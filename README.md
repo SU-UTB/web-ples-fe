@@ -1,3 +1,8 @@
+Resources:
+ - [Trunk based development](https://trunkbaseddevelopment.com/)
+ - [React](https://react.dev/)
+ - [Headless UI](https://headlessui.com/)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
