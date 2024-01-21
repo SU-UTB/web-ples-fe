@@ -1,34 +1,34 @@
 import { useState, useEffect } from "react"
 
-interface CountdownProps {
+type CountdownProps = {
   targetDate: Date
 }
 
 const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
-  const calculateTimeLeft = () => {
-    const difference = +targetDate - +new Date()
-    let timeLeft = { days: 0, hours: 0, minutes: 0 }
-
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-      }
-    }
-
-    return timeLeft
-  }
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft())
-    }, 1000)
+    const calculateTimeLeft = () => {
+      const difference = +targetDate - +new Date();
+      let time = { days: 0, hours: 0, minutes: 0 };
 
-    return () => clearTimeout(timer)
-  }, [timeLeft])
+      if (difference > 0) {
+        time = {
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / 1000 / 60) % 60),
+        };
+      }
+
+      return time;
+    };
+
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [targetDate]);
 
   return (
     <div className="flex items-center justify-center space-x-1">
