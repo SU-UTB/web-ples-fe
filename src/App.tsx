@@ -5,7 +5,6 @@ import SupportProgramSection from "./components/sections/SupportProgramSection"
 
 import './index.css';
 
-
 function App() {
 
   return (
