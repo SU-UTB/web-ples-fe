@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      numbers: ['Cormorant Garamond'],
+      'pilcrow': ['"Pilcrow Rounded"', 'sans-serif'],
+    }
   },
   plugins: [],
 }
