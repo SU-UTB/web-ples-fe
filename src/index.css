@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,300;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: 'PilcrowRounded-Variable';
-  src: url('../fonts/PilcrowRounded-Variable.woff2') format('woff2'),
-       url('../fonts/PilcrowRounded-Variable.woff') format('woff'),
-       url('../fonts/PilcrowRounded-Variable.ttf') format('truetype');
-       font-weight: 400 900;
-       font-display: swap;
-       font-style: normal;
+  font-family: "PilcrowRounded-Variable";
+  src: url("../fonts/PilcrowRounded-Variable.woff2") format("woff2"),
+    url("../fonts/PilcrowRounded-Variable.woff") format("woff"),
+    url("../fonts/PilcrowRounded-Variable.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
-@layer base {
-  body {
-    @apply font-pilcrow;
-  }
+body {
+  @apply font-pilcrow;
 }

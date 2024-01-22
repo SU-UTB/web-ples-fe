@@ -1,6 +1,6 @@
 import { TicketDiv } from "../TicketDiv"
 
-const TicketsSection = () => {
+export const TicketsSection = () => {
   return (
     <div className="flex flex-col items-center mb-10">
       <div className="uppercase font-bold text-xl mb-4">Vstupenky</div>
@@ -33,5 +33,3 @@ const TicketsSection = () => {
     </div>
   )
 }
-
-export default TicketsSection

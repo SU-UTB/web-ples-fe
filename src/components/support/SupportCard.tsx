@@ -14,7 +14,7 @@ export const SupportCard = ({ img, alt, name, date }: Props) => {
         <img src={img} alt={alt} className="w-24 h-24 rounded-sm " />
         <div className="px-4">
           <div className="text-lg font-bold mb-1">{name}</div>
-          <div className="">{date}</div>
+          <div>{date}</div>
         </div>
       </div>
       <img src={calendar} alt="kalendář" className="w-5 h-5 self-end" />

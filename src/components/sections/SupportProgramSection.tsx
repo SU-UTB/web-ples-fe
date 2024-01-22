@@ -1,7 +1,7 @@
 import { SupportCard } from "../support/SupportCard"
 import { InfoCard } from "../InfoCard"
 
-const SupportProgramSection = () => {
+export const SupportProgramSection = () => {
   return (
     <InfoCard headline="Doprovodný program">
       <div className="flex flex-col justify-center ">
@@ -41,5 +41,3 @@ const SupportProgramSection = () => {
     </InfoCard>
   )
 }
-
-export default SupportProgramSection
