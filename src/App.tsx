@@ -2,17 +2,24 @@ import HeroSection from "./components/sections/HeroSection"
 import AboutSection from "./components/sections/AboutSection"
 import { TicketsSection } from "./components/sections/TicketsSection"
 import { SupportProgramSection } from "./components/sections/SupportProgramSection"
+import { GallerySection } from "./components/sections/GallerySection"
+import { ContactSection } from "./components/sections/ContactSection"
+import { PartnerSection } from "./components/sections/PartnerSection"
+import { MenuComponent } from "./components/hamburger/HamburgerButton"
 
-import './index.css';
+import "./index.css"
 
 function App() {
-
   return (
     <>
-      <HeroSection/>
-      <AboutSection/>
-      <TicketsSection/>
-      <SupportProgramSection/>
+      <MenuComponent />
+      <HeroSection />
+      <AboutSection />
+      <TicketsSection />
+      <SupportProgramSection />
+      <GallerySection />
+      <ContactSection />
+      <PartnerSection />
     </>
   )
 }
