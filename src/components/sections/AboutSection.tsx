@@ -1,12 +1,12 @@
-import { InfoCard } from "../InfoCard"
-import { ProgramDiv } from "../ProgramDiv"
+import { InfoCard } from "../divs/InfoCard"
+import { ProgramDiv } from "../divs/ProgramDiv"
 
 const AboutSection = () => {
   return (
-    <div className="mt-10 flex justify-center items-center">
+    <div className="flex justify-center mt-10">
       <div className="grid grid-cols-2 grid-rows-6">
         <div className="row-start-1 row-end-4 col-start-1 col-end-2">
-          <img src="/Stani2.png" alt="Socha"/>
+          <img src="about/Stani2.png" alt="Socha" />
         </div>
         <div className="row-start-1 row-end-2 col-start-2 col-end-3">
           <InfoCard headline="O PLESE:">
@@ -41,53 +41,49 @@ const AboutSection = () => {
         <div className="row-start-4 row-end-7 col-start-2 col-end-3">
           <InfoCard headline="PROGRAM:">
             <div className="space-y-3">
-            <ProgramDiv 
-                time="19:00" 
-                headline="Otevření kongresového centra" 
-                description="ve foyer hraju a zpívá ZUŠ Zlín ledová show před kongresovým centrem" 
+              <ProgramDiv
+                time="19:00"
+                headline="Otevření kongresového centra"
+                description="ve foyer hraju a zpívá ZUŠ Zlín ledová show před kongresovým centrem"
               />
-              <ProgramDiv 
-                time="20:00" 
-                headline="Slavnostní zahájení plesu:" 
-                description="taneční vystoupení ZUŠ Zlín proslov rektora prof. Mgr. Milana Adámka, Ph.D." 
+              <ProgramDiv
+                time="20:00"
+                headline="Slavnostní zahájení plesu:"
+                description="taneční vystoupení ZUŠ Zlín proslov rektora prof. Mgr. Milana Adámka, Ph.D."
               />
-              <ProgramDiv 
-                time="20:15" 
+              <ProgramDiv
+                time="20:15"
                 headline="Prestige Symphony Orchestra"
                 description=""
               />
-              <ProgramDiv 
-                time="20:45" 
-                headline="Prague Lounge Trio" 
+              <ProgramDiv
+                time="20:45"
+                headline="Prague Lounge Trio"
                 description=""
               />
-              <ProgramDiv 
-                time="21:45" 
-                headline="Prestige Symphony Orchestra" 
+              <ProgramDiv
+                time="21:45"
+                headline="Prestige Symphony Orchestra"
                 description=""
               />
-              <ProgramDiv 
-                time="24:00" 
-                headline="Prague Lounge Trio" 
+              <ProgramDiv
+                time="24:00"
+                headline="Prague Lounge Trio"
                 description=""
               />
-              <ProgramDiv 
-                time="23:15" 
-                headline="Losování cen"
-                description=""
+              <ProgramDiv time="23:15" headline="Losování cen" description="" />
+              <ProgramDiv
+                time="00:00"
+                headline="Půlnoční překvapení:"
+                description="finalisté Česko Slovensko má talent"
               />
-              <ProgramDiv 
-                time="00:00" 
-                headline="Půlnoční překvapení:" 
-                description="finalisté Česko Slovensko má talent" 
-              />
-              <ProgramDiv 
-                time="00:10" 
+              <ProgramDiv
+                time="00:10"
                 headline="Kapela Frontmen"
                 description=""
               />
-              <ProgramDiv 
-                time="01:30" 
+              <ProgramDiv
+                time="01:30"
                 headline="Ukončení plesu"
                 description=" "
               />
