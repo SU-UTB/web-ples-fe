@@ -1,13 +1,12 @@
-import calendar from "/support/calendar.svg"
-
 type Props = {
   img: string
   alt: string
   name: string
   date: string
+  icon: string
 }
 
-export const SupportCard = ({ img, alt, name, date }: Props) => {
+export const SupportCard = ({ img, alt, name, date, icon }: Props) => {
   return(
     <div className="flex items-start justify-between bg-white rounded-lg shadow-lg p-4 my-4">
       <div className="flex">
@@ -17,7 +16,7 @@ export const SupportCard = ({ img, alt, name, date }: Props) => {
           <div>{date}</div>
         </div>
       </div>
-      <img src={calendar} alt="kalendář" className="w-5 h-5 self-end" />
+      <img src={icon} alt="kalendář" className="w-5 h-5 self-end" />
     </div>
   )
 }
