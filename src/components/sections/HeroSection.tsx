@@ -1,5 +1,5 @@
 import Countdown from "../countdown/Countdown"
-import Clouds from "/hero/HeroClouds.png"
+import Clouds from "/hero/heroclouds.png"
 
 const HeroSection = () => {
   const date = "2024-02-16T19:00:00"
