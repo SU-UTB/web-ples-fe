@@ -13,8 +13,7 @@ export const TicketDiv = ({ img, alt, headline, price, capacity, info }: Props) 
       <img 
         src={img} 
         alt={alt} 
-        style={{ maxHeight: '1080px', maxWidth: '1080px', objectFit: 'cover' }}
-        className="bg-gray-100 rounded-lg shadow-xl mb-4"
+        className="bg-gray-100 rounded-lg shadow-xl max-h-[1080px] max-w-[1080px] object-cover mb-4"
       />
       <div className="uppercase font-bold">{headline}</div>
       <div>{price}</div>
