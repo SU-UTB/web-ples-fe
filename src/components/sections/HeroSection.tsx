@@ -1,4 +1,5 @@
 import Countdown from "../countdown/Countdown"
+import Clouds from "/hero/heroclouds.png"
 
 const HeroSection = () => {
   const date = "2024-02-16T19:00:00"
@@ -10,7 +11,7 @@ const HeroSection = () => {
     backgroundRepeat: "no-repeat",
   }
   const backgroundStyle = {
-    backgroundImage: "/hero/HeroClouds.png",
+    backgroundImage: `url(${Clouds})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",

@@ -40,7 +40,7 @@ const AboutSection = () => {
         </div>
         <div className="row-start-4 row-end-7 col-start-2 col-end-3">
           <InfoCard headline="PROGRAM:">
-            <div className="space-y-2">
+            <div className="space-y-3">
             <ProgramDiv 
                 time="19:00" 
                 headline="Otevření kongresového centra" 
