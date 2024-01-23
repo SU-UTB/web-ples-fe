@@ -11,5 +11,10 @@ export default {
       'pilcrow': ['"Pilcrow Rounded"', 'sans-serif'],
     }
   },
+  variants: {
+    extend: {
+      grayscale: ['hover'],
+    },
+  },
   plugins: [],
 }
