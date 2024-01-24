@@ -1,5 +1,5 @@
-import { InfoCard } from "../divs/InfoCard"
-import { ProgramDiv } from "../divs/ProgramDiv"
+import { InfoCard } from "../cards/InfoCard"
+import { ProgramDiv } from "../cards/ProgramCard"
 
 const AboutSection = () => {
   return (

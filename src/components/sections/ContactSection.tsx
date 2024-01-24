@@ -1,5 +1,5 @@
-import { InfoCard } from "../divs/InfoCard"
-import { ContactDiv } from "../divs/ContactDiv"
+import { InfoCard } from "../cards/InfoCard"
+import { ContactDiv } from "../cards/ContactCard"
 
 export const ContactSection = () => {
   return (

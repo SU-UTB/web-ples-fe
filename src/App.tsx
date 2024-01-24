@@ -5,7 +5,7 @@ import { SupportProgramSection } from "./components/sections/SupportProgramSecti
 import { GallerySection } from "./components/sections/GallerySection"
 import { ContactSection } from "./components/sections/ContactSection"
 import { PartnerSection } from "./components/sections/PartnerSection"
-import { MenuComponent } from "./components/hamburger/HamburgerButton"
+import { MenuComponent } from "./components/hamburger/MenuComponent"
 
 import "./index.css"
 

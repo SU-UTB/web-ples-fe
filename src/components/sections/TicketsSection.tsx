@@ -1,6 +1,6 @@
-import { TicketDiv } from "../divs/TicketDiv"
-import { ContactDiv } from "../divs/ContactDiv"
-import { InfoCard } from "../divs/InfoCard"
+import { TicketDiv } from "../cards/TicketCard"
+import { ContactDiv } from "../cards/ContactCard"
+import { InfoCard } from "../cards/InfoCard"
 
 export const TicketsSection = () => {
   return (

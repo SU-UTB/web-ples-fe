@@ -1,5 +1,5 @@
 import { SupportCard } from "../support/SupportCard"
-import { InfoCard } from "../divs/InfoCard"
+import { InfoCard } from "../cards/InfoCard"
 
 export const SupportProgramSection = () => {
   return (
