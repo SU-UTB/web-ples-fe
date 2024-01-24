@@ -1,11 +1,9 @@
-
-
 export const PartnerSection = () => {
 
   return(
-    <div>
+    <section id="partner">
       <div className="uppercase"></div>
       
-    </div>
+    </section>
   )
 } 

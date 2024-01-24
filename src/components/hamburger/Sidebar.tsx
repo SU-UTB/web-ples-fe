@@ -35,7 +35,7 @@ export const Sidebar = ({ isOpen, toggle }: SidebarProps) => {
             <a href="#tickets" onClick={toggle} className="mb-4">
               Doprovodný program
             </a>
-            <a href="#tickets" onClick={toggle} className="mb-4">
+            <a href="#gallery" onClick={toggle} className="mb-4">
               Galerie
             </a>
             <a href="#tickets" onClick={toggle} className="mb-4">
