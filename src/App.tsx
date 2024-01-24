@@ -11,7 +11,7 @@ import "./index.css"
 
 function App() {
   return (
-    <div className="w-full">
+    <main className="w-full">
       <MenuComponent />
       <HeroSection />
       <AboutSection />
@@ -20,7 +20,7 @@ function App() {
       <GallerySection />
       <ContactSection />
       <PartnerSection />
-    </div>
+    </main>
   )
 }
 
