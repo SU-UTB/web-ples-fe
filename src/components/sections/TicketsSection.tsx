@@ -1,27 +1,34 @@
-import { TicketDiv } from "../cards/TicketCard"
-import { ContactDiv } from "../cards/ContactCard"
+import { TicketCard } from "../cards/TicketCard"
+import { ContactCard } from "../cards/ContactCard"
 import { InfoCard } from "../cards/InfoCard"
 
 export const TicketsSection = () => {
   return (
-    <div className="flex flex-col items-center mt-10 ">
-      <div className="grid grid-cols-3 grid-rows-1 justify-center items-center">
-        <div className="px-8 col-start-1 col-end-3">
+    <section
+      id="ticket"
+      className="flex flex-col items-center mt-10 max-w-screen-2xl mx-auto gap-8"
+    >
+      <div className="flex justify-between flex-wrap w-full">
+        <div className="">
           <div className="uppercase font-bold text-4xl mb-4 font-numbers">
             Vstupenky
           </div>
-          <div className="text-lg ">
-            Srdečně vás zveme na XXII. ročník Reprezentačního plesu Univerzity
-            Tomáše Bati ve Zlíně. Již 16. 2. 2024 se v Kongresovém centru ve
-            Zlíně společně přeneseme na Olymp a poznáme, jaké to je, KDYŽ BOHOVÉ
-            TANČÍ. Ať už jste obyčejný smrtelník, polobůh nebo samotný Zeus, o
-            ples pod Olympem určitě nesmíte přijít! Aktuální dění a novinky
-            můžete sledovat na Facebookové události.
+          <div className="flex flex-col gap-2 text-lg max-w-2xl">
+            <p>
+              Oficiální předprodej vstupenek na XXII. Reprezentační ples
+              Univerzity Tomáše Bati bude spuštěn <strong>29. 1. 2024</strong> a bude probíhat v
+              budově Rektorátu UTB (U13) na nám. T. G. Masaryka 5555, Zlín.
+            </p>
+            <p>
+              Prodej bude pokračovat od pondělí do čtvrtka od <strong>9:00 do 16:00</strong>a v
+              pátky od <strong>9:00 do 12:00</strong> až do <strong>16.2. 2024, nebo do vyprodání lístků.</strong>
+            </p>
           </div>
         </div>
-        <div className="max-w-md px-8 col-start-3 col-end-4">
+        <div className="col-start-3 col-end-4">
           <InfoCard headline="Bližší informace k předprodeji:">
-            <ContactDiv
+            <ContactCard
+              title=""
               name="Pavlína Šromotová"
               position=""
               email="sromotova@sutb.cz"
@@ -30,8 +37,8 @@ export const TicketsSection = () => {
           </InfoCard>
         </div>
       </div>
-      <div className="flex justify-center items-center mb-10">
-        <TicketDiv
+      <div className="flex flex-wrap justify-between w-full mb-10 gap-4">
+        <TicketCard
           img="/tickets/Stani1.png"
           alt="Stání"
           headline="na stání"
@@ -39,7 +46,7 @@ export const TicketsSection = () => {
           capacity="500/500"
           info="(možnost sednout si na volně dostupné sedačky bez stolu a bez možnosti místenky)"
         />
-        <TicketDiv
+        <TicketCard
           img="/tickets/Sezeni1.png"
           alt="Sezení"
           headline="na sezení"
@@ -47,7 +54,7 @@ export const TicketsSection = () => {
           capacity="500/500"
           info="(sezení bez rautu v 2. patře)"
         />
-        <TicketDiv
+        <TicketCard
           img="/tickets/SezeniRaut1.png"
           alt="Sezení s rautem"
           headline="na sezení s rautem"
@@ -56,6 +63,6 @@ export const TicketsSection = () => {
           info="(nezahrnuje nápoje)"
         />
       </div>
-    </div>
+    </section>
   )
 }

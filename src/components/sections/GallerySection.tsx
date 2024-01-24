@@ -2,8 +2,8 @@ import { galleryImages } from "../gallery/AppData"
 
 export const GallerySection = () => {
   return(
-    <div className="my-10">
-      <div className="text-4xl mb-8 text-center font-semibold font-numbers">GALERIE Z MINULÉHO ROČNÍKU:</div>
+    <section id="gallery" className="my-10 ">
+      <h3 className="text-4xl mb-8 font-semibold font-numbers max-w-screen-2xl mx-auto">GALERIE Z MINULÉHO ROČNÍKU:</h3>
       <div className="grid grid-cols-5 grid-rows-2 gap-4">
         {galleryImages.map((image) => (
           <img 
@@ -14,6 +14,6 @@ export const GallerySection = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   )
 } 
