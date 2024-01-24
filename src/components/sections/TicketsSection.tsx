@@ -20,7 +20,7 @@ export const TicketsSection = () => {
               budově Rektorátu UTB (U13) na nám. T. G. Masaryka 5555, Zlín.
             </p>
             <p>
-              Prodej bude pokračovat od pondělí do čtvrtka od <strong>9:00 do 16:00</strong>a v
+              Prodej bude pokračovat od pondělí do čtvrtka od <strong>9:00 do 16:00</strong> a v
               pátky od <strong>9:00 do 12:00</strong> až do <strong>16.2. 2024, nebo do vyprodání lístků.</strong>
             </p>
           </div>
