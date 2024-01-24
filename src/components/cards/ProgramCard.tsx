@@ -4,7 +4,7 @@ type Props = {
   description: string;
 };
 
-export const ProgramDiv = ({ time, headline, description }: Props) => {
+export const ProgramCard = ({ time, headline, description }: Props) => {
   return (
     <div className="flex">
       <div className="w-24 font-bold text-2xl font-numbers">{time}</div> 
