@@ -5,11 +5,11 @@ import { InfoCard } from "../cards/InfoCard"
 export const TicketsSection = () => {
   return (
     <section
-      id="ticket"
+      id="vstupenky"
       className="flex flex-col items-center mt-10 max-w-screen-2xl mx-auto gap-8"
     >
       <div className="flex justify-between flex-wrap w-full">
-        <div className="">
+        <div className="mx-5">
           <div className="uppercase font-bold text-4xl mb-4 font-numbers">
             Vstupenky
           </div>
@@ -25,7 +25,7 @@ export const TicketsSection = () => {
             </p>
           </div>
         </div>
-        <div className="col-start-3 col-end-4">
+        <div className="col-start-3 col-end-4 mx-5">
           <InfoCard headline="Bližší informace k předprodeji:">
             <ContactCard
               title=""
@@ -37,13 +37,12 @@ export const TicketsSection = () => {
           </InfoCard>
         </div>
       </div>
-      <div className="flex flex-wrap justify-between w-full mb-10 gap-4">
+      <div className="flex flex-wrap justify-between w-full mb-10 gap-4 ">
         <TicketCard
           img="/tickets/Stani1.png"
           alt="Stání"
           headline="na stání"
           price="350,-"
-          capacity="500/500"
           info="(možnost sednout si na volně dostupné sedačky bez stolu a bez možnosti místenky)"
         />
         <TicketCard
@@ -51,7 +50,6 @@ export const TicketsSection = () => {
           alt="Sezení"
           headline="na sezení"
           price="500,-"
-          capacity="500/500"
           info="(sezení bez rautu v 2. patře)"
         />
         <TicketCard
@@ -59,7 +57,6 @@ export const TicketsSection = () => {
           alt="Sezení s rautem"
           headline="na sezení s rautem"
           price="750,-"
-          capacity="500/500"
           info="(nezahrnuje nápoje)"
         />
       </div>
