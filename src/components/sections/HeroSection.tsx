@@ -18,7 +18,7 @@ const HeroSection = () => {
   }
 
   return (
-    <div
+    <section id="hero"
       style={gradientStyle}
       className="flex flex-col justify-center items-center"
     >
@@ -31,7 +31,7 @@ const HeroSection = () => {
       <div style={backgroundStyle}>
         <img src="/hero/HeroPillarsCropped.png" alt="Pillars" className="relative"/>
       </div>
-    </div>
+    </section>
   )
 }
 
