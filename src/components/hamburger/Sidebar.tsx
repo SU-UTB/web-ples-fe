@@ -1,15 +1,24 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion"
 
 type SidebarProps = {
-  isOpen: boolean;
-  toggle: () => void;
-};
+  isOpen: boolean
+  //toggle: () => void
+}
 
-export const Sidebar = ({ isOpen, toggle }: SidebarProps) => {
+export const Sidebar = ({ isOpen }: SidebarProps) => {
   const variants = {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "100%" },
   }
+
+  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault(); 
+    const href = event.currentTarget.getAttribute('href') || '';
+    const element = document.querySelector(href); 
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' }); 
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -22,31 +31,31 @@ export const Sidebar = ({ isOpen, toggle }: SidebarProps) => {
           exit="closed"
           transition={{ type: "spring", bounce: 0.25 }}
         >
-          <nav className="uppercase flex flex-col items-end justify-center h-full text-end font-semibold font-numbers gap-5 mr-10">
-            <a href="#o-plese" onClick={toggle} className="underline mb-4">
+          <nav className="uppercase flex flex-col items-end justify-center h-full text-end font-semibold font-numbers gap-5 mr-10 ">
+            <a href="#o-plese" onClick={handleLinkClick} className="underline mb-4">
               O plese
             </a>
-            <a href="#program" onClick={toggle} className="mb-4">
+            <a href="#program" onClick={handleLinkClick} className="mb-4">
               Program
             </a>
-            <a href="#tickets" onClick={toggle} className="mb-4">
+            <a href="#vstupenky" onClick={handleLinkClick} className="mb-4">
               Vstupenky
             </a>
-            <a href="#tickets" onClick={toggle} className="mb-4">
+            <a href="#doprovodny-program" onClick={handleLinkClick} className="mb-4 ">
               Doprovodný program
             </a>
-            <a href="#gallery" onClick={toggle} className="mb-4">
+            <a href="#gallery" onClick={handleLinkClick} className="mb-4">
               Galerie
             </a>
-            <a href="#tickets" onClick={toggle} className="mb-4">
+            <a href="#kontakty" onClick={handleLinkClick} className="mb-4">
               Kontakt
             </a>
-            <a href="#tickets" onClick={toggle} className="mb-4">
+            <a href="#partneri" onClick={handleLinkClick} className="mb-4">
               Partneři
             </a>
             <div className="flex gap-7">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/studentskaunieutb/"
                 target="_blank"
                 rel="noreferrer"
                 className="mb-4"
@@ -54,7 +63,7 @@ export const Sidebar = ({ isOpen, toggle }: SidebarProps) => {
                 <img src="/hamburger/instagram-logo.svg" alt="Instagram" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.facebook.com/events/752918923323142?ref=newsfeed"
                 target="_blank"
                 rel="noreferrer"
                 className="mb-4"
@@ -68,4 +77,3 @@ export const Sidebar = ({ isOpen, toggle }: SidebarProps) => {
     </AnimatePresence>
   )
 }
-

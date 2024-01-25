@@ -12,7 +12,7 @@ export const SupportCard = ({ img, alt, name, date, icon }: Props) => {
       <div className="flex">
         <img src={img} alt={alt} className="w-24 h-24 rounded-sm " />
         <div className="px-4">
-          <div className="text-lg font-bold mb-1">{name}</div>
+          <div className="text-2xl font-semibold mb-1">{name}</div>
           <div>{date}</div>
         </div>
       </div>

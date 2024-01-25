@@ -6,9 +6,9 @@ type Props = {
 
 export const ProgramCard = ({ time, headline, description }: Props) => {
   return (
-    <div className="flex">
-      <div className="w-24 font-bold text-2xl font-numbers">{time}</div> 
-      <div className="flex flex-col justify-center">
+    <div className="flex gap-12">
+      <div className="font-bold text-2xl font-numbers max-w-10">{time}</div> 
+      <div className="flex flex-col ">
         <div className="font-bold text-lg">{headline}</div>
         <div className="text-lg">{description}</div>
       </div>

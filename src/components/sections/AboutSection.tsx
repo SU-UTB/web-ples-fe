@@ -3,45 +3,72 @@ import { ProgramCard } from "../cards/ProgramCard"
 
 const AboutSection = () => {
   return (
-    <section className="mt-10 w-full max-w-screen-2xl mx-auto">
-      <div className="flex justify-between">
-        <div className="row-start-1 row-end-4 col-start-1 col-end-2">
+    <section id="o-plese" className="w-full max-w-screen-2xl mx-auto my-7 ">
+      <div className="flex flex-wrap justify-between mx-5">
+        <div className="">
           <img src="about/Stani2.png" alt="Socha" />
         </div>
-        <div className="flex flex-col gap-4">
-          <div className="row-start-1 row-end-2 col-start-2 col-end-3">
-            <InfoCard headline="O PLESE:">
+        <div className="flex flex-col gap-8">
+          <InfoCard headline="O PLESE:">
+            <div className="flex flex-col gap-4 order-1">
               <p>
-                Srdečně vás zveme na již XXI. ročník Reprezentačního plesu
-                Univerzity Tomáše Bati ve Zlíně. Jako každý rok se ples ponese v
-                určitém tématu, kterým je letošní Zimní bál. Těšit se můžeme na
-                krásnou zimní atmosféru a večer plný elegance a dobré zábavy.
-                Aktuální dění a novinky můžete sledovat na Facebookové události.
+                Srdečně vás zveme na XXII. ročník Reprezentačního plesu
+                Univerzity Tomáše Bati ve Zlíně. Již 16. 2. 2024 se v
+                Kongresovém centru ve Zlíně společně přeneseme na Olymp a
+                poznáme, jaké to je, KDYŽ BOHOVÉ TANČÍ.
               </p>
-            </InfoCard>
-          </div>
-          <div className="row-start-2 row-end-4 col-start-2 col-end-3">
-            <InfoCard headline="DRESS CODE">
               <p>
-                Letošní ples nabízí spoustu možností pro váš dress code. Ať už
-                zvolíte modrou, červenou, fialovou, stříbrnou nebo šedivou
-                barvu, neváhejte. Pro muže se bude hodit modrý oblek. Doplníte
-                jej klasickou černou kravatou nebo, která doplní modrou košili,
-                modrou kravatou. Můžete zvolit i modrou barvu košile. Váš oblek
-                může podtrhnout motýlek nebo i jinak ozvláštněné manžetové
-                knoflíčky. Nezapomeňte na klasickou pánskou obuv. Pro ženy
-                doporučujeme dlouhé šaty v jedné z výše zmíněných barev případně
-                s vlečkou, dlouhý rukáv a výrazné zdobení na šatech. Můžete
-                zvolit i kratší štíhlý pod kolena. Určitě nepodceňte výrazné a
-                teplé doplňky ve stylu zimy a ledu – čelenku, náušnice nebo jiný
-                doplněk do vlasů. Nemusíte se bát ani kožešin či rukaviček.
-                Nezapomeňte na podpadky, které dodají vašemu outfitu mrazivou
-                tečku.
+                Ať už jste obyčejný smrtelník, polobůh nebo samotný Zeus, o ples
+                pod Olympem, který se koná jednou za tisíc let, určitě nesmíte
+                přijít!
               </p>
-            </InfoCard>
-          </div>
-          <div className="row-start-4 row-end-7 col-start-2 col-end-3">
+              <p>
+                Aktuální dění a novinky sledujte na{" "}
+                <span className="underline font-bold">
+                  <a
+                    href="https://www.facebook.com/events/752918923323142?ref=newsfeed"
+                    target="_blank"
+                  >
+                    Facebookové události.
+                  </a>
+                </span>
+              </p>
+            </div>
+          </InfoCard>
+
+          <InfoCard headline="DRESS CODE">
+            <div className="flex flex-col gap-4 order-3">
+              <p>
+                Letošní dress code se na Olympu ponese v bílé, zlaté a zelené
+                barvě, protože jen tak vzdáme úctu velké trojce - Diovi,
+                Poseidónovi a Hádovi.
+              </p>
+              <p>
+                <strong>Ženy</strong>, zkuste vstoupit na parket v dlouhých
+                šatech v jedné ze zmíněných barev, popřípadě s vlečkou, dlouhým
+                rukávem a výraznými ozdobami. Můžete si vybrat i kratší střih
+                pod kolena, ale nezapomeňte na výrazné třpytivé doplňky v duchu
+                antického Řecka – korunku, čelenku nebo jiný vlasový prvek.
+                Určitě nesmí chybět ani elegantní podpatky, které vašemu outfitu
+                dodají tu správnou božskou tečku.
+              </p>
+              <p>
+                <strong>Pro muže</strong> doporučujeme modrý nebo bílý oblek,
+                ale klidně můžete sáhnout i po klasických černých či šedých
+                tónech. Celý outfit završte zlatou nebo zelenou kravatou,
+                případně si dovolte experiment s motýlky v těchto odstínech.
+                Dodatečný lesk můžete přidat třpytivými či originálně zdobenými
+                manžetovými knoflíčky. A samozřejmě nezapomeňte na elegantní
+                pánskou obuv.
+              </p>
+            </div>
+          </InfoCard>
+          <section id="program">
             <InfoCard headline="PROGRAM:">
+              <div className="my-4 text-xl order-3">
+                Celým večerem vás provede moderátor, herec a zpěvák Milan
+                Peroutka.
+              </div>
               <div className="space-y-3">
                 <ProgramCard
                   time="19:00"
@@ -95,7 +122,7 @@ const AboutSection = () => {
                 />
               </div>
             </InfoCard>
-          </div>
+          </section>
         </div>
       </div>
     </section>

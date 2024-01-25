@@ -3,9 +3,9 @@ import { ContactCard } from "../cards/ContactCard"
 
 export const ContactSection = () => {
   return (
-    <section id="Contact" className="my-7">
+    <section id="Kontakty" className="my-7 mx-5">
       <InfoCard headline="kontakty:">
-        <div className="grid grid-cols-2 grid-rows-3 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-3 gap-2 auto-rows-max">
           <ContactCard
             title="Bc."
             name="Michaela Filipcová"
