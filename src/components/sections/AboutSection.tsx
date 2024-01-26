@@ -1,16 +1,18 @@
 import { InfoCard } from "../cards/InfoCard"
 import { ProgramCard } from "../cards/ProgramCard"
 
+import aboutImg from '../../assets/img/about/Stani2.png'
+
 const AboutSection = () => {
   return (
-    <section id="o-plese" className="w-full max-w-screen-2xl mx-auto my-7 ">
+    <section id="o-plese" className="w-full mx-auto max-w-screen-2xl my-7 ">
       <div className="flex flex-wrap justify-between mx-5">
         <div className="">
-          <img src="about/Stani2.png" alt="Socha" />
+          <img src={aboutImg} alt="Socha" />
         </div>
         <div className="flex flex-col gap-8">
           <InfoCard headline="O PLESE:">
-            <div className="flex flex-col gap-4 order-1">
+            <div className="flex flex-col order-1 gap-4">
               <p>
                 Srdečně vás zveme na XXII. ročník Reprezentačního plesu
                 Univerzity Tomáše Bati ve Zlíně. Již 16. 2. 2024 se v
@@ -24,7 +26,7 @@ const AboutSection = () => {
               </p>
               <p>
                 Aktuální dění a novinky sledujte na{" "}
-                <span className="underline font-bold">
+                <span className="font-bold underline">
                   <a
                     href="https://www.facebook.com/events/752918923323142?ref=newsfeed"
                     target="_blank"
@@ -37,7 +39,7 @@ const AboutSection = () => {
           </InfoCard>
 
           <InfoCard headline="DRESS CODE">
-            <div className="flex flex-col gap-4 order-3">
+            <div className="flex flex-col order-3 gap-4">
               <p>
                 Letošní dress code se na Olympu ponese v bílé, zlaté a zelené
                 barvě, protože jen tak vzdáme úctu velké trojce - Diovi,
@@ -65,7 +67,7 @@ const AboutSection = () => {
           </InfoCard>
           <section id="program">
             <InfoCard headline="PROGRAM:">
-              <div className="my-4 text-xl order-3">
+              <div className="order-3 my-4 text-xl">
                 Celým večerem vás provede moderátor, herec a zpěvák Milan
                 Peroutka.
               </div>

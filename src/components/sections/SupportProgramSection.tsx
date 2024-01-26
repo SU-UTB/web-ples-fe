@@ -1,5 +1,9 @@
-import { SupportCard } from "../cards/SupportCard"
 import { InfoCard } from "../cards/InfoCard"
+import { SupportCard } from "../cards/SupportCard"
+
+import calendarIcon from '../../assets/img/support/calendar.svg'
+import statueEvent from '../../assets/img/support/statueEvent.png'
+import vineEvent from '../../assets/img/support/vineEvent.png'
 
 export const SupportProgramSection = () => {
   return (
@@ -23,7 +27,7 @@ export const SupportProgramSection = () => {
           </p>
           <p>
             Bližší informace najdete na&nbsp;
-            <span className="underline font-bold">
+            <span className="font-bold underline">
               <a
                 href="https://www.facebook.com/events/752918923323142?ref=newsfeed"
                 target="_blank"
@@ -35,32 +39,28 @@ export const SupportProgramSection = () => {
         </div>
         <div>
           <SupportCard
-            img="/support/statueEvent.png"
+            img={vineEvent}
             alt="víno"
             name="Dionýsova škola šumivého vína"
             date="30.1.2024"
-            icon="/support/calendar.svg"
           />
           <SupportCard
-            img="/support/vineEvent.png"
+            img={vineEvent}
             alt="víno"
             name="Apollónova škola tance"
             date="8.2.2024"
-            icon="/support/calendar.svg"
           />
           <SupportCard
-            img="/support/statueEvent.png"
+            img={statueEvent}
             alt="víno"
             name="Dámský salón"
             date="16.1.2024"
-            icon="/support/link-chain.svg"
           />
           <SupportCard
-            img="/support/statueEvent.png"
+            img={statueEvent}
             alt="víno"
             name="Dionýsova škola šumivého vína"
             date="12.2-16.2.2024"
-            icon="/support/link-chain.svg"
           />
         </div>
       </InfoCard>

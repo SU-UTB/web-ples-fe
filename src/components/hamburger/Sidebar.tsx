@@ -1,4 +1,7 @@
-import { motion, AnimatePresence } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
+
+import fbIcon from '../../assets/icons/hamburger/facebook-logo.svg'
+import igIcon from '../../assets/icons/hamburger/instagram-logo.svg'
 
 type SidebarProps = {
   isOpen: boolean
@@ -23,15 +26,15 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
     <AnimatePresence>
       {isOpen && (
         <motion.aside
-          className="fixed right-0 top-0 w-64 h-full bg-white shadow-xl rounded-xl z-40"
+          className="fixed top-0 right-0 z-40 w-64 h-full bg-white shadow-xl rounded-xl"
           variants={variants}
           initial="closed"
           animate="open"
           exit="closed"
           transition={{ type: "spring", bounce: 0.25 }}
         >
-          <nav className="uppercase flex flex-col items-end justify-center h-full text-end font-semibold font-numbers gap-5 mr-10 ">
-            <a href="#o-plese" onClick={handleLinkClick} className="underline mb-4">
+          <nav className="flex flex-col items-end justify-center h-full gap-5 mr-10 font-semibold uppercase text-end font-numbers ">
+            <a href="#o-plese" onClick={handleLinkClick} className="mb-4 underline">
               O plese
             </a>
             <a href="#program" onClick={handleLinkClick} className="mb-4">
@@ -59,7 +62,7 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
                 rel="noreferrer"
                 className="mb-4"
               >
-                <img src="/hamburger/instagram-logo.svg" alt="Instagram" />
+                <img src={igIcon} alt="Instagram" />
               </a>
               <a
                 href="https://www.facebook.com/events/752918923323142?ref=newsfeed"
@@ -67,7 +70,7 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
                 rel="noreferrer"
                 className="mb-4"
               >
-                <img src="/hamburger/facebook-logo.svg" alt="Facebook" />
+                <img src={fbIcon} alt="Facebook" />
               </a>
             </div>
           </nav>

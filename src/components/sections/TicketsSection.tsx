@@ -1,19 +1,23 @@
-import { TicketCard } from "../cards/TicketCard"
 import { ContactCard } from "../cards/ContactCard"
 import { InfoCard } from "../cards/InfoCard"
+import { TicketCard } from "../cards/TicketCard"
+
+import sezeni from '../../assets/img/tickets/Sezeni1.png'
+import sezeniRaut from '../../assets/img/tickets/SezeniRaut1.png'
+import stani from '../../assets/img/tickets/Stani1.png'
 
 export const TicketsSection = () => {
   return (
     <section
       id="vstupenky"
-      className="flex flex-col items-center mt-10 max-w-screen-2xl mx-auto gap-8"
+      className="flex flex-col items-center gap-8 mx-auto mt-10 max-w-screen-2xl"
     >
-      <div className="flex justify-between items-center flex-wrap w-full">
+      <div className="flex flex-wrap items-center justify-between w-full">
         <div className="mx-5">
-          <div className="uppercase font-bold text-4xl mb-4 font-numbers">
+          <div className="mb-4 text-4xl font-bold uppercase font-numbers">
             Vstupenky
           </div>
-          <div className="flex flex-col gap-2 text-lg max-w-2xl">
+          <div className="flex flex-col max-w-2xl gap-2 text-lg">
             <p>
               Oficiální předprodej vstupenek na XXII. Reprezentační ples
               Univerzity Tomáše Bati bude spuštěn <strong>29. 1. 2024</strong> a bude probíhat v
@@ -37,23 +41,23 @@ export const TicketsSection = () => {
           </InfoCard>
         </div>
       </div>
-      <div className="flex flex-wrap justify-between w-full mb-10 gap-4 ">
+      <div className="flex flex-wrap justify-between w-full gap-4 mb-10 ">
         <TicketCard
-          img="/tickets/Stani1.png"
+          img={stani}
           alt="Stání"
           headline="na stání"
           price="350,-"
           info="(možnost sednout si na volně dostupné sedačky bez stolu a bez možnosti místenky)"
         />
         <TicketCard
-          img="/tickets/Sezeni1.png"
+          img={sezeni}
           alt="Sezení"
           headline="na sezení"
           price="500,-"
           info="(sezení bez rautu v 2. patře)"
         />
         <TicketCard
-          img="/tickets/SezeniRaut1.png"
+          img={sezeniRaut}
           alt="Sezení s rautem"
           headline="na sezení s rautem"
           price="750,-"
