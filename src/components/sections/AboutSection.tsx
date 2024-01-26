@@ -5,8 +5,8 @@ import aboutImg from '../../assets/img/about/Stani2.png'
 
 export const AboutSection = () => {
   return (
-    <section id="o-plese" className="w-full mx-auto max-w-screen-2xl my-7 ">
-      <div className="flex flex-wrap justify-between mx-5">
+    <section id="o-plese" className="w-full px-4 mx-auto max-w-screen-2xl my-7">
+      <div className="flex flex-wrap justify-between">
         <div className="">
           <img src={aboutImg} alt="Socha" />
         </div>

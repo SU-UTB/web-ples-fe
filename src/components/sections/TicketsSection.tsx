@@ -14,7 +14,7 @@ export const TicketsSection = () => {
     >
       <div className="flex flex-wrap items-center justify-between w-full">
         <div className="mx-5">
-          <div className="mb-4 text-4xl font-bold uppercase font-numbers">
+          <div className="mb-4 text-3xl font-bold uppercase md:text-4xl font-numbers">
             Vstupenky
           </div>
           <div className="flex flex-col max-w-2xl gap-2 text-lg">
@@ -41,7 +41,7 @@ export const TicketsSection = () => {
           </InfoCard>
         </div>
       </div>
-      <div className="flex flex-wrap justify-between w-full gap-4 mb-10 ">
+      <div className="flex flex-wrap justify-between w-full gap-4 px-4 mb-10">
         <TicketCard
           img={stani}
           alt="Stání"

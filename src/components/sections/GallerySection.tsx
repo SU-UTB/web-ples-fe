@@ -3,8 +3,8 @@ import { galleryImages } from "../gallery/AppData"
 export const GallerySection = () => {
   return (
     <section id="gallery" className="my-10">
-      <div className="flex flex-col w-full mx-auto max-w-screen-2xl">
-        <div className="mx-5 mb-8 text-4xl font-semibold font-numbers">
+      <div className="flex flex-col w-full px-4 mx-auto max-w-screen-2xl">
+        <div className="mb-8 text-3xl font-semibold md:text-4xl font-numbers">
           GALERIE Z MINULÉHO ROČNÍKU:
         </div>
       </div>

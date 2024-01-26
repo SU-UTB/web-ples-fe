@@ -17,7 +17,7 @@ export const SupportProgramSection = () => {
           <p>
             V den D se dámy mohou přijít zkrášlit šikovnými kadeřnicemi a
             kosmetičkami za symbolickou částku. Stačí si vybrat salon, který se
-            vám líbí, nahlásit promo kód <strong>Zeus2024&nbsp;</strong> a sleva je vaše!
+            vám líbí, nahlásit promo kód <strong>Zeus2024&nbsp;</strong>a sleva je vaše!
           </p>
           <p>
             Nezapomněli jsme ani na pány. Ti se mohou objednat do partnerského

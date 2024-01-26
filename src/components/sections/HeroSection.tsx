@@ -10,11 +10,9 @@ export const HeroSection = () => {
   return (
     <section id="hero"
       style={{backgroundImage: 'linear-gradient(to top, rgba(194,194,194,0.32816876750700286) 0%, rgba(255,255,255,1) 32%)'}}
-      className="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover"
+      className="flex flex-col items-center justify-center px-4 mt-24 bg-center bg-no-repeat bg-cover md:mt-20"
     >
-      <div className="mx-5 mt-16">
-        <img src={heroHeading} alt="Reprezentační ples UTB 2024"/>
-      </div>
+      <img src={heroHeading} alt="Reprezentační ples UTB 2024"/>
       <div className="my-5">
         <Countdown targetDate={new Date(date)} />
       </div>
