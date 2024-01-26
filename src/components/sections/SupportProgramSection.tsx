@@ -1,7 +1,6 @@
 import { InfoCard } from "../cards/InfoCard"
 import { SupportCard } from "../cards/SupportCard"
 
-import calendarIcon from '../../assets/img/support/calendar.svg'
 import statueEvent from '../../assets/img/support/statueEvent.png'
 import vineEvent from '../../assets/img/support/vineEvent.png'
 
