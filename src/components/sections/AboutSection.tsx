@@ -3,7 +3,7 @@ import { ProgramCard } from "../cards/ProgramCard"
 
 import aboutImg from '../../assets/img/about/Stani2.png'
 
-const AboutSection = () => {
+export const AboutSection = () => {
   return (
     <section id="o-plese" className="w-full mx-auto max-w-screen-2xl my-7 ">
       <div className="flex flex-wrap justify-between mx-5">
@@ -135,5 +135,3 @@ const AboutSection = () => {
     </section>
   )
 }
-
-export default AboutSection

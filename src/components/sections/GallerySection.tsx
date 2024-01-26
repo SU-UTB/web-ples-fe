@@ -14,7 +14,7 @@ export const GallerySection = () => {
             key={`${image}-${image.alt}`}
             src={image.src}
             alt={image.alt}
-            className="w-auto h-full transition duration-300 grayscale hover:grayscale-0"
+            className="w-full h-full transition duration-300 grayscale hover:grayscale-0"
           />
         ))}
       </div>
