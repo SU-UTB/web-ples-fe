@@ -73,12 +73,16 @@ const AboutSection = () => {
                 <ProgramCard
                   time="19:00"
                   headline="Otevření kongresového centra"
-                  description="ve foyer hraju a zpívá ZUŠ Zlín ledová show před kongresovým centrem"
+                  description={
+                    <p>
+                      taneční vystoupení ZUŠ Zlín proslov rektora <strong>prof. Mgr. Milana Adámka, Ph.D.</strong>
+                    </p>
+                  }
                 />
                 <ProgramCard
                   time="20:00"
                   headline="Slavnostní zahájení plesu:"
-                  description="taneční vystoupení ZUŠ Zlín proslov rektora prof. Mgr. Milana Adámka, Ph.D."
+                  description="taneční vystoupení ZUŠ Zlín proslov rektora "
                 />
                 <ProgramCard
                   time="20:15"
@@ -108,7 +112,7 @@ const AboutSection = () => {
                 <ProgramCard
                   time="00:00"
                   headline="Půlnoční překvapení:"
-                  description="finalisté Česko Slovensko má talent"
+                  description=""
                 />
                 <ProgramCard
                   time="00:10"
@@ -121,6 +125,7 @@ const AboutSection = () => {
                   description=" "
                 />
               </div>
+              <div className="text-center opacity-50">Změna programu vyhrazena</div>
             </InfoCard>
           </section>
         </div>

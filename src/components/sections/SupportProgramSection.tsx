@@ -3,7 +3,7 @@ import { InfoCard } from "../cards/InfoCard"
 
 export const SupportProgramSection = () => {
   return (
-    <section className="doprovodny-program">
+    <section id="doprovodny-program">
       <InfoCard headline="Doprovodný program">
         <div className="flex flex-col justify-center gap-4">
           <p>
