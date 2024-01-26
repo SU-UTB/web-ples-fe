@@ -36,7 +36,6 @@ export const SupportProgramSection = () => {
             </span>
           </p>
         </div>
-        <div>
           <SupportCard
             img={vineEvent}
             alt="víno"
@@ -61,7 +60,6 @@ export const SupportProgramSection = () => {
             name="Dionýsova škola šumivého vína"
             date="12.2-16.2.2024"
           />
-        </div>
       </InfoCard>
     </section>
   )
