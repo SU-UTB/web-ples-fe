@@ -1,9 +1,9 @@
 import { InfoCard } from "../cards/InfoCard"
 import { SupportCard } from "../cards/SupportCard"
 
-import calendarIcon from '../../assets/img/support/calendar.svg'
-import statueEvent from '../../assets/img/support/statueEvent.png'
-import vineEvent from '../../assets/img/support/vineEvent.png'
+import calendarIcon from "../../assets/img/support/calendar.svg"
+import statueEvent from "../../assets/img/support/statueEvent.png"
+import vineEvent from "../../assets/img/support/vineEvent.png"
 
 export const SupportProgramSection = () => {
   return (
@@ -12,17 +12,20 @@ export const SupportProgramSection = () => {
         <div className="flex flex-col justify-center gap-4">
           <p>
             Abychom vás správně naladili, připravili jsme si dva doslova božské
-            doprovodné programy. Těšit se můžete na <strong>Dionýsovu školu šumivého&nbsp;</strong> 
-            vína a <strong>Apollónovu školu tance.</strong> 
+            doprovodné programy. Těšit se můžete na{" "}
+            <strong>Dionýsovu školu šumivého&nbsp;</strong>
+            vína a <strong>Apollónovu školu tance.</strong>
           </p>
           <p>
             V den D se dámy mohou přijít zkrášlit šikovnými kadeřnicemi a
             kosmetičkami za symbolickou částku. Stačí si vybrat salon, který se
-            vám líbí, nahlásit promo kód <strong>Zeus2024&nbsp;</strong> a sleva je vaše!
+            vám líbí, nahlásit promo kód <strong>Zeus2024&nbsp;</strong> a sleva
+            je vaše!
           </p>
           <p>
             Nezapomněli jsme ani na pány. Ti se mohou objednat do partnerského
-            salónu po celý týden. Slevu získají po zadání promo kódu <strong>Zeus2024&nbsp;</strong>
+            salónu po celý týden. Slevu získají po zadání promo kódu{" "}
+            <strong>Zeus2024&nbsp;</strong>
             při rezervaci termínu.
           </p>
           <p>
@@ -36,6 +39,10 @@ export const SupportProgramSection = () => {
               </a>
             </span>
           </p>
+          <div className="text-center opacity-50">
+            <p>Promo kód pro dámské salony platí pouze v den konání akce.</p>
+            <p>Promo kód pro pánský salon platí v celém týdnu konání akce.</p>
+          </div>
         </div>
         <div>
           <SupportCard
