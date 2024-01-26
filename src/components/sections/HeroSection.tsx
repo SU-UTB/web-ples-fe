@@ -1,5 +1,8 @@
 import Countdown from "../countdown/Countdown"
-import Clouds from "/hero/heroclouds.png"
+
+import clouds from "../../assets/img/hero/HeroClouds.png"
+import heroHeading from '../../assets/img/hero/HeroHeading.svg'
+import heroPillar from '../../assets/img/hero/HeroPillarsCropped.png'
 
 const HeroSection = () => {
   const date = "2024-02-16T19:00:00"
@@ -11,7 +14,7 @@ const HeroSection = () => {
     backgroundRepeat: "no-repeat",
   }
   const backgroundStyle = {
-    backgroundImage: `url(${Clouds})`,
+    backgroundImage: `url('${clouds}')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -20,16 +23,16 @@ const HeroSection = () => {
   return (
     <section id="hero"
       style={gradientStyle}
-      className="flex flex-col justify-center items-center"
+      className="flex flex-col items-center justify-center"
     >
-      <div className="mt-16 mx-5">
-        <img src="/hero/HeroHeading.svg" alt="Heading"/>
+      <div className="mx-5 mt-16">
+        <img src={heroHeading} alt="Reprezentační ples UTB 2024"/>
       </div>
       <div className="my-5">
         <Countdown targetDate={new Date(date)} />
       </div>
       <div style={backgroundStyle}>
-        <img src="/hero/HeroPillarsCropped.png" alt="Pillars" className="relative"/>
+        <img src={heroPillar} alt="pilíře" className="relative"/>
       </div>
     </section>
   )
