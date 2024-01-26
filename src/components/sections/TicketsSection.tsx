@@ -8,7 +8,7 @@ export const TicketsSection = () => {
       id="vstupenky"
       className="flex flex-col items-center mt-10 max-w-screen-2xl mx-auto gap-8"
     >
-      <div className="flex justify-between flex-wrap w-full">
+      <div className="flex justify-between items-center flex-wrap w-full">
         <div className="mx-5">
           <div className="uppercase font-bold text-4xl mb-4 font-numbers">
             Vstupenky

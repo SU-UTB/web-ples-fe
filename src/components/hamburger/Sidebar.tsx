@@ -2,7 +2,6 @@ import { motion, AnimatePresence } from "framer-motion"
 
 type SidebarProps = {
   isOpen: boolean
-  //toggle: () => void
 }
 
 export const Sidebar = ({ isOpen }: SidebarProps) => {

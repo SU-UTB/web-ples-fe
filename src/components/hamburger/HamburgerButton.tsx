@@ -1,4 +1,4 @@
-import { motion,  } from "framer-motion"
+import { motion } from "framer-motion"
 
 type HamburgerButtonProps = {
   toggle: () => void
@@ -8,7 +8,7 @@ type HamburgerButtonProps = {
 export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
   <button
     onClick={toggle}
-    className="fixed top-5 right-5 bg-slate-100 border-black border-sm rounded-xl z-50 p-4"
+    className="fixed top-5 right-5 bg-slate-100 rounded-xl z-50 p-4"
   >
     <motion.div
       className="space-y-2"

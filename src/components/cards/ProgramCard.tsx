@@ -1,7 +1,7 @@
 type Props = {
   time: string;
   headline: string;
-  description: string;
+  description: React.ReactNode;
 };
 
 export const ProgramCard = ({ time, headline, description }: Props) => {
