@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
+      sans: ['PilcrowRounded'],
       numbers: ['Cormorant Garamond'],
-      'pilcrow': ['"Pilcrow Rounded"', 'sans-serif'],
     }
   },
   variants: {

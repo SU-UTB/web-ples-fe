@@ -9,9 +9,7 @@ import { PartnerSection } from "./components/sections/PartnerSection"
 import { SupportProgramSection } from "./components/sections/SupportProgramSection"
 import { TicketsSection } from "./components/sections/TicketsSection"
 
-import "./index.css"
-
-function App() {
+const App = () => {
   return (
     <main className="w-full">
       <MenuComponent />
