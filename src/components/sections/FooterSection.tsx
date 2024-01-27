@@ -1,3 +1,5 @@
+import { copyrightText } from "../../utils/constants"
+
 export const FooterSection = () => {
   return (
     <section
@@ -5,7 +7,7 @@ export const FooterSection = () => {
       className="py-8 mt-10 text-center border shadow-glow border-slate-300"
     >
       <div></div>
-      <p>© 2024 Company Name. All rights reserved.</p>
+      <p>{copyrightText}</p>
     </section>
   )
 }

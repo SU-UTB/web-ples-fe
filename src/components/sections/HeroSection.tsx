@@ -13,6 +13,7 @@ export const HeroSection = () => {
       className="flex flex-col items-center justify-center px-4 mt-24 bg-center bg-no-repeat bg-cover md:mt-20"
     >
       <img src={heroHeading} alt="Reprezentační ples UTB 2024"/>
+      <h1 className="hidden">Reprezentační ples UTB 2024</h1>
       <div className="my-5">
         <Countdown targetDate={new Date(date)} />
       </div>

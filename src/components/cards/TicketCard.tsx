@@ -18,7 +18,7 @@ export const TicketCard = ({ img, alt, headline, price, info }: Props) => {
       />
       <h3 className="text-2xl font-semibold uppercase">{headline}</h3>
       <h4 className="text-2xl">{price}</h4>
-      <p className="text-lg max-w-[450px] max-h-[70px] overflow-y-auto">{info}</p>
+      <p className="text-lg max-w-[450px]">{info}</p>
     </article>
   )
 }

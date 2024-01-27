@@ -7,9 +7,7 @@ export const AboutSection = () => {
   return (
     <section id="o-plese" className="w-full px-4 mx-auto max-w-screen-2xl my-7">
       <div className="flex flex-wrap justify-between">
-        <div className="">
-          <img src={aboutImg} alt="Socha" />
-        </div>
+        <img src={aboutImg} alt="Socha" />
         <div className="flex flex-col gap-8">
           <InfoCard headline="O PLESE:">
             <div className="flex flex-col order-1 gap-4">
