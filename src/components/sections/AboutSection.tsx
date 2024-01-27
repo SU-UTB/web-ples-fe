@@ -44,7 +44,7 @@ export const AboutSection = () => {
                 Poseidónovi a Hádovi.
               </p>
               <p>
-                <strong>Ženy</strong>, zkuste vstoupit na parket v dlouhých
+                <span className="font-bold">Ženy</span>, zkuste vstoupit na parket v dlouhých
                 šatech v jedné ze zmíněných barev, popřípadě s vlečkou, dlouhým
                 rukávem a výraznými ozdobami. Můžete si vybrat i kratší střih
                 pod kolena, ale nezapomeňte na výrazné třpytivé doplňky v duchu
@@ -53,7 +53,7 @@ export const AboutSection = () => {
                 dodají tu správnou božskou tečku.
               </p>
               <p>
-                <strong>Pro muže</strong> doporučujeme modrý nebo bílý oblek,
+                <span className="font-bold">Pro muže</span> doporučujeme modrý nebo bílý oblek,
                 ale klidně můžete sáhnout i po klasických černých či šedých
                 tónech. Celý outfit završte zlatou nebo zelenou kravatou,
                 případně si dovolte experiment s motýlky v těchto odstínech.
@@ -84,7 +84,7 @@ export const AboutSection = () => {
                     <p>
                       Světelná show s projekcemi Aliatrix Proslov rektora
                       &nbsp;
-                      <strong>prof. Mgr. Milana Adámka, Ph.D.</strong>
+                      <span className="font-bold">prof. Mgr. Milana Adámka, Ph.D.</span>
                     </p>
                   }
                 />

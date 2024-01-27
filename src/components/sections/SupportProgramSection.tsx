@@ -12,18 +12,18 @@ export const SupportProgramSection = () => {
           <p>
             Abychom vás správně naladili, připravili jsme si dva doslova božské
             doprovodné programy. Těšit se můžete na{" "}
-            <strong>Dionýsovu školu šumivého&nbsp;</strong>
-            vína a <strong>Apollónovu školu tance.</strong>
+            <span className="font-bold">Dionýsovu školu šumivého&nbsp;</span>
+            vína a <span className="font-bold">Apollónovu školu tance.</span>
           </p>
           <p>
             V den D se dámy mohou přijít zkrášlit šikovnými kadeřnicemi a
             kosmetičkami za symbolickou částku. Stačí si vybrat salon, který se
-            vám líbí, nahlásit promo kód <strong>Zeus2024&nbsp;</strong>a sleva je vaše!
+            vám líbí, nahlásit promo kód <span className="font-bold">Zeus2024&nbsp;</span>a sleva je vaše!
           </p>
           <p>
             Nezapomněli jsme ani na pány. Ti se mohou objednat do partnerského
             salónu po celý týden. Slevu získají po zadání promo kódu{" "}
-            <strong>Zeus2024&nbsp;</strong>
+            <span className="font-bold">Zeus2024&nbsp;</span>
             při rezervaci termínu.
           </p>
           <p>
