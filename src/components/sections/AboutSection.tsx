@@ -1,7 +1,7 @@
 import { InfoCard } from "../cards/InfoCard"
 import { ProgramCard } from "../cards/ProgramCard"
 
-import aboutImg from '../../assets/img/about/Stani2.png'
+import aboutImg from "../../assets/img/about/Stani2.png"
 
 export const AboutSection = () => {
   return (
@@ -74,15 +74,19 @@ export const AboutSection = () => {
                   time="19:00"
                   headline="Otevření kongresového centra"
                   description={
-                    <p>
-                      taneční vystoupení ZUŠ Zlín proslov rektora <strong>prof. Mgr. Milana Adámka, Ph.D.</strong>
-                    </p>
+                    <p>ve foyer vystoupí harfistka z Musica Angelica Zlín</p>
                   }
                 />
                 <ProgramCard
                   time="20:00"
                   headline="Slavnostní zahájení plesu:"
-                  description="taneční vystoupení ZUŠ Zlín proslov rektora "
+                  description={
+                    <p>
+                      Světelná show s projekcemi Aliatrix Proslov rektora
+                      &nbsp;
+                      <strong>prof. Mgr. Milana Adámka, Ph.D.</strong>
+                    </p>
+                  }
                 />
                 <ProgramCard
                   time="20:15"
@@ -91,41 +95,53 @@ export const AboutSection = () => {
                 />
                 <ProgramCard
                   time="20:45"
-                  headline="Prague Lounge Trio"
+                  headline="Kapela SIMPLY THE SHOW"
                   description=""
                 />
                 <ProgramCard
-                  time="21:45"
+                  time="21:15"
                   headline="Prestige Symphony Orchestra"
                   description=""
                 />
                 <ProgramCard
-                  time="24:00"
-                  headline="Prague Lounge Trio"
+                  time="22:00"
+                  headline="Taneční vystoupení TS FREE DANCE PROSTĚJOV"
                   description=""
                 />
                 <ProgramCard
-                  time="23:15"
-                  headline="Losování cen"
+                  time="22:10"
+                  headline="Kapela SIMPLY THE SHOW"
+                  description=""
+                />
+                <ProgramCard
+                  time="22:55"
+                  headline="Prestige Symphony Orchestra"
+                  description=""
+                />
+                <ProgramCard
+                  time="23:45"
+                  headline="Losování hlavních cen tomboly"
                   description=""
                 />
                 <ProgramCard
                   time="00:00"
-                  headline="Půlnoční překvapení:"
-                  description=""
+                  headline="Půlnoční překvapení"
+                  description=" "
                 />
                 <ProgramCard
                   time="00:10"
-                  headline="Kapela Frontmen"
-                  description=""
+                  headline="Kapela SIMPLY THE SHOW"
+                  description=" "
                 />
                 <ProgramCard
-                  time="01:30"
+                  time="01:00"
                   headline="Ukončení plesu"
                   description=" "
                 />
               </div>
-              <div className="text-center opacity-50">Změna programu vyhrazena</div>
+              <div className="text-center opacity-50">
+                Změna programu vyhrazena
+              </div>
             </InfoCard>
           </section>
         </div>
