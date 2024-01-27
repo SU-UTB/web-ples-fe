@@ -11,8 +11,8 @@ export const MenuComponent = () => {
 
   return (
     <>
-      <HamburgerButton toggle={toggleSidebar} isOpen={isOpen} />
-      <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
+      <HamburgerButton isOpen={isOpen} toggle={toggleSidebar} />
+      <Sidebar isOpen={isOpen} />
     </>
   )
 }

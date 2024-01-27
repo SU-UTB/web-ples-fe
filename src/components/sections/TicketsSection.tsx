@@ -10,26 +10,26 @@ export const TicketsSection = () => {
   return (
     <section
       id="vstupenky"
-      className="flex flex-col items-center gap-8 mx-auto mt-10 max-w-screen-2xl"
+      className="flex flex-col items-center gap-8 px-4 mx-auto mt-10 max-w-screen-2xl"
     >
       <div className="flex flex-wrap items-center justify-between w-full">
-        <div className="mx-5">
-          <div className="mb-4 text-4xl font-bold uppercase font-numbers">
+        <div>
+          <h2 className="mb-4 text-3xl font-bold uppercase md:text-4xl font-numbers">
             Vstupenky
-          </div>
+          </h2>
           <div className="flex flex-col max-w-2xl gap-2 text-lg">
             <p>
               Oficiální předprodej vstupenek na XXII. Reprezentační ples
-              Univerzity Tomáše Bati bude spuštěn <strong>29. 1. 2024</strong> a bude probíhat v
+              Univerzity Tomáše Bati bude spuštěn <span className="font-bold">29. 1. 2024</span> a bude probíhat v
               budově Rektorátu UTB (U13) na nám. T. G. Masaryka 5555, Zlín.
             </p>
             <p>
-              Prodej bude pokračovat od pondělí do čtvrtka od <strong>9:00 do 16:00</strong> a v
-              pátky od <strong>9:00 do 12:00</strong> až do <strong>16.2. 2024, nebo do vyprodání lístků.</strong>
+              Prodej bude pokračovat od pondělí do čtvrtka od <span className="font-bold">9:00 do 16:00</span> a v
+              pátky od <span className="font-bold">9:00 do 12:00</span> až do <span className="font-bold">16.2. 2024, nebo do vyprodání lístků.</span>
             </p>
           </div>
         </div>
-        <div className="col-start-3 col-end-4 mx-5">
+        <div className="col-start-3 col-end-4">
           <InfoCard headline="Bližší informace k předprodeji:">
             <ContactCard
               title=""
@@ -41,7 +41,7 @@ export const TicketsSection = () => {
           </InfoCard>
         </div>
       </div>
-      <div className="flex flex-wrap justify-between w-full gap-4 mb-10 ">
+      <div className="flex flex-wrap justify-between w-full gap-4 px-4 mb-10">
         <TicketCard
           img={stani}
           alt="Stání"

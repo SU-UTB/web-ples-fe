@@ -1,21 +1,19 @@
-import HeroSection from "./components/sections/HeroSection"
-import AboutSection from "./components/sections/AboutSection"
 import { MenuComponent } from "./components/hamburger/MenuComponent"
-import { TicketsSection } from "./components/sections/TicketsSection"
-import { SupportProgramSection } from "./components/sections/SupportProgramSection"
-import { GallerySection } from "./components/sections/GallerySection"
+import { AboutSection } from "./components/sections/AboutSection"
 import { ContactSection } from "./components/sections/ContactSection"
-import { PartnerSection } from "./components/sections/PartnerSection"
-import { OrganizerSection } from "./components/sections/OrganizerSection"
 import { FooterSection } from "./components/sections/FooterSection"
+import { GallerySection } from "./components/sections/GallerySection"
+import { HeroSection } from "./components/sections/HeroSection"
+import { OrganizerSection } from "./components/sections/OrganizerSection"
+import { PartnerSection } from "./components/sections/PartnerSection"
+import { SupportProgramSection } from "./components/sections/SupportProgramSection"
+import { TicketsSection } from "./components/sections/TicketsSection"
 
-import "./index.css"
-
-function App() {
+const App = () => {
   return (
     <main className="w-full">
       <MenuComponent />
-      <HeroSection />
+      <HeroSection/>
       <AboutSection />
       <TicketsSection />
       <SupportProgramSection />
