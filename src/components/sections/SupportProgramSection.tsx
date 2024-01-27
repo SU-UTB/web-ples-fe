@@ -1,7 +1,6 @@
 import { InfoCard } from "../cards/InfoCard"
 import { SupportCard } from "../cards/SupportCard"
 
-import calendarIcon from '../../assets/img/support/calendar.svg'
 import statueEvent from '../../assets/img/support/statueEvent.png'
 import vineEvent from '../../assets/img/support/vineEvent.png'
 
@@ -18,7 +17,7 @@ export const SupportProgramSection = () => {
           <p>
             V den D se dámy mohou přijít zkrášlit šikovnými kadeřnicemi a
             kosmetičkami za symbolickou částku. Stačí si vybrat salon, který se
-            vám líbí, nahlásit promo kód <strong>Zeus2024&nbsp;</strong> a sleva je vaše!
+            vám líbí, nahlásit promo kód <strong>Zeus2024&nbsp;</strong>a sleva je vaše!
           </p>
           <p>
             Nezapomněli jsme ani na pány. Ti se mohou objednat do partnerského
@@ -37,7 +36,6 @@ export const SupportProgramSection = () => {
             </span>
           </p>
         </div>
-        <div>
           <SupportCard
             img={vineEvent}
             alt="víno"
@@ -62,7 +60,6 @@ export const SupportProgramSection = () => {
             name="Dionýsova škola šumivého vína"
             date="12.2-16.2.2024"
           />
-        </div>
       </InfoCard>
     </section>
   )
