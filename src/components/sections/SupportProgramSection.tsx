@@ -47,25 +47,25 @@ export const SupportProgramSection = () => {
           img={vineEvent}
           alt="víno"
           name="Dionýsova škola šumivého vína"
-          date="30.1.2024"
+          date="30. 1. 2024"
         />
         <SupportCard
           img={vineEvent}
           alt="víno"
           name="Apollónova škola tance"
-          date="8.2.2024"
+          date="8. 2. 2024"
         />
         <SupportCard
           img={statueEvent}
           alt="víno"
           name="Dámský salón"
-          date="16.1.2024"
+          date="16. 1. 2024"
         />
         <SupportCard
           img={statueEvent}
           alt="víno"
           name="Dionýsova škola šumivého vína"
-          date="12.2-16.2.2024"
+          date="12. 2. - 16. 2. 2024"
         />
       </InfoCard>
     </section>

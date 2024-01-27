@@ -26,7 +26,7 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
     <AnimatePresence>
       {isOpen && (
         <motion.aside
-          className="fixed top-0 right-0 z-40 w-64 h-full bg-white shadow-xl rounded-xl"
+          className="fixed top-0 right-0 z-40 w-64 h-full shadow-sidebar bg-card-grey rounded-30"
           variants={variants}
           initial="closed"
           animate="open"

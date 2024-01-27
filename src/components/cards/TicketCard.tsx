@@ -14,7 +14,7 @@ export const TicketCard = ({ img, alt, headline, price, info }: Props) => {
         height={412}
         src={img}
         alt={alt}
-        className="rounded-lg bg-card-grey shadow-card w-full max-w-[412px] max-h-[412px] object-cover mb-4"
+        className="rounded-20 bg-card-grey shadow-card w-full max-w-[412px] max-h-[412px] object-cover"
       />
       <div>
         <h3 className="text-2xl font-semibold uppercase">{headline}</h3>
