@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from 'react';
 
 type CountdownProps = {
-  targetDate: Date
-}
+  targetDate: Date;
+};
 
 const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
@@ -35,7 +35,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       <div className="flex">
         <div className="flex flex-col items-center ">
           <div className="p-3 bg-gray-100 rounded-lg shadow-xl drop-shadow-xl">
-          <span className="text-3xl font-numbers">{timeLeft.days}</span>
+            <span className="text-3xl font-numbers">{timeLeft.days}</span>
           </div>
           <span className="uppercase mt-2">dní</span>
         </div>
@@ -59,7 +59,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Countdown
+export default Countdown;

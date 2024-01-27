@@ -1,4 +1,4 @@
-import { copyrightText } from "../../utils/constants"
+import { copyrightText } from '../../utils/constants';
 
 export const FooterSection = () => {
   return (
@@ -9,5 +9,5 @@ export const FooterSection = () => {
       <div></div>
       <p>{copyrightText}</p>
     </section>
-  )
-}
+  );
+};

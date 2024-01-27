@@ -1,24 +1,24 @@
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion } from 'framer-motion';
 
-import fbIcon from '../../assets/icons/hamburger/facebook-logo.svg'
-import igIcon from '../../assets/icons/hamburger/instagram-logo.svg'
+import fbIcon from '../../assets/icons/hamburger/facebook-logo.svg';
+import igIcon from '../../assets/icons/hamburger/instagram-logo.svg';
 
 type SidebarProps = {
-  isOpen: boolean
-}
+  isOpen: boolean;
+};
 
 export const Sidebar = ({ isOpen }: SidebarProps) => {
   const variants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "100%" },
-  }
+    closed: { opacity: 0, x: '100%' },
+  };
 
   const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault(); 
+    event.preventDefault();
     const href = event.currentTarget.getAttribute('href') || '';
-    const element = document.querySelector(href); 
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' }); 
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -31,10 +31,14 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
           initial="closed"
           animate="open"
           exit="closed"
-          transition={{ type: "spring", bounce: 0.25 }}
+          transition={{ type: 'spring', bounce: 0.25 }}
         >
           <nav className="flex flex-col items-end justify-center h-full gap-5 mr-10 font-semibold uppercase text-end font-numbers ">
-            <a href="#o-plese" onClick={handleLinkClick} className="mb-4 underline">
+            <a
+              href="#o-plese"
+              onClick={handleLinkClick}
+              className="mb-4 underline"
+            >
               O plese
             </a>
             <a href="#program" onClick={handleLinkClick} className="mb-4">
@@ -43,7 +47,11 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
             <a href="#vstupenky" onClick={handleLinkClick} className="mb-4">
               Vstupenky
             </a>
-            <a href="#doprovodny-program" onClick={handleLinkClick} className="mb-4 ">
+            <a
+              href="#doprovodny-program"
+              onClick={handleLinkClick}
+              className="mb-4 "
+            >
               Doprovodný program
             </a>
             <a href="#gallery" onClick={handleLinkClick} className="mb-4">
@@ -77,5 +85,5 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
         </motion.aside>
       )}
     </AnimatePresence>
-  )
-}
+  );
+};

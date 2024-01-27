@@ -1,5 +1,5 @@
-import suIcon from '../../assets/icons/organizer/su-icon.svg'
-import utbIcon from '../../assets/icons/organizer/utb-icon.svg'
+import suIcon from '../../assets/icons/organizer/su-icon.svg';
+import utbIcon from '../../assets/icons/organizer/utb-icon.svg';
 
 export const OrganizerSection = () => {
   return (
@@ -9,10 +9,22 @@ export const OrganizerSection = () => {
           Organizátoři:
         </div>
         <div className="flex flex-wrap justify-around gap-4 gap-y-8">
-          <img src={suIcon} alt="SU" width={320} height={42} className='max-w-[194px]  md:max-w-[320px]'  />
-          <img src={utbIcon} alt="UTB" width={320} height={42} className='max-w-[194px] md:max-w-[320px]'  />
+          <img
+            src={suIcon}
+            alt="SU"
+            width={320}
+            height={42}
+            className="max-w-[194px]  md:max-w-[320px]"
+          />
+          <img
+            src={utbIcon}
+            alt="UTB"
+            width={320}
+            height={42}
+            className="max-w-[194px] md:max-w-[320px]"
+          />
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

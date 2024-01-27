@@ -1,4 +1,4 @@
-import { galleryImages } from "../gallery/AppData"
+import { galleryImages } from '../gallery/AppData';
 
 export const GallerySection = () => {
   return (
@@ -19,5 +19,5 @@ export const GallerySection = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};

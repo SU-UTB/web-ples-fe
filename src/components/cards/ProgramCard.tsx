@@ -1,19 +1,19 @@
+import { ReactNode } from 'react';
+
 type Props = {
   time: string;
   headline: string;
-  description: React.ReactNode;
+  description: ReactNode;
 };
 
 export const ProgramCard = ({ time, headline, description }: Props) => {
   return (
-    <div className="flex gap-12">
-      <div className="font-bold text-2xl font-numbers max-w-10">{time}</div> 
-      <div className="flex flex-col ">
-        <div className="font-bold text-lg">{headline}</div>
-        <div className="text-lg">{description}</div>
+    <div className="flex gap-x-6 lg:gap-x-12">
+      <p className="text-2xl font-bold font-numbers">{time}</p>
+      <div>
+        <h5 className="pt-1 text-lg font-bold">{headline}</h5>
+        <p className="text-lg">{description}</p>
       </div>
     </div>
   );
 };
-
-//TODO - try to avoid fixed width and use grid instead

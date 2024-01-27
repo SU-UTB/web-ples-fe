@@ -1,5 +1,5 @@
-import { ContactCard } from "../cards/ContactCard"
-import { InfoCard } from "../cards/InfoCard"
+import { ContactCard } from '../cards/ContactCard';
+import { InfoCard } from '../cards/InfoCard';
 
 export const ContactSection = () => {
   return (
@@ -44,5 +44,5 @@ export const ContactSection = () => {
         </div>
       </InfoCard>
     </section>
-  )
-}
+  );
+};

@@ -13,5 +13,5 @@ export const PartnerSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
