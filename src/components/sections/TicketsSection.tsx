@@ -1,23 +1,16 @@
 import { ContactCard } from '../cards/ContactCard';
 import { InfoCard } from '../cards/InfoCard';
-import { TicketCard } from '../cards/TicketCard';
-
-import sezeni from '../../assets/img/tickets/Sezeni1.png';
-import sezeniRaut from '../../assets/img/tickets/SezeniRaut1.png';
-import stani from '../../assets/img/tickets/Stani1.png';
+import { TicketItemList } from '../ticket/TicketItemList';
 
 export const TicketsSection = () => {
   return (
-    <section
-      id="vstupenky"
-      className="flex flex-col items-center gap-8 px-4 mx-auto mt-10 max-w-screen-2xl"
-    >
-      <div className="flex flex-wrap items-center justify-between w-full">
+    <section id="vstupenky" className="px-4 mx-auto mt-10 max-w-screen-2xl">
+      <h2 className="mb-4 text-3xl font-bold uppercase md:text-4xl font-numbers">
+        Vstupenky
+      </h2>
+      <div className="flex justify-between w-full pb-8">
         <div>
-          <h2 className="mb-4 text-3xl font-bold uppercase md:text-4xl font-numbers">
-            Vstupenky
-          </h2>
-          <div className="flex flex-col max-w-2xl gap-2 text-lg">
+          <div className="space-y-2 text-lg max-w-[740px]">
             <p>
               Oficiální předprodej vstupenek na XXII. Reprezentační ples
               Univerzity Tomáše Bati bude spuštěn{' '}
@@ -35,40 +28,22 @@ export const TicketsSection = () => {
           </div>
         </div>
         <div className="col-start-3 col-end-4">
-          <InfoCard headline="Bližší informace k předprodeji:">
+          <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card">
+            <h4 className="text-xl font-semibold">
+              Bližší informace k předprodeji:
+            </h4>
             <ContactCard
               title=""
               name="Pavlína Šromotová"
               position=""
               email="sromotova@sutb.cz"
               phone="+421 918 234 777"
+              isHeadlineBold={false}
             />
-          </InfoCard>
+          </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-between w-full gap-4 px-4 mb-10">
-        <TicketCard
-          img={stani}
-          alt="Stání"
-          headline="na stání"
-          price="350,-"
-          info="(možnost sednout si na volně dostupné sedačky bez stolu a bez možnosti místenky)"
-        />
-        <TicketCard
-          img={sezeni}
-          alt="Sezení"
-          headline="na sezení"
-          price="500,-"
-          info="(sezení bez rautu v 2. patře)"
-        />
-        <TicketCard
-          img={sezeniRaut}
-          alt="Sezení s rautem"
-          headline="na sezení s rautem"
-          price="750,-"
-          info="(nezahrnuje nápoje)"
-        />
-      </div>
+      <TicketItemList />
     </section>
   );
 };

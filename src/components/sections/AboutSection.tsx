@@ -1,8 +1,7 @@
+import { ProgramItemList } from '../about/ProgramItemList';
 import { InfoCard } from '../cards/InfoCard';
-import { ProgramCard } from '../cards/ProgramCard';
 
 import aboutImg from '../../assets/img/about-socha.png';
-import { ProgramItemList } from '../about/ProgramItemList';
 
 export const AboutSection = () => {
   return (
