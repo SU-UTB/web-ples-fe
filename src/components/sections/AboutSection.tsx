@@ -1,13 +1,13 @@
 import { InfoCard } from "../cards/InfoCard"
 import { ProgramCard } from "../cards/ProgramCard"
 
-import aboutImg from "../../assets/img/about/Stani2.png"
+import aboutImg from "../../assets/img/about-socha.png"
 
 export const AboutSection = () => {
   return (
     <section id="o-plese" className="w-full px-4 mx-auto max-w-screen-2xl my-7">
-      <div className="flex flex-wrap justify-between">
-        <img src={aboutImg} alt="Socha" />
+      <div className="flex flex-col items-center justify-center lg:items-start lg:gap-x-4 lg:flex-row">
+        <img src={aboutImg} alt="Socha" width={645} height={645} className="w-full max-w-[645px] h-auto" />
         <div className="flex flex-col gap-8">
           <InfoCard headline="O PLESE:">
             <div className="flex flex-col order-1 gap-4">
