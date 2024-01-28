@@ -1,9 +1,9 @@
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion';
 
 type HamburgerButtonProps = {
-  toggle: () => void
-  isOpen: boolean
-}
+  toggle: () => void;
+  isOpen: boolean;
+};
 
 export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
   <button
@@ -13,7 +13,7 @@ export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
     <motion.div
       className="w-full h-full p-4 space-y-3"
       initial={false}
-      animate={isOpen ? "open" : "closed"}
+      animate={isOpen ? 'open' : 'closed'}
     >
       <motion.div
         variants={{
@@ -39,4 +39,4 @@ export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
       />
     </motion.div>
   </button>
-)
+);

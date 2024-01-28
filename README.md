@@ -1,7 +1,8 @@
 Resources:
- - [Trunk based development](https://trunkbaseddevelopment.com/)
- - [React](https://react.dev/)
- - [Headless UI](https://headlessui.com/)
+
+- [Trunk based development](https://trunkbaseddevelopment.com/)
+- [React](https://react.dev/)
+- [Headless UI](https://headlessui.com/)
 
 # React + TypeScript + Vite
 
@@ -27,7 +28,7 @@ export default {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
