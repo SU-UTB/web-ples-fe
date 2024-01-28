@@ -101,6 +101,7 @@ export const ReservationsAdministrationPage = () => {
   // NEW RESERVATION
   const [selectedStand, setSelectedStand] = useState(0);
   const [selectedSeats, setSelectedSeats] = useState<Seats[]>();
+  const [note, setNote] = useState('');
 
   const handleSubmitNewReservation = async (
     event: React.FormEvent<HTMLFormElement>,
@@ -118,6 +119,7 @@ export const ReservationsAdministrationPage = () => {
       await api().post(Endpoints.PostReservations, {
         stand: selectedStand,
         seats: seatsIds,
+        note: note,
       });
 
       toast.success('Rezervace byla vytvořena', {});
@@ -149,7 +151,7 @@ export const ReservationsAdministrationPage = () => {
     <>
       <div className="flex justify-center items-center h-screen w-screen py-4 pl-4 bg-white relative pr-[500px]">
         <Map className="h-full" />
-        <div className="absolute right-0 text-center w-[500px] bg-slate-800 border-l border-black h-full shadow-xl">
+        <div className="absolute right-0 text-center w-[500px] bg-slate-800 border-l border-black h-full shadow-xl overflow-y-scroll">
           <section className="px-16 py-16 border-b border-slate-600">
             <h1 className="text-slate-50 tracking-wide font-bold text-4xl mb-4">
               Místa
@@ -262,6 +264,19 @@ export const ReservationsAdministrationPage = () => {
                   displayValue="alias"
                 />
               </div>
+              <div className="space-y-1">
+                <label
+                  className="text-slate-100 tracking-wide text-lg"
+                  htmlFor="seats"
+                >
+                  Poznámka
+                </label>
+                <textarea
+                  value={note}
+                  onChange={(e) => setNote(e.currentTarget.value)}
+                  className="rounded-md block shadow-xl w-full focus:outline-none focus:ring-2 focus:ring-orange-500 transition duration-300 p-3"
+                />
+              </div>
               <div className="space-y-3">
                 <button
                   className="font-medium w-full flex items-center justify-center gap-4 tracking-wide rounded-lg transition duration-300 py-3 sm:py-4 px-8 sm:px-9 text-lg sm:text-xl bg-orange-600 text-orange-50 shadow-lg shadow-orange-600/20 hover:bg-orange-550 hover:shadow-orange-550/50 hover:text-white"
@@ -286,7 +301,7 @@ export const ReservationsAdministrationPage = () => {
                 </button>
                 <button
                   className="text-sm w-full tracking-wide rounded-lg transition duration-300 py-3  bg-slate-700 text-slate-200 hover:bg-slate-600 hover:text-white hover:shadow-lg"
-                  type="submit"
+                  type="button"
                   onClick={handleRemoveAllSeats}
                 >
                   <span>Vymazat výběr</span>
