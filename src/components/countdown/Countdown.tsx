@@ -1,33 +1,25 @@
 import { useEffect, useState } from 'react';
+import { getCountdownTimeLeft } from '../../utils/getCountdownTimeLeft';
 import { CountdownWindow } from './CountdownWindow';
 
 type Props = {
   targetDate: Date;
 };
 
-const Countdown = ({ targetDate }: Props) => {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
+export const Countdown = ({ targetDate }: Props) => {
+  const [msLeft, setMsLeft] = useState(
+    targetDate.getTime() - new Date().getTime(),
+  );
 
   useEffect(() => {
-    const calculateTimeLeft = () => {
-      const difference = +targetDate - +new Date();
-      const time = { days: 0, hours: 0, minutes: 0 };
-
-      if (difference > 0) {
-        time.days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        time.hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-        time.minutes = Math.floor((difference / 1000 / 60) % 60);
-      }
-
-      return time;
-    };
-
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
+      setMsLeft(targetDate.getTime() - new Date().getTime());
     }, 1000);
 
     return () => clearTimeout(timer);
-  }, [targetDate]);
+  }, [targetDate, msLeft]);
+
+  const timeLeft = getCountdownTimeLeft(msLeft);
 
   return (
     <div className="flex items-center justify-center space-x-1">
@@ -43,5 +35,3 @@ const Countdown = ({ targetDate }: Props) => {
     </div>
   );
 };
-
-export default Countdown;
