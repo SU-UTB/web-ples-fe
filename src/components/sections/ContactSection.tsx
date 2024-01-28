@@ -1,9 +1,10 @@
 import { ContactCard } from '../cards/ContactCard';
 import { InfoCard } from '../cards/InfoCard';
+import { Section } from '../shared/Section';
 
 export const ContactSection = () => {
   return (
-    <section id="kontakty" className="my-12 desktop:my-24">
+    <Section id="kontakty" className="my-12 desktop:my-24">
       <InfoCard headline="kontakty:">
         <div className="grid grid-cols-1 grid-rows-3 gap-2 md:grid-cols-2 auto-rows-max">
           <ContactCard
@@ -43,6 +44,6 @@ export const ContactSection = () => {
           />
         </div>
       </InfoCard>
-    </section>
+    </Section>
   );
 };

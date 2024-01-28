@@ -1,16 +1,14 @@
 import { ContactCard } from '../cards/ContactCard';
+import { Section } from '../shared/Section';
 import { TicketItemList } from '../ticket/TicketItemList';
 
 export const TicketsSection = () => {
   return (
-    <section
-      id="vstupenky"
-      className="px-4 mx-auto my-12 desktop:my-24 desktop:px-0 max-w-screen-desktop"
-    >
+    <Section id="vstupenky" className="my-12 desktop:my-24">
       <h2 className="mb-4 text-3xl font-bold uppercase md:text-4xl font-numbers">
         Vstupenky
       </h2>
-      <div className="flex justify-between w-full pb-20">
+      <div className="justify-between hidden w-full pb-20 desktop:flex">
         <div className="space-y-2 text-lg max-w-[740px]">
           <p>
             Oficiální předprodej vstupenek na XXII. Reprezentační ples
@@ -42,6 +40,6 @@ export const TicketsSection = () => {
         </div>
       </div>
       <TicketItemList />
-    </section>
+    </Section>
   );
 };

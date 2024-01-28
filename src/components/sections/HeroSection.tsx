@@ -1,12 +1,12 @@
-import Countdown from '../countdown/Countdown';
+import { Countdown } from '../countdown/Countdown';
+
+import { COUNTDOWN_DATE } from '../../utils/constants';
 
 import clouds from '../../assets/img/hero/HeroClouds.png';
 import heroHeading from '../../assets/img/hero/HeroHeading.svg';
 import heroPillar from '../../assets/img/hero/HeroPillarsCropped.png';
 
 export const HeroSection = () => {
-  const date = '2024-02-16T19:00:00';
-
   return (
     <section
       id="hero"
@@ -15,7 +15,7 @@ export const HeroSection = () => {
       <img src={heroHeading} alt="Reprezentační ples UTB 2024" />
       <h1 className="hidden">Reprezentační ples UTB 2024</h1>
       <div className="pt-12 pb-4">
-        <Countdown targetDate={new Date(date)} />
+        <Countdown targetDate={COUNTDOWN_DATE} />
       </div>
       <div
         className="bg-center bg-no-repeat bg-cover"
