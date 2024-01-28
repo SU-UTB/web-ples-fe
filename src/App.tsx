@@ -5,6 +5,7 @@ import {
   ReservationsAdministrationPage,
   ReservationsViewPage,
 } from './components/pages';
+import './styles/index.css';
 
 const App = () => {
   const router = createBrowserRouter([

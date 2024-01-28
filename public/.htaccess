@@ -1,0 +1,28 @@
+RewriteEngine On
+
+# Exclude specific files from rewriting
+RewriteRule ^manifest\.json$ - [L]
+RewriteRule ^robots\.txt$ - [L]
+RewriteRule ^page-icon\.svg$ - [L]
+RewriteRule ^meta-image\.png$ - [L]
+
+
+RewriteRule ^build/(.*) backend/public/build/$1 [L]
+RewriteRule ^vendor/(.*) backend/public/vendor/$1 [L]
+RewriteRule ^js/(.*) backend/public/js/$1 [L]
+RewriteRule ^css/(.*) backend/public/css/$1 [L]
+RewriteRule ^images/(.*) backend/public/images/$1 [L]
+
+# Rewrite "/api/<something>` to backend 
+RewriteRule ^api/(.*) backend/public/index.php/api/$1 [L]
+
+# Rewrite "/admin/<something>` to admin backend 
+RewriteRule ^admin(.*) backend/public/index.php/admin/$1 [L]
+
+# url.cz/admin/_x_ => admin/
+
+# Exclude /assets/ directory from rewriting
+RewriteRule ^assets/ - [L]
+
+# Rewrite all other requests to index.html
+RewriteRule ^(.*)$ index.html [L]

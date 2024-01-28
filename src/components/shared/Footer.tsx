@@ -1,9 +1,9 @@
-import { COPYRIGHT_TEXT } from '../../utils/constants';
-
 export const Footer = () => {
   return (
-    <footer className="py-8 mt-10 text-center border shadow-glow border-slate-300">
-      <p>{COPYRIGHT_TEXT}</p>
+    <footer className="py-4 sm:py-8 px-4 text-sm sm:text-sm text-center bg-gray-200 text-gray-800">
+      <p>
+        © {new Date().getFullYear()} Studentská unie, Všechna práva vyhrazena
+      </p>
     </footer>
   );
 };
