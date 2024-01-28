@@ -4,9 +4,9 @@ import { Section } from '../shared/Section';
 
 export const ContactSection = () => {
   return (
-    <Section id="kontakty" className="my-12 desktop:my-24">
-      <InfoCard headline="kontakty:">
-        <div className="grid grid-cols-1 grid-rows-3 gap-2 md:grid-cols-2 auto-rows-max">
+    <Section id="kontakty" className="py-24">
+      <InfoCard headline="Kontakty:">
+        <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <ContactCard
             title="Bc."
             name="Michaela Filipcová"

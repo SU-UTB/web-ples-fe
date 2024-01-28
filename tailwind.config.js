@@ -26,6 +26,19 @@ export default {
           900: '#7a3a14',
           950: '#421c08',
         },
+        gray: {
+          50: '#f3f3f0',
+          100: '#ecece8',
+          200: '#d9d8cf',
+          300: '#c0c0b1',
+          400: '#a6a391',
+          500: '#94907b',
+          600: '#87826f',
+          700: '#716c5d',
+          800: '#5e594e',
+          900: '#4d4941',
+          950: '#282622',
+        },
       },
       borderRadius: {
         10: '10px',
@@ -39,8 +52,8 @@ export default {
       },
     },
     fontFamily: {
-      sans: ['PilcrowRounded'],
-      numbers: ['Cormorant Garamond'],
+      sans: ['PilcrowRounded', 'sans-serif'],
+      numbers: ['Cormorant Garamond', 'sans-serif'],
     },
   },
   variants: {

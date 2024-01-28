@@ -8,10 +8,7 @@ type Props = {
 
 export const Section = ({ id, children, className }: Props) => {
   return (
-    <section
-      id={id}
-      className={`mx-auto w-full max-w-screen-desktop px-4 desktop:px-0 ${className}`}
-    >
+    <section id={id} className={`w-full px-4 py-16 sm:py-24 ${className}`}>
       {children}
     </section>
   );

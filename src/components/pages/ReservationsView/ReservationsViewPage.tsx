@@ -40,6 +40,14 @@ export const ReservationsViewPage = () => {
     getAllReservations();
   }, []);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      getAllReservations();
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const getAllReservations = async () => {
     try {
       const response = await api().get(Endpoints.GetReservations, {

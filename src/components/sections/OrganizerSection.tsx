@@ -5,24 +5,19 @@ import utbIcon from '../../assets/icons/organizer/utb-icon.svg';
 
 export const OrganizerSection = () => {
   return (
-    <Section id="organizer">
-      <h3 className="mb-10 text-3xl font-semibold uppercase font-numbers">
+    <Section
+      id="organizer"
+      className="bg-gradient-to-b from-gray-50 to-gray-200"
+    >
+      <h2 className="text-center mb-12 text-2xl sm:text-3xl font-semibold uppercase font-numbers text-gray-950">
         Organizátoři:
-      </h3>
-      <div className="flex flex-wrap justify-around gap-4 py-12 gap-y-8">
-        <img
-          src={suIcon}
-          alt="SU"
-          width={320}
-          height={42}
-          className="max-w-[194px] md:max-w-[320px]"
-        />
+      </h2>
+      <div className="flex flex-wrap justify-center gap-16 gap-y-8">
+        <img src={suIcon} alt="Studentská unie UTB" className="h-6 sm:h-8" />
         <img
           src={utbIcon}
-          alt="UTB"
-          width={320}
-          height={42}
-          className="max-w-[194px] md:max-w-[320px]"
+          alt="Univerzita Tomáše Bati"
+          className="h-6 sm:h-8"
         />
       </div>
     </Section>
