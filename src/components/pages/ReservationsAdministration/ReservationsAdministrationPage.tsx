@@ -151,7 +151,7 @@ export const ReservationsAdministrationPage = () => {
     <>
       <div className="flex justify-center items-center h-screen w-screen py-4 pl-4 bg-white relative pr-[500px]">
         <Map className="h-full" />
-        <div className="absolute right-0 text-center w-[500px] bg-slate-800 border-l border-black h-full shadow-xl">
+        <div className="absolute right-0 text-center w-[500px] bg-slate-800 border-l border-black h-full shadow-xl overflow-y-scroll">
           <section className="px-16 py-16 border-b border-slate-600">
             <h1 className="text-slate-50 tracking-wide font-bold text-4xl mb-4">
               Místa
@@ -301,7 +301,7 @@ export const ReservationsAdministrationPage = () => {
                 </button>
                 <button
                   className="text-sm w-full tracking-wide rounded-lg transition duration-300 py-3  bg-slate-700 text-slate-200 hover:bg-slate-600 hover:text-white hover:shadow-lg"
-                  type="submit"
+                  type="button"
                   onClick={handleRemoveAllSeats}
                 >
                   <span>Vymazat výběr</span>
