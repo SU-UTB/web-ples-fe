@@ -6,16 +6,6 @@ import { api } from '../../../api';
 import { Endpoints } from '../../../api/endpoints';
 import { Map } from './components';
 
-interface LoginData {
-  email: string;
-  password: string;
-}
-
-const initialLoginData: LoginData = {
-  email: '',
-  password: '',
-};
-
 // ALL SEATS
 interface AllSeats {
   availableStands: string;
@@ -52,45 +42,12 @@ interface Seats {
 }
 
 export const ReservationsAdministrationPage = () => {
-  const [loginData, setLoginData] = useState(initialLoginData);
-  const [loggedIn, setLoggedIn] = useState<boolean>(false);
   const [allSeats, setAllSeats] = useState(initialAllSeats);
   const [allFreeSeats, setAllFreeSeats] = useState();
 
   useEffect(() => {
-    setLoggedIn(true);
     getAllReservations();
   }, []);
-
-  const handleSubmitLogin = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    login();
-  };
-
-  const handleChangeLogin = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setLoginData({ ...loginData, [name]: value });
-  };
-
-  const login = async () => {
-    try {
-      const response = await api().post(Endpoints.Login, {
-        email: loginData.email,
-        password: loginData.password,
-      });
-      localStorage.setItem('token', response.data.token);
-      setLoggedIn(true);
-      await getAllReservations();
-      setLoginData(initialLoginData);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const logout = () => {
-    localStorage.removeItem('token');
-    setLoggedIn(false);
-  };
 
   const getAllReservations = async () => {
     try {
@@ -151,7 +108,7 @@ export const ReservationsAdministrationPage = () => {
     event.preventDefault();
 
     if (selectedStand === 0 && (!selectedSeats || selectedSeats.length === 0)) {
-      toast('Alespoň 1 místo musí být vybráno', {});
+      toast.error('Alespoň 1 místo musí být vybráno', {});
       return;
     }
 

@@ -24,7 +24,18 @@ const App = () => {
 
   return (
     <>
-      <Toaster />
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          className: '',
+          error: {
+            className: 'bg-red-600 text-red-50 px-5 py-2.5 text-xl ',
+          },
+          success: {
+            className: 'bg-green-600 text-green-50 px-5 py-2.5 text-xl ',
+          },
+        }}
+      />
       <RouterProvider router={router} />
     </>
   );
