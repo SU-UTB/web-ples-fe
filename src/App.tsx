@@ -1,6 +1,10 @@
 import { Toaster } from 'react-hot-toast';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { HomePage, ReservationsPage } from './components/pages';
+import {
+  HomePage,
+  ReservationsAdministrationPage,
+  ReservationsViewPage,
+} from './components/pages';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -10,7 +14,11 @@ const App = () => {
     },
     {
       path: '/rezervace',
-      element: <ReservationsPage />,
+      element: <ReservationsViewPage />,
+    },
+    {
+      path: '/rezervace/administrace',
+      element: <ReservationsAdministrationPage />,
     },
   ]);
 

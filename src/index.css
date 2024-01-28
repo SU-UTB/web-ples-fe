@@ -10,3 +10,7 @@ body {
   font-size: 16px;
   background-color: #f3f3f0;
 }
+
+.multiSelectContainer li:hover{
+  background: #f28316 !important;
+}
