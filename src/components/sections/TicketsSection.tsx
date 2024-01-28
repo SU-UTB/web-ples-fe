@@ -4,12 +4,12 @@ import { TicketItemList } from '../ticket/TicketItemList';
 
 export const TicketsSection = () => {
   return (
-    <Section id="vstupenky" className="my-12 desktop:my-24">
+    <Section id="vstupenky" className="">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-semibold uppercase font-numbers mb-4">
           Vstupenky
         </h2>
-        <div className="justify-between w-full pb-20 flex flex-col desktop:flex-row gap-8">
+        <div className="justify-between w-full pb-20 flex flex-col lg:flex-row gap-8">
           <div className="space-y-2 text-lg max-w-2xl">
             <p>
               Oficiální předprodej vstupenek na XXII. Reprezentační ples
