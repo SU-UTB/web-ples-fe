@@ -101,6 +101,7 @@ export const ReservationsAdministrationPage = () => {
   // NEW RESERVATION
   const [selectedStand, setSelectedStand] = useState(0);
   const [selectedSeats, setSelectedSeats] = useState<Seats[]>();
+  const [note, setNote] = useState('');
 
   const handleSubmitNewReservation = async (
     event: React.FormEvent<HTMLFormElement>,
@@ -118,6 +119,7 @@ export const ReservationsAdministrationPage = () => {
       await api().post(Endpoints.PostReservations, {
         stand: selectedStand,
         seats: seatsIds,
+        note: note,
       });
 
       toast.success('Rezervace byla vytvořena', {});
@@ -260,6 +262,19 @@ export const ReservationsAdministrationPage = () => {
                     },
                   }}
                   displayValue="alias"
+                />
+              </div>
+              <div className="space-y-1">
+                <label
+                  className="text-slate-100 tracking-wide text-lg"
+                  htmlFor="seats"
+                >
+                  Poznámka
+                </label>
+                <textarea
+                  value={note}
+                  onChange={(e) => setNote(e.currentTarget.value)}
+                  className="rounded-md block shadow-xl w-full focus:outline-none focus:ring-2 focus:ring-orange-500 transition duration-300 p-3"
                 />
               </div>
               <div className="space-y-3">
