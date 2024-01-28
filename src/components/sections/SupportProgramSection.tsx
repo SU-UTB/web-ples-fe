@@ -3,10 +3,11 @@ import { SupportCard } from '../cards/SupportCard';
 
 import statueEvent from '../../assets/img/support/statueEvent.png';
 import vineEvent from '../../assets/img/support/vineEvent.png';
+import { Section } from '../shared/Section';
 
 export const SupportProgramSection = () => {
   return (
-    <section id="doprovodny-program">
+    <Section id="doprovodny-program">
       <InfoCard headline="Doprovodný program">
         <div className="flex flex-col justify-center gap-4">
           <p>
@@ -29,14 +30,13 @@ export const SupportProgramSection = () => {
           </p>
           <p>
             Bližší informace najdete na&nbsp;
-            <span className="font-bold underline">
-              <a
-                href="https://www.facebook.com/events/752918923323142?ref=newsfeed"
-                target="_blank"
-              >
-                Facebookové události.
-              </a>
-            </span>
+            <a
+              href="https://www.facebook.com/events/752918923323142?ref=newsfeed"
+              target="_blank"
+              className="font-bold underline"
+            >
+              Facebookové události.
+            </a>
           </p>
           <div className="text-center opacity-50">
             <p>Promo kód pro dámské salony platí pouze v den konání akce.</p>
@@ -68,6 +68,6 @@ export const SupportProgramSection = () => {
           date="12. 2. - 16. 2. 2024"
         />
       </InfoCard>
-    </section>
+    </Section>
   );
 };

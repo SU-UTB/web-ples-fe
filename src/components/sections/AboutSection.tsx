@@ -1,11 +1,15 @@
+import { AboutCard } from '../about/AboutCard';
+import { DresscodeCard } from '../about/DresscodeCard';
+
 import { ProgramItemList } from '../about/ProgramItemList';
 import { InfoCard } from '../cards/InfoCard';
+import { Section } from '../shared/Section';
 
 import aboutImg from '../../assets/img/about-socha.png';
 
 export const AboutSection = () => {
   return (
-    <section id="o-plese" className="w-full px-4 mx-auto max-w-screen-2xl my-7">
+    <Section id="o-plese" className="my-7">
       <div className="flex flex-col items-center justify-center lg:items-start lg:gap-x-4 lg:flex-row">
         <img
           src={aboutImg}
@@ -15,60 +19,8 @@ export const AboutSection = () => {
           className="w-full max-w-[645px] h-auto"
         />
         <div className="flex flex-col gap-8">
-          <InfoCard headline="O PLESE:">
-            <div className="flex flex-col order-1 gap-4">
-              <p>
-                Srdečně vás zveme na XXII. ročník Reprezentačního plesu
-                Univerzity Tomáše Bati ve Zlíně. Již 16. 2. 2024 se v
-                Kongresovém centru ve Zlíně společně přeneseme na Olymp a
-                poznáme, jaké to je, KDYŽ BOHOVÉ TANČÍ.
-              </p>
-              <p>
-                Ať už jste obyčejný smrtelník, polobůh nebo samotný Zeus, o ples
-                pod Olympem, který se koná jednou za tisíc let, určitě nesmíte
-                přijít!
-              </p>
-              <p>
-                Aktuální dění a novinky sledujte na{' '}
-                <span className="font-bold underline">
-                  <a
-                    href="https://www.facebook.com/events/752918923323142?ref=newsfeed"
-                    target="_blank"
-                  >
-                    Facebookové události.
-                  </a>
-                </span>
-              </p>
-            </div>
-          </InfoCard>
-
-          <InfoCard headline="DRESS CODE">
-            <div className="flex flex-col order-3 gap-4">
-              <p>
-                Letošní dress code se na Olympu ponese v bílé, zlaté a zelené
-                barvě, protože jen tak vzdáme úctu velké trojce - Diovi,
-                Poseidónovi a Hádovi.
-              </p>
-              <p>
-                <span className="font-bold">Ženy</span>, zkuste vstoupit na
-                parket v dlouhých šatech v jedné ze zmíněných barev, popřípadě s
-                vlečkou, dlouhým rukávem a výraznými ozdobami. Můžete si vybrat
-                i kratší střih pod kolena, ale nezapomeňte na výrazné třpytivé
-                doplňky v duchu antického Řecka – korunku, čelenku nebo jiný
-                vlasový prvek. Určitě nesmí chybět ani elegantní podpatky, které
-                vašemu outfitu dodají tu správnou božskou tečku.
-              </p>
-              <p>
-                <span className="font-bold">Pro muže</span> doporučujeme modrý
-                nebo bílý oblek, ale klidně můžete sáhnout i po klasických
-                černých či šedých tónech. Celý outfit završte zlatou nebo
-                zelenou kravatou, případně si dovolte experiment s motýlky v
-                těchto odstínech. Dodatečný lesk můžete přidat třpytivými či
-                originálně zdobenými manžetovými knoflíčky. A samozřejmě
-                nezapomeňte na elegantní pánskou obuv.
-              </p>
-            </div>
-          </InfoCard>
+          <AboutCard />
+          <DresscodeCard />
           <section id="program">
             <InfoCard headline="PROGRAM:">
               <div className="order-3 my-4 text-xl">
@@ -83,6 +35,6 @@ export const AboutSection = () => {
           </section>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
