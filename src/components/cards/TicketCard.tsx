@@ -16,7 +16,7 @@ export const TicketCard = ({ img, alt, headline, price, info }: Props) => {
         alt={alt}
         className="rounded-20 bg-card-grey shadow-card w-full max-w-[412px] max-h-[412px] object-cover"
       />
-      <div>
+      <div className="px-12">
         <h3 className="text-2xl font-semibold uppercase">{headline}</h3>
         <h4 className="text-2xl">{price}</h4>
         <p className="text-lg max-w-[450px]">{info}</p>

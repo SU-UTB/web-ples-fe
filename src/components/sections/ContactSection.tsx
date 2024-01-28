@@ -1,13 +1,11 @@
 import { ContactCard } from '../cards/ContactCard';
+import { InfoCard } from '../cards/InfoCard';
 import { Section } from '../shared/Section';
 
 export const ContactSection = () => {
   return (
     <Section id="kontakty" className="py-24">
-      <div className="max-w-4xl py-14 px-10 bg-card-grey rounded-20 shadow-card space-y-6 -mx-2 sm:mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-semibold uppercase font-numbers">
-          Kontakty:
-        </h2>
+      <InfoCard headline="Kontakty:">
         <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <ContactCard
             title="Bc."
@@ -45,7 +43,7 @@ export const ContactSection = () => {
             phone="+421 918 234 777"
           />
         </div>
-      </div>
+      </InfoCard>
     </Section>
   );
 };
