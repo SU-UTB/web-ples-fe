@@ -39,6 +39,7 @@
 body {
   font-family: 'PilcrowRounded';
   font-size: 16px;
+  color: #2e2e2e;
 
   @apply bg-gray-50
 }
