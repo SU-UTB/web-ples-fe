@@ -59,7 +59,7 @@ export const SupportProgramSection = () => {
           img={statueEvent}
           alt="socha"
           name="Afroditin salón krásy"
-          date="16. 1. 2024"
+          date="16. 2. 2024"
         />
         <SupportCard
           img={statueEvent}
