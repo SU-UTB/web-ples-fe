@@ -44,8 +44,8 @@ export const SupportProgramSection = () => {
           </div>
         </div>
         <SupportCard
-          img={vineEvent}
-          alt="víno"
+          img={statueEvent}
+          alt="socha"
           name="Dionýsova škola šumivého vína"
           date="30. 1. 2024"
         />
@@ -57,14 +57,14 @@ export const SupportProgramSection = () => {
         />
         <SupportCard
           img={statueEvent}
-          alt="víno"
-          name="Dámský salón"
+          alt="socha"
+          name="Afroditin salón krásy"
           date="16. 1. 2024"
         />
         <SupportCard
           img={statueEvent}
-          alt="víno"
-          name="Dionýsova škola šumivého vína"
+          alt="socha"
+          name="Diúv salón"
           date="12. 2. - 16. 2. 2024"
         />
       </InfoCard>
