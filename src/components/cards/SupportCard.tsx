@@ -5,9 +5,10 @@ type Props = {
   alt: string;
   name: string;
   date: string;
+  link: string;
 };
 
-export const SupportCard = ({ img, alt, name, date }: Props) => {
+export const SupportCard = ({ img, alt, name, date, link }: Props) => {
   return (
     <article className="relative flex items-start justify-between p-4 my-4 bg-card-grey rounded-20 shadow-card">
       <div className="flex items-center gap-x-4">
@@ -17,11 +18,13 @@ export const SupportCard = ({ img, alt, name, date }: Props) => {
           <p className="md:text-xl">{date}</p>
         </div>
       </div>
-      <img
-        src={calendarIcon}
-        alt="kalendář"
-        className="absolute w-5 h-5 right-4 bottom-4"
-      />
+      <a href={link} target="_blank">
+        <img
+          src={calendarIcon}
+          alt="kalendář"
+          className="absolute w-5 h-5 right-4 bottom-4"
+        />
+      </a>
     </article>
   );
 };
