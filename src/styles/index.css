@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 
 @font-face {
   font-family: 'PilcrowRounded';
@@ -41,9 +41,31 @@ body {
   font-size: 16px;
   color: #2e2e2e;
 
-  @apply bg-gray-50
+  @apply bg-gray-50;
 }
 
-.multiSelectContainer li:hover{
+.multiSelectContainer li:hover {
   background: #f28316 !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .hero-heading {
+    min-width: 300px;
+  }
+  .hero-pillar {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 641px) {
+  .hero-heading {
+    min-width: 500px;
+  }
+  .hero-pillar {
+    min-width: 500px;
+  }
 }
