@@ -35,7 +35,7 @@ export const TicketsSection = () => {
               name="Pavlína Šromotová"
               position=""
               email="sromotova@sutb.cz"
-              phone="+421 918 234 777"
+              phone="+420  777 293 697"
             />
           </div>
         </div>
