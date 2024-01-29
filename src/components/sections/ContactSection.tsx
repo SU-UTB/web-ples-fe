@@ -37,7 +37,7 @@ export const ContactSection = () => {
           />
           <ContactCard
             title=""
-            name="Sára Skuběnková"
+            name="Sára Skubeňová"
             position="Propagace"
             email="skubenkova@sutb.cz"
             phone="+421 918 234 777"
