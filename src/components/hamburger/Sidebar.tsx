@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+// Sidebar.tsx
+import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-
-import fbIcon from '../../assets/icons/hamburger/facebook-logo.svg';
-import igIcon from '../../assets/icons/hamburger/instagram-logo.svg';
-
-import './styles/index.css';
+import { NavItems } from './NavItems';
+import { SocLinkItems } from './SocLinkItems';
+import { SocLink } from './SocLink';
 
 type SidebarProps = {
   isOpen: boolean;
@@ -17,21 +16,9 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
     event: React.MouseEvent<HTMLAnchorElement>,
     itemId: string,
   ) => {
-    // Prevent default anchor click behavior
     event.preventDefault();
-
-    // Get the href attribute and ensure it's not null
-    const href = event.currentTarget.getAttribute('href');
-    if (!href) {
-      console.error('Href attribute is missing');
-      return;
-    }
-
-    // Set the active nav item state
     setActiveNavItem(itemId);
-
-    // Scroll to the target element
-    const element = document.querySelector(href);
+    const element = document.querySelector(`#${itemId}`);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -52,44 +39,25 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
           transition={{ type: 'spring', bounce: 0.25 }}
         >
           <nav className="flex flex-col items-end justify-center h-full p-10">
-            {[
-              'o-plese',
-              'program',
-              'vstupenky',
-              'doprovodný-program',
-              'galerie',
-              'kontakty',
-            ].map((item) => {
-              const itemId = item.toLowerCase().replace(/\s+/g, '-');
-              const itemNonDash = item.replace(/-/g, ' ').toUpperCase();
-              return (
-                <a
-                  key={itemId}
-                  href={`#${itemId}`}
-                  className={`block p-2 mb-4 ${activeNavItem === itemId ? 'underline' : ''} text-xl font-numbers font-semibold text-right`}
-                  onClick={(e) => handleLinkClick(e, itemId)}
-                >
-                  {itemNonDash.charAt(0).toUpperCase() + itemNonDash.slice(1)}
-                </a>
-              );
-            })}
+            {NavItems.map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className={`block p-2 mb-4 ${activeNavItem === item.id ? 'underline' : ''} text-xl font-numbers font-semibold text-right`}
+                onClick={(e) => handleLinkClick(e, item.id)}
+              >
+                {item.value}
+              </a>
+            ))}
             <div className="flex justify-center mt-6 gap-3">
-              <a
-                href="https://www.instagram.com/studentskaunieutb/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2"
-              >
-                <img src={igIcon} alt="Instagram" />
-              </a>
-              <a
-                href="https://www.facebook.com/events/752918923323142/?acontext=%7B%22event_action_history%22%3A[]%7D"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2"
-              >
-                <img src={fbIcon} alt="Facebook" />
-              </a>
+              {SocLinkItems.map((item) => (
+                <SocLink
+                  key={item.id}
+                  href={item.href}
+                  text=""
+                  icon={item.icon}
+                />
+              ))}
             </div>
           </nav>
         </motion.aside>
