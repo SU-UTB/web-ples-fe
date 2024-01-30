@@ -10,7 +10,7 @@ type Props = {
 
 export const SupportCard = ({ img, alt, name, date, link }: Props) => {
   return (
-    <article className="relative flex items-start justify-between p-4 my-4 bg-card-grey rounded-20 shadow-card">
+    <article className="relative flex items-start justify-between p-4 my-6 bg-card-grey rounded-20 shadow-card">
       <div className="flex items-center gap-x-4">
         <img src={img} alt={alt} className="w-24 h-24 rounded-lg" />
         <div className="space-y-1">
@@ -18,7 +18,7 @@ export const SupportCard = ({ img, alt, name, date, link }: Props) => {
           <p className="md:text-xl">{date}</p>
         </div>
       </div>
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noopener noreferrer">
         <img
           src={calendarIcon}
           alt="kalendář"
