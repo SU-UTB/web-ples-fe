@@ -1,33 +1,39 @@
+import { ticketCards } from '../../AppData';
 import { TicketCard } from '../cards/TicketCard';
 
-import sezeni from '../../assets/img/tickets/Sezeni1.png';
-import sezeniRaut from '../../assets/img/tickets/SezeniRaut1.png';
-import stani from '../../assets/img/tickets/Stani1.png';
+import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import '../../styles/custom-swiper.css';
 
 export const TicketItemList = () => {
   return (
-    <div className="grid gap-6 md:grid-cols-2 desktop:grid-cols-3 md:gap-y-12">
-      <TicketCard
-        img={stani}
-        alt="Stání"
-        headline="na stání"
-        price="350,-"
-        info="(možnost sednout si na volně dostupné sedačky bez stolu a bez možnosti místenky)"
-      />
-      <TicketCard
-        img={sezeni}
-        alt="Sezení"
-        headline="na sezení"
-        price="500,-"
-        info="(sezení bez rautu v 2. patře)"
-      />
-      <TicketCard
-        img={sezeniRaut}
-        alt="Sezení s rautem"
-        headline="na sezení s rautem"
-        price="750,-"
-        info="(nezahrnuje nápoje)"
-      />
-    </div>
+    <>
+      <Swiper
+        modules={[Pagination]}
+        className="block desktop:hidden h-[640px]"
+        breakpoints={{
+          640: { slidesPerView: 2, spaceBetween: 40 },
+        }}
+        spaceBetween={50}
+        slidesPerView={1}
+        centeredSlides
+        loop
+        pagination={{ clickable: true }}
+      >
+        {ticketCards.map((ticket) => (
+          <SwiperSlide key={ticket.id} className="pt-8">
+            <TicketCard {...ticket} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <div className="hidden desktop:grid desktop:grid-cols-3 md:gap-y-12">
+        {ticketCards.map((ticket) => (
+          <TicketCard key={ticket.id} {...ticket} />
+        ))}
+      </div>
+    </>
   );
 };

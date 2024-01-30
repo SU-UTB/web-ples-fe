@@ -12,7 +12,7 @@ export const GallerySection = () => {
       </div>
       <div className="flex flex-wrap gap-4 afer:content-[''] after:flex-grow-[999]">
         {galleryPhotos.map((photo) => (
-          <ImgContainer key={photo.id} photo={photo} />
+          <ImgContainer key={photo.id} {...photo} />
         ))}
       </div>
     </Section>

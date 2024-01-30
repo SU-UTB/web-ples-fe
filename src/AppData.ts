@@ -9,10 +9,14 @@ import galleryImg7 from './assets/img/gallery/gallery-7.webp';
 import galleryImg8 from './assets/img/gallery/gallery-8.webp';
 import galleryImg9 from './assets/img/gallery/gallery-9.webp';
 
-import { Photo } from './AppTypes';
+import sezeniRaut from './assets/img/tickets/sezeni-raut.webp';
+import sezeni from './assets/img/tickets/sezeni.webp';
+import stani from './assets/img/tickets/stani.webp';
+
+import { PhotoType, TicketCardType } from './AppTypes';
 import { GALLERY_PHOTO_HEIGHT } from './utils/constants';
 
-export const galleryPhotos: Photo[] = [
+export const galleryPhotos: PhotoType[] = [
   {
     id: 0,
     src: galleryImg0,
@@ -82,5 +86,32 @@ export const galleryPhotos: Photo[] = [
     alt: 'galerie9',
     width: 546,
     height: GALLERY_PHOTO_HEIGHT,
+  },
+];
+
+export const ticketCards: TicketCardType[] = [
+  {
+    id: 0,
+    img: stani,
+    alt: 'Stání',
+    headline: 'na stání',
+    price: '350,-',
+    info: '(možnost sednout si na volně dostupné sedačky bez stolu a bez možnosti místenky)',
+  },
+  {
+    id: 1,
+    img: sezeni,
+    alt: 'Sezení',
+    headline: 'na sezení',
+    price: '500,-',
+    info: '(sezení bez rautu v 2. patře)',
+  },
+  {
+    id: 2,
+    img: sezeniRaut,
+    alt: 'Sezení s rautem',
+    headline: 'na sezení s rautem',
+    price: '750,-',
+    info: '(nezahrnuje nápoje)',
   },
 ];

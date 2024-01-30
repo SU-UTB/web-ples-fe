@@ -25,7 +25,7 @@ export const TicketsSection = () => {
             </span>
           </p>
         </div>
-        <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card">
+        <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card max-w-[500px]">
           <h3 className="text-xl font-semibold">
             Bližší informace k předprodeji:
           </h3>
