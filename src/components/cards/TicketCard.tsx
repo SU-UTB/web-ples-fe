@@ -8,7 +8,7 @@ export const TicketCard = ({
   info,
 }: TicketCardType) => {
   return (
-    <article className="flex flex-col items-center text-cente gap-y-8 bg-card-grey">
+    <article className="flex flex-col items-center text-center gap-y-8 bg-card-grey">
       <img
         width={412}
         height={412}
