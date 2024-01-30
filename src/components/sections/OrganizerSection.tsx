@@ -7,6 +7,7 @@ export const OrganizerSection = () => {
   return (
     <Section
       id="organizer"
+      className="bg-gradient-to-b from-gray-50 to-gray-200"
     >
       <div className="w-full px-4 mx-auto max-w-screen-desktop desktop:px-0">
         <h2 className="mb-12 text-2xl font-semibold text-left uppercase sm:text-3xl font-numbers text-gray-950">
