@@ -12,18 +12,6 @@ type SidebarProps = {
 export const Sidebar = ({ isOpen }: SidebarProps) => {
   const [activeNavItem, setActiveNavItem] = useState('');
 
-  const handleLinkClick = (
-    event: React.MouseEvent<HTMLAnchorElement>,
-    itemId: string,
-  ) => {
-    event.preventDefault();
-    setActiveNavItem(itemId);
-    const element = document.querySelector(`#${itemId}`);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <AnimatePresence>
       {isOpen && (
@@ -44,7 +32,7 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
                 key={item.id}
                 href={`#${item.id}`}
                 className={`block p-2 mb-4 ${activeNavItem === item.id ? 'underline' : ''} text-xl font-numbers font-semibold text-right`}
-                onClick={(e) => handleLinkClick(e, item.id)}
+                onClick={() => setActiveNavItem(item.id)}
               >
                 {item.value}
               </a>

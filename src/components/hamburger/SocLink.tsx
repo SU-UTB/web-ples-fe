@@ -1,11 +1,11 @@
 // SocLink.tsx
-type SocLinkProps = {
+type Props = {
   href: string;
   text: string;
   icon: string;
 };
 
-export const SocLink: React.FC<SocLinkProps> = ({ href, text, icon }) => {
+export const SocLink = ({ href, text, icon }: Props) => {
   return (
     <a
       href={href}
