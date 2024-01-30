@@ -6,6 +6,8 @@ import { HeroSection } from '../sections/HeroSection';
 import { OrganizerSection } from '../sections/OrganizerSection';
 import { SupportProgramSection } from '../sections/SupportProgramSection';
 import { TicketsSection } from '../sections/TicketsSection';
+import { GeneralPartnerSection } from '../sections/GeneralPartnerSection';
+import { MainPartnerSection } from '../sections/MainPartnerSection';
 import { Footer } from '../shared/Footer';
 
 export const HomePage = () => (
@@ -18,8 +20,8 @@ export const HomePage = () => (
       <SupportProgramSection />
       <GallerySection />
       <ContactSection />
-      {/* TODO Add partners sections when we have partners */}
-      {/* TODO <PartnerSection /> */}
+      <GeneralPartnerSection />
+      <MainPartnerSection />
       <OrganizerSection />
     </main>
     <Footer />
