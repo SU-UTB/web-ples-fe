@@ -8,7 +8,7 @@ import { Section } from '../shared/Section';
 
 export const SupportProgramSection = () => {
   return (
-    <Section id="doprovodný-program">
+    <Section id="doprovodny-program">
       <InfoCard headline="Doprovodný program">
         <div className="flex flex-col justify-center gap-4">
           <p>

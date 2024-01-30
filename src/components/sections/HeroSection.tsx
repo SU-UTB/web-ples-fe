@@ -6,8 +6,6 @@ import clouds from '../../assets/img/hero/HeroClouds.png';
 import heroHeading from '../../assets/img/hero/HeroHeading.svg';
 import heroPillar from '../../assets/img/hero/HeroPillarsCropped.png';
 
-import './styles/index.css';
-
 export const HeroSection = () => {
   return (
     <section

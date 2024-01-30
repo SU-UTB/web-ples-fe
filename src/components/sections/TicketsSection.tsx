@@ -6,11 +6,11 @@ export const TicketsSection = () => {
   return (
     <Section id="vstupenky" className="">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-semibold uppercase font-numbers mb-4 mx-2">
+        <h2 className="text-2xl sm:text-3xl font-semibold uppercase font-numbers mb-4 px-2 desktop:px-0">
           Vstupenky
         </h2>
         <div className="justify-between w-full pb-20 flex flex-col lg:flex-row gap-8 ">
-          <div className="space-y-2 text-lg max-w-2xl mx-2">
+          <div className="space-y-2 text-lg max-w-2xl px-2 desktop:px-0">
             <p>
               Oficiální předprodej vstupenek na XXII. Reprezentační ples
               Univerzity Tomáše Bati bude spuštěn{' '}
