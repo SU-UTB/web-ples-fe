@@ -8,7 +8,7 @@ type HamburgerButtonProps = {
 export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
   <button
     onClick={toggle}
-    className="fixed z-50 top-5 right-5 bg-slate-100 h-[60px] w-[60px] rounded-[10px]"
+    className="fixed z-50 top-5 right-5 bg-slate-100 h-[60px] w-[60px] rounded-[10px] shadow-card"
   >
     <motion.div
       className="w-full h-full p-4 space-y-3"
@@ -27,7 +27,7 @@ export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
           closed: { opacity: 1 },
           open: { opacity: 0 },
         }}
-        className="w-8 h-[1.5px] bg-black rounded-full"
+        className="w-8 h-[2px] bg-black rounded-full"
         transition={{ duration: 0.1 }}
       />
       <motion.div
@@ -35,7 +35,7 @@ export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
           closed: { rotate: 0, translateY: 0 },
           open: { rotate: -45, translateY: -13, translateX: 0 },
         }}
-        className="w-8 h-[1.5px] bg-black rounded-full"
+        className="w-8 h-[2px] bg-black rounded-full"
       />
     </motion.div>
   </button>

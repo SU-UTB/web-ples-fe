@@ -5,11 +5,11 @@ import { TicketItemList } from '../ticket/TicketItemList';
 export const TicketsSection = () => {
   return (
     <Section id="vstupenky">
-      <h2 className="mb-4 text-2xl font-semibold uppercase sm:text-3xl font-numbers">
+      <h2 className="px-2 mb-4 text-2xl font-semibold uppercase sm:text-3xl font-numbers desktop:px-0">
         Vstupenky
       </h2>
       <div className="flex flex-col justify-between w-full gap-8 pb-20 lg:flex-row">
-        <div className="max-w-2xl space-y-2 text-lg">
+        <div className="max-w-2xl px-2 space-y-2 text-lg desktop:px-0">
           <p>
             Oficiální předprodej vstupenek na XXII. Reprezentační ples
             Univerzity Tomáše Bati bude spuštěn{' '}

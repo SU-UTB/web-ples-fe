@@ -1,10 +1,8 @@
 import { AboutCard } from '../about/AboutCard';
 import { DresscodeCard } from '../about/DresscodeCard';
-
 import { ProgramItemList } from '../about/ProgramItemList';
 import { InfoCard } from '../cards/InfoCard';
 import { Section } from '../shared/Section';
-
 import aboutImg from '../../assets/img/about-socha.png';
 
 export const AboutSection = () => {
@@ -16,7 +14,7 @@ export const AboutSection = () => {
           alt="Socha"
           width={645}
           height={645}
-          className="w-full max-w-[645px] h-auto"
+          className="w-full max-w-[645px] h-auto hidden desktop:block"
         />
         <div className="flex flex-col gap-8">
           <AboutCard />
