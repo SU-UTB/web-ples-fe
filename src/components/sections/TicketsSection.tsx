@@ -4,7 +4,7 @@ import { TicketItemList } from '../ticket/TicketItemList';
 
 export const TicketsSection = () => {
   return (
-    <Section id="vstupenky" className="">
+    <Section id="vstupenky">
       <h2 className="mb-4 text-2xl font-semibold uppercase sm:text-3xl font-numbers">
         Vstupenky
       </h2>

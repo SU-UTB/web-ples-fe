@@ -6,7 +6,7 @@ import stani from '../../assets/img/tickets/Stani1.png';
 
 export const TicketItemList = () => {
   return (
-    <div className="grid grid-cols-3 gap-6 desktop:gap-y-12">
+    <div className="grid gap-6 md:grid-cols-2 desktop:grid-cols-3 md:gap-y-12">
       <TicketCard
         img={stani}
         alt="Stání"

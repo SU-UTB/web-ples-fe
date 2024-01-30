@@ -17,6 +17,7 @@ export const ImgContainer = ({ photo }: Props) => {
         width={photo.width}
         height={photo.height}
         className="object-cover w-full h-full align-middle transition duration-300 group-hover:grayscale-0 grayscale"
+        loading="lazy"
       />
     </div>
   );
