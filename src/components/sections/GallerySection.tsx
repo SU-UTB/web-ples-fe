@@ -2,7 +2,7 @@ import { galleryImages } from '../gallery/AppData';
 
 export const GallerySection = () => {
   return (
-    <section id="gallery" className="w-full py-16 sm:py-24">
+    <section id="galerie" className="w-full py-16 sm:py-24">
       <div className="w-full px-4 mx-auto max-w-screen-desktop desktop:px-0">
         <h2 className="text-2xl sm:text-3xl font-semibold uppercase font-numbers mb-10 text-center">
           GALERIE Z MINULÉHO ROČNÍKU
