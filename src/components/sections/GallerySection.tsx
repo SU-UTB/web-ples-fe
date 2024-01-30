@@ -1,25 +1,20 @@
-import { galleryImages } from '../gallery/AppData';
+import { galleryPhotos } from '../../AppData';
+import { ImgContainer } from '../gallery/ImgContainer';
+import { Section } from '../shared/Section';
 
 export const GallerySection = () => {
   return (
-    <section id="gallery" className="w-full py-16 sm:py-24">
-      <div className="w-full px-4 mx-auto max-w-screen-desktop desktop:px-0">
-        <h2 className="text-2xl sm:text-3xl font-semibold uppercase font-numbers mb-10 text-center">
+    <Section id="gallery" className="py-16 sm:py-24">
+      <div className="w-full px-4 mx-auto">
+        <h2 className="mb-10 text-2xl font-semibold text-center uppercase sm:text-3xl font-numbers">
           GALERIE Z MINULÉHO ROČNÍKU
         </h2>
       </div>
-      <div className="grid grid-cols-5 gap-2 sm:gap-4 overflow-hidden">
-        {galleryImages.map((image) => (
-          <div>
-            <img
-              key={`${image}-${image.alt}`}
-              src={image.src}
-              alt={image.alt}
-              className="object-cover w-full h-24 sm:h-46 md:h-64 transition duration-300 grayscale hover:grayscale-0"
-            />
-          </div>
+      <div className="flex flex-wrap gap-4 afer:content-[''] after:flex-grow-[999]">
+        {galleryPhotos.map((photo) => (
+          <ImgContainer key={photo.id} photo={photo} />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
