@@ -12,7 +12,7 @@ export const ProgramCard = ({ time, headline, description }: Props) => {
       <p className="text-2xl font-bold font-numbers">{time}</p>
       <div>
         <h5 className="pt-1 text-lg font-bold">{headline}</h5>
-        <p className="text-lg">{description}</p>
+        <div className="text-lg">{description}</div>
       </div>
     </div>
   );

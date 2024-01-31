@@ -13,7 +13,7 @@ export const ProgramItemList = () => {
         headline="Slavnostní zahájení plesu:"
         description={
           <p>
-            Světelná show s projekcemi Aliatrix Proslov rektora &nbsp;
+            Světelná show s projekcemi Aliatrix Proslov rektora&nbsp;
             <span className="font-bold">
               prof.&nbsp;Mgr.&nbsp;Milana Adámka,&nbsp;Ph.D.
             </span>
