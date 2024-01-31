@@ -1,9 +1,11 @@
+import { Section } from '../shared/Section';
+
 import suIcon from '../../assets/icons/organizer/su-icon.svg';
 import utbIcon from '../../assets/icons/organizer/utb-icon.svg';
 
 export const OrganizerSection = () => {
   return (
-    <section
+    <Section
       id="organizer"
       className="bg-gradient-to-b from-gray-50 to-gray-200"
     >
@@ -20,6 +22,6 @@ export const OrganizerSection = () => {
           />
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
