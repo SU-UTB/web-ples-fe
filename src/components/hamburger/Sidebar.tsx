@@ -1,9 +1,9 @@
 // Sidebar.tsx
-import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useState } from 'react';
 import { NavItems } from './NavItems';
-import { SocLinkItems } from './SocLinkItems';
 import { SocLink } from './SocLink';
+import { SocLinkItems } from './SocLinkItems';
 
 type SidebarProps = {
   isOpen: boolean;
@@ -16,7 +16,7 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
     <AnimatePresence>
       {isOpen && (
         <motion.aside
-          className="fixed top-0 right-0 z-40 w-72 h-full bg-card-grey shadow-card"
+          className="fixed top-0 right-0 z-40 h-full w-72 bg-card-grey shadow-card"
           variants={{
             open: { opacity: 1, x: 0 },
             closed: { opacity: 0, x: '100%' },
@@ -37,7 +37,7 @@ export const Sidebar = ({ isOpen }: SidebarProps) => {
                 {item.value}
               </a>
             ))}
-            <div className="flex justify-center mt-6 gap-3">
+            <div className="flex justify-center gap-3 mt-6">
               {SocLinkItems.map((item) => (
                 <SocLink
                   key={item.id}
