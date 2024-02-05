@@ -1,9 +1,9 @@
 import { InfoCard } from '../cards/InfoCard';
 import { SupportCard } from '../cards/SupportCard';
 
+import danceEvent from '../../assets/img/support/danceEvent.png';
 import statueEvent from '../../assets/img/support/statueEvent.png';
 import vineEvent from '../../assets/img/support/vineEvent.png';
-import danceEvent from '../../assets/img/support/danceEvent.png';
 import { Section } from '../shared/Section';
 
 export const SupportProgramSection = () => {
@@ -63,14 +63,14 @@ export const SupportProgramSection = () => {
           alt="socha"
           name="Afroditin salón krásy"
           date="16. 2. 2024"
-          link=""
+          link="https://www.facebook.com/events/761448135869848"
         />
         <SupportCard
           img={statueEvent}
           alt="socha"
           name="Diúv salón"
           date="12. 2. - 16. 2. 2024"
-          link=""
+          link="https://www.facebook.com/events/772241391627604/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22home%22%7D%2C%7B%22mechanism%22%3A%22search_results%22%2C%22surface%22%3A%22search%22%7D]%2C%22ref_notif_type%22%3Anull%7D"
         />
       </InfoCard>
     </Section>
