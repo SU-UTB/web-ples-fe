@@ -13,7 +13,8 @@ export const ProgramItemList = () => {
         headline="Slavnostní zahájení plesu:"
         description={
           <p>
-            Světelná show s projekcemi Aliatrix Proslov rektora&nbsp;
+            Světelná show s projekcemi Aliatrix
+            <br /> Proslov rektora&nbsp;
             <span className="font-bold">
               prof.&nbsp;Mgr.&nbsp;Milana Adámka,&nbsp;Ph.D.
             </span>
@@ -37,7 +38,7 @@ export const ProgramItemList = () => {
       />
       <ProgramCard
         time="22:00"
-        headline="Taneční vystoupení TS FREE DANCE PROSTĚJOV"
+        headline="Taneční vystoupení od Idance Studio"
         description=""
       />
       <ProgramCard
@@ -46,7 +47,7 @@ export const ProgramItemList = () => {
         description=""
       />
       <ProgramCard
-        time="22:55"
+        time="23:05"
         headline="Prestige Symphony Orchestra"
         description=""
       />
