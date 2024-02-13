@@ -1,5 +1,3 @@
-import { Section } from '../shared/Section';
-
 import suIcon from '../../assets/icons/organizer/su-icon.svg';
 import utbIcon from '../../assets/icons/organizer/utb-icon.svg';
 

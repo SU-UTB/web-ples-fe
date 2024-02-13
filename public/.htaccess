@@ -5,7 +5,7 @@ RewriteRule ^manifest\.json$ - [L]
 RewriteRule ^robots\.txt$ - [L]
 RewriteRule ^page-icon\.svg$ - [L]
 RewriteRule ^meta-image\.png$ - [L]
-
+RewriteRule \.(png|ico)$ - [L]
 
 RewriteRule ^build/(.*) backend/public/build/$1 [L]
 RewriteRule ^vendor/(.*) backend/public/vendor/$1 [L]
