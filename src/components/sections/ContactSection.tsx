@@ -8,18 +8,16 @@ export const ContactSection = () => {
       <InfoCard headline="Kontakty:">
         <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <ContactCard
-            title="Bc."
-            name="Michaela Filipcová"
-            position="Manažerka plesu"
-            email="filipcova@sutb.cz"
-            phone="+420 725 126 034"
+            name="Jiří Pernica"
+            position="Manažer plesu"
+            email="pernica@sutb.cz"
+            phone="+420 722 142 888"
           />
           <ContactCard
-            title=""
-            name="Jakub Staněk"
+            name="David Fiala"
             position="Produkce"
-            email="stanek@sutb.cz"
-            phone="+420 776 459 859"
+            email="fiala@sutb.cz"
+            phone="+420 739 437 387"
           />
           <ContactCard
             title="Bc."
@@ -29,18 +27,16 @@ export const ContactSection = () => {
             phone="+420 734 542 044"
           />
           <ContactCard
-            title="Bc."
-            name="Karel Kratochvíl"
+            name="Tina Marečková"
             position="Spolupráce a sponzoři"
-            email="kratochvil@sutb.cz"
-            phone="+420 725 979 411"
+            email="mareckova@sutb.cz"
+            phone="+420 720 182 609"
           />
           <ContactCard
-            title=""
-            name="Sára Skubeňová"
+            name="Sára Forejtová"
             position="Propagace"
-            email="skubenkova@sutb.cz"
-            phone="+421 918 234 777"
+            email="forejtova@sutb.cz"
+            phone="+421 728 411 288"
           />
         </div>
       </InfoCard>

@@ -1,5 +1,5 @@
 type Props = {
-  title: string;
+  title?: string;
   name: string;
   position: string;
   email: string;
