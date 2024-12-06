@@ -4,10 +4,18 @@ import { Section } from '../shared/Section';
 
 export const OrganizerSection = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-gray-200">
+    <div style={{
+      background: `
+        linear-gradient(
+          to bottom,
+          #F3E7E7 0%,
+          #02264F 20%
+        )
+      `,
+    }}>
       <Section id="organizer">
         <div className="w-full px-4 mx-auto max-w-screen-desktop desktop:px-0">
-          <h2 className="mb-16 text-2xl font-semibold text-center uppercase sm:text-3xl font-numbers text-gray-950">
+          <h2 className="mt-8 mb-16 text-2xl font-semibold text-center uppercase sm:text-3xl font-numbers text-[#F3E7E7]">
             Organizátoři:
           </h2>
           <div className="flex flex-wrap justify-center gap-16 gap-y-8">
