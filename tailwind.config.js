@@ -46,7 +46,7 @@ export default {
         30: '30px',
       },
       boxShadow: {
-        card: '12px 12px 18px 0px rgba(83, 146, 134, 0.20), 0px 0px 18px 0px #F3E7E7',
+        card: '0px 0px 18px 1px #dbcaca',
         sidebar:
           '12px 12px 18px 0px rgba(83, 146, 134, 0.20), -12px -12px 18px 0px #F3E7E7',
       },
