@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Countdown } from '../countdown/Countdown';
-
 import { COUNTDOWN_DATE } from '../../utils/constants';
 
 import clouds from '../../assets/img/hero/HeroClouds.png';
 import heroHeading from '../../assets/img/hero/HeroHeading.svg';
 import heroPillar from '../../assets/img/hero/HeroPillarsCropped.png';
-import leftImage from '../../assets/img/hero/HeroHeadingLeft.svg'; // Replace with your left SVG path
+import leftImage from '../../assets/img/hero/HeroHeadingLeft.svg'; 
 import rightImage from '../../assets/img/hero/HeroHeadingRight.svg';
-import easterEggImage from '../../assets/img/eastereggs/easterEgg.png'; // Replace with your small image path
+import easterEggImage from '../../assets/img/eastereggs/easterEgg.png'; 
+import baguetteImage from '../../assets/img/eastereggs/baguette.png'; // Add your baguette image
 
 export const HeroSection = () => {
+  const clickCount = useRef<number>(0);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null); // Compatible timeout type
+
   const [easterEgg, setEasterEgg] = useState<{
     x: number;
     y: number;
@@ -18,6 +21,35 @@ export const HeroSection = () => {
     dy: number;
   } | null>(null);
   const [animationKey, setAnimationKey] = useState(0); // Unique key to restart animation
+  const [baguetteAnimation, setBaguetteAnimation] = useState(false);
+  const [baguetteImages, setBaguetteImages] = useState<number[]>([]); // State for multiple baguettes
+
+  const handleTripleClick = () => {
+    // Trigger the baguette animation and create multiple baguette images
+    setBaguetteAnimation(true);
+    setBaguetteImages(Array.from({ length: 4 }, (_, i) => i)); // Create 10 baguette images
+
+    // Reset the baguette animation after the movement is complete (e.g., 3 seconds)
+    setTimeout(() => {
+      setBaguetteAnimation(false);
+      setBaguetteImages([]); // Clear baguettes
+    }, 4000);
+  };
+
+  const handleClick = () => {
+    clickCount.current += 1;
+
+    if (timer.current) {
+      clearTimeout(timer.current);
+    }
+
+    timer.current = setTimeout(() => {
+      if (clickCount.current === 3) {
+        handleTripleClick();
+      }
+      clickCount.current = 0; // Reset click count after a short delay
+    }, 300); // Adjust the delay as needed
+  };
 
   const handleHeroHeadingClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
     const rect = event.currentTarget.getBoundingClientRect();
@@ -45,8 +77,7 @@ export const HeroSection = () => {
     setEasterEgg({ x: clickX, y: clickY, dx, dy });
     setAnimationKey((prev) => prev + 1); // Update key to restart animation
 
-    // Clear the Easter egg after the animation finishes (e.g., 1.5s duration)
-    setTimeout(() => setEasterEgg(null), 1000);
+    setTimeout(() => setEasterEgg(null), 1000); // Clear after animation finishes
   };
 
   const animationStyle = easterEgg
@@ -68,23 +99,34 @@ export const HeroSection = () => {
     `
     : '';
 
+  const baguetteAnimationStyle = baguetteAnimation
+    ? `
+      @keyframes baguetteMoveUp {
+        0% {
+          opacity: 0; /* Start fully transparent */
+          transform: translateY(0vh); /* Start from the bottom of the screen */
+        }
+        15% {
+          opacity: 1; /* Fade in to full opacity */
+        }
+        100% {
+          transform: translateY(-180vh); /* End above the screen */
+        }
+      }
+    `
+    : '';
+
   return (
     <section
       id="hero"
       className="flex flex-col items-center justify-center px-4 pt-24 bg-center bg-no-repeat bg-cover bg-card-gray md:pt-20"
       style={{
-        background: `
-          linear-gradient(
-            to bottom,
-            #B22547 80%,
-            #F3E7E7 98%
-          )
-        `,
+        background: `linear-gradient(to bottom, #B22547 80%, #F3E7E7 98%)`,
       }}
     >
-      <style>{animationStyle}</style> {/* Inject animation style */}
+      <style>{animationStyle}</style> {/* Injecting the Easter egg animation */}
+      <style>{baguetteAnimationStyle}</style> {/* Injecting the baguette animation */}
 
-      {/* Left SVG Image */}
       <img
         src={leftImage}
         alt="Left Decoration"
@@ -102,7 +144,12 @@ export const HeroSection = () => {
       <img
         src={heroHeading}
         alt="Reprezentační ples UTB 2024"
-        style={{ maxHeight: '60vh', maxWidth: '80vw' }}
+        style={{
+          maxHeight: '60vh',
+          maxWidth: '80vw',
+          zIndex: '15',
+        }}
+        onClick={handleClick}
       />
 
       <h1 className="hidden">Reprezentační ples UTB 2024</h1>
@@ -123,7 +170,7 @@ export const HeroSection = () => {
         />
         {easterEgg && (
           <img
-            key={animationKey} // Reset animation on re-render
+            key={animationKey}
             src={easterEggImage}
             alt="Easter Egg"
             className="absolute"
@@ -136,9 +183,26 @@ export const HeroSection = () => {
             }}
           />
         )}
+
+        {/* Render baguette images */}
+        {baguetteImages.map((_, index) => (
+          <img
+            key={index}
+            src={baguetteImage}
+            alt="Baguette"
+            className="absolute"
+            style={{
+              bottom: '0', // Start from the bottom of the screen
+              left: `${index*22}vw`, // Random horizontal position
+              width: '25vw',
+              height: 'auto',
+              animation: 'baguetteMoveUp 4s ease-in-out forwards', // Animation for moving up
+              zIndex: '20'
+            }}
+          />
+        ))}
       </div>
 
-      {/* Right SVG Image */}
       <img
         src={rightImage}
         alt="Right Decoration"
