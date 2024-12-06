@@ -1,8 +1,36 @@
+import { useRef, useState } from 'react';
 import suIcon from '../../assets/icons/organizer/su-icon.svg';
 import utbIcon from '../../assets/icons/organizer/utb-icon.svg';
 import { Section } from '../shared/Section';
 
 export const OrganizerSection = () => {
+  const [isRolling, setIsRolling] = useState(false); // State to track the barrel roll animation trigger
+  const clickCount = useRef<number>(0);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null); // Compatible timeout type
+
+  const handleTripleClick = () => {
+    setIsRolling(true); // Trigger barrel roll animation
+    // Reset the animation after it finishes (5 seconds)
+    setTimeout(() => {
+      setIsRolling(false); // Reset the state to stop the animation
+    }, 1300);
+  };
+
+  const handleClick = () => {
+    clickCount.current += 1;
+
+    if (timer.current) {
+      clearTimeout(timer.current);
+    }
+
+    timer.current = setTimeout(() => {
+      if (clickCount.current === 3) {
+        handleTripleClick();
+      }
+      clickCount.current = 0; // Reset click count after a short delay
+    }, 400); // Adjust the delay as needed
+  };
+
   return (
     <div style={{
       background: `
@@ -23,7 +51,12 @@ export const OrganizerSection = () => {
               src={suIcon}
               loading="lazy"
               alt="Studentská unie UTB"
-              className="h-6 sm:h-8"
+              className={`h-6 sm:h-8 ${isRolling ? 'rolling' : ''}`} // Apply 'rolling' class when isRolling is true
+              onClick={handleClick}
+              style={{
+                transition: 'transform 1s ease-in-out',
+                transform: isRolling ? 'rotate(720deg) scale(1.5)' : 'rotate(0deg) scale(1)', // Apply barrel roll rotation
+              }}
             />
             <img
               src={utbIcon}
