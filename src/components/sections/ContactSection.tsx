@@ -36,7 +36,7 @@ export const ContactSection = () => {
             name="Sára Forejtová"
             position="Propagace"
             email="forejtova@sutb.cz"
-            phone="+421 728 411 288"
+            phone="+420 728 411 288"
           />
         </div>
       </InfoCard>

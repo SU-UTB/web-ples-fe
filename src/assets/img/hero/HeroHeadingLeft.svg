@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 597.46004 976.68998"
+   version="1.1"
+   id="svg107"
+   sodipodi:docname="HeroHeadingLeft.svg"
+   width="597.46002"
+   height="976.69"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview107"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.81525195"
+     inkscape:cx="755.59464"
+     inkscape:cy="465.50027"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg107" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#f3e7e7;}</style>
+  </defs>
+  <g
+     id="Vrstva_2"
+     data-name="Vrstva 2"
+     transform="translate(0,-45.08)">
+    <g
+       id="Vrstva_1-2"
+       data-name="Vrstva 1">
+      <polygon
+         class="cls-1"
+         points="77.9,47.75 77.9,45.08 597.46,46.41 "
+         id="polygon105" />
+      <path
+         class="cls-1"
+         d="M 2.66,1021.77 H 0 V 118 H 1.33 A 71.62,71.62 0 0 0 72.87,46.41 v -1.33 h 5 v 2.67 H 75.52 A 74.27,74.27 0 0 1 2.66,120.6 Z"
+         id="path106" />
+    </g>
+  </g>
+</svg>
