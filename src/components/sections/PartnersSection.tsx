@@ -18,9 +18,12 @@ import zlinFilmFestival from '../../assets/img/partners/zlin-film-festival.png';
 
 export const PartnersSection = () => {
   return (
-    <Section id="main-partner">
+    <div style={{
+      backgroundColor: '#F3E7E7'
+    }}>
+      <Section id="main-partner">
       <div className="w-full px-4 mx-auto max-w-screen-desktop desktop:px-0">
-        <h2 className="mb-16 text-center text-2xl font-semibold uppercase sm:text-3xl font-numbers text-gray-950">
+        <h2 className="mb-16 text-center text-2xl font-semibold uppercase sm:text-3xl font-numbers text-[#02264F]">
           Partneři:
         </h2>
         <div className="flex flex-wrap justify-center gap-x-16 gap-y-12 items-center ">
@@ -97,5 +100,6 @@ export const PartnersSection = () => {
         </div>
       </div>
     </Section>
+    </div>
   );
 };
