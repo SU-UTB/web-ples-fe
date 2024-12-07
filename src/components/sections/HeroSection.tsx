@@ -59,8 +59,8 @@ export const HeroSection = () => {
     const clickY = event.clientY - rect.top;
 
     // Get the center of the image
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
+    const centerX = Math.round(rect.width / 2);
+    const centerY = Math.round(rect.height / 2);
 
     // Calculate angle (in radians) relative to the center
     const angle = Math.atan2(clickY - centerY, clickX - centerX);
@@ -70,8 +70,8 @@ export const HeroSection = () => {
     const distance = viewportWidth * 0.2; // 20% of viewport width
 
     // Calculate the offset (dx, dy) for animation based on the angle
-    const dx = Math.cos(angle) * distance;
-    const dy = Math.sin(angle) * distance;
+    const dx = Math.round(Math.cos(angle) * distance * 10000) / 10000;
+    const dy = Math.round(Math.sin(angle) * distance * 10000) / 10000;
 
     // Set the Easter egg's initial position and direction
     setEasterEgg({ x: clickX, y: clickY, dx, dy });
@@ -119,7 +119,7 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col items-center justify-center px-4 pt-24 bg-center bg-no-repeat bg-cover bg-card-gray md:pt-20"
+      className="flex flex-col items-center justify-center px-4 pt-12 bg-center bg-no-repeat bg-cover bg-card-gray md:pt-20"
       style={{
         background: `linear-gradient(to bottom, #B22547 80%, #F3E7E7 98%)`,
       }}
@@ -130,7 +130,7 @@ export const HeroSection = () => {
       <img
         src={leftImage}
         alt="Left Decoration"
-        className="absolute top-10 md:top-0 left-1 md:left-10 z-10 gradient-mask p-4 md:p-14 w-4/5 md:w-2/5"
+        className="absolute top-2 md:top-0 left-1 md:left-10 z-10 gradient-mask p-4 md:p-14 w-4/5 md:w-2/5"
         style={{
           width: '45%',
           height: 'auto',
@@ -206,7 +206,7 @@ export const HeroSection = () => {
       <img
         src={rightImage}
         alt="Right Decoration"
-        className="absolute top-10 md:top-0 right-1 md:right-10 z-10 gradient-mask p-4 md:p-14 w-4/5 md:w-2/5"
+        className="absolute top-2 md:top-0 right-1 md:right-10 z-10 gradient-mask p-4 md:p-14 w-4/5 md:w-2/5"
         style={{
           width: '45%',
           height: 'auto',
