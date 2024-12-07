@@ -9,6 +9,7 @@ import leftImage from '../../assets/img/hero/HeroHeadingLeft.svg';
 import rightImage from '../../assets/img/hero/HeroHeadingRight.svg';
 import easterEggImage from '../../assets/img/eastereggs/easterEgg.png'; 
 import baguetteImage from '../../assets/img/eastereggs/baguette.png'; // Add your baguette image
+import soundFile from '../../assets/img/eastereggs/french-music.mp3';
 
 export const HeroSection = () => {
   const clickCount = useRef<number>(0);
@@ -28,6 +29,10 @@ export const HeroSection = () => {
     // Trigger the baguette animation and create multiple baguette images
     setBaguetteAnimation(true);
     setBaguetteImages(Array.from({ length: 4 }, (_, i) => i)); // Create 10 baguette images
+
+    // Play the sound
+    const audio = new Audio(soundFile); // Replace with the actual path to your .mp3 file
+    audio.play();
 
     // Reset the baguette animation after the movement is complete (e.g., 3 seconds)
     setTimeout(() => {
