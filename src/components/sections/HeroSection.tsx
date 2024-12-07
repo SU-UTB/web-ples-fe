@@ -33,7 +33,7 @@ export const HeroSection = () => {
     setTimeout(() => {
       setBaguetteAnimation(false);
       setBaguetteImages([]); // Clear baguettes
-    }, 4000);
+    }, 6000);
   };
 
   const handleClick = () => {
@@ -196,7 +196,7 @@ export const HeroSection = () => {
               left: `${index*22}vw`, // Random horizontal position
               width: '25vw',
               height: 'auto',
-              animation: 'baguetteMoveUp 4s ease-in-out forwards', // Animation for moving up
+              animation: 'baguetteMoveUp 6s ease-in-out forwards', // Animation for moving up
               zIndex: '20'
             }}
           />
