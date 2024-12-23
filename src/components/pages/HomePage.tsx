@@ -17,13 +17,13 @@ export const HomePage = () => (
       <MenuComponent />
       <HeroSection />
       <AboutSection />
-      <TicketsSection />
-      <SupportProgramSection />
+      {/* <TicketsSection /> */}
+      {/* <SupportProgramSection /> */}
       <GallerySection />
       <ContactSection />
-      <GeneralPartnerSection />
-      <MainPartnerSection />
-      <PartnersSection />
+      {/* <GeneralPartnerSection /> */}
+      {/* <MainPartnerSection /> */}
+      {/* <PartnersSection /> */}
       <OrganizerSection />
     </main>
     <Footer />

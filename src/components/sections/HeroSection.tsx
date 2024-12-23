@@ -56,35 +56,40 @@ export const HeroSection = () => {
     }, 300); // Adjust the delay as needed
   };
 
-  const handleHeroHeadingClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-
-    // Get click position relative to the image
-    const clickX = event.clientX - rect.left;
-    const clickY = event.clientY - rect.top;
-
-    // Get the center of the image
-    const centerX = Math.round(rect.width / 2);
-    const centerY = Math.round(rect.height / 2);
-
-    // Calculate angle (in radians) relative to the center
-    const angle = Math.atan2(clickY - centerY, clickX - centerX);
-
-    // Define the animation distance based on viewport width (e.g., 10%)
-    const viewportWidth = window.innerWidth;
-    const distance = viewportWidth * 0.2; // 20% of viewport width
-
-    // Calculate the offset (dx, dy) for animation based on the angle
-    const dx = Math.round(Math.cos(angle) * distance * 10000) / 10000;
-    const dy = Math.round(Math.sin(angle) * distance * 10000) / 10000;
-
+  const handleHeroHeadingInteraction = (event: React.MouseEvent<HTMLDivElement, MouseEvent> | React.TouchEvent<HTMLDivElement>) => {
+    let clickX, clickY;
+  
+    if (event.type === 'touchstart') {
+      const touch = (event as React.TouchEvent).touches[0];
+      clickX = touch.clientX;
+      clickY = touch.clientY;
+    } else {
+      const mouseEvent = event as React.MouseEvent;
+      clickX = mouseEvent.clientX;
+      clickY = mouseEvent.clientY;
+    }
+  
+    const rect = (event.currentTarget as HTMLDivElement).getBoundingClientRect();
+  
+    // Get position relative to the div
+    const relativeX = clickX - rect.left;
+    const relativeY = clickY - rect.top;
+  
+    // Generate random direction for animation
+    const randomAngle = Math.random() * 2 * Math.PI; // Random angle in radians
+    const distance = window.innerWidth * 0.2; // 20% of viewport width
+  
+    const dx = Math.cos(randomAngle) * distance;
+    const dy = Math.sin(randomAngle) * distance;
+  
     // Set the Easter egg's initial position and direction
-    setEasterEgg({ x: clickX, y: clickY, dx, dy });
+    setEasterEgg({ x: relativeX, y: relativeY, dx, dy });
     setAnimationKey((prev) => prev + 1); // Update key to restart animation
-
-    setTimeout(() => setEasterEgg(null), 1000); // Clear after animation finishes
+  
+    // Clear the animation after it finishes
+    setTimeout(() => setEasterEgg(null), 1000);
   };
-
+  
   const animationStyle = easterEgg
     ? `
       @keyframes fadeAndMove {
@@ -158,21 +163,8 @@ export const HeroSection = () => {
       />
 
       <h1 className="hidden">Reprezentační ples UTB 2024</h1>
-      <div className="pt-12 pb-4">
+      <div className="pt-12 pb-4 z-20 relative" onClick={handleHeroHeadingInteraction} onTouchStart={handleHeroHeadingInteraction}>
         <Countdown targetDate={COUNTDOWN_DATE} />
-      </div>
-      <div
-        className="bg-center bg-no-repeat bg-cover m-0 relative"
-        style={{
-          backgroundImage: `url('${clouds}')`,
-        }}
-        onClick={handleHeroHeadingClick}
-      >
-        <img
-          src={heroPillar}
-          alt="pilíře"
-          className="w-full max-w-[1300px] min-w-[100px] h-auto relative hero-pillar"
-        />
         {easterEgg && (
           <img
             key={animationKey}
@@ -188,6 +180,22 @@ export const HeroSection = () => {
             }}
           />
         )}
+      </div>
+
+      
+      <div
+        className="bg-center bg-no-repeat bg-cover m-0 relative w-full h-[300px]"
+        // style={{
+        //   backgroundImage: `url('${clouds}')`,
+        // }}
+        //onClick={handleHeroHeadingClick}
+      >
+        {/* <img
+          src={heroPillar}
+          alt="pilíře"
+          className="w-full max-w-[1300px] min-w-[100px] h-auto relative hero-pillar"
+        /> */}
+        
 
         {/* Render baguette images */}
         {baguetteImages.map((_, index) => (
@@ -202,7 +210,7 @@ export const HeroSection = () => {
               width: '25vw',
               height: 'auto',
               animation: 'baguetteMoveUp 6s ease-in-out forwards', // Animation for moving up
-              zIndex: '20'
+              zIndex: '100'
             }}
           />
         ))}
