@@ -10,5 +10,5 @@ type SocLinkItem = {
 
 export const SocLinkItems: SocLinkItem[] = [
   { id: 'instagram', value: 'Instagram', href: 'https://www.instagram.com/studentskaunieutb/', icon: igIcon },
-  { id: 'facebook', value: 'Facebook', href: 'https://www.facebook.com/events/752918923323142/?acontext=%7B%22event_action_history%22%3A[]%7D', icon: fbIcon }
+  { id: 'facebook', value: 'Facebook', href: 'https://www.facebook.com/studentskaunieutb', icon: fbIcon }
 ];

@@ -17,7 +17,7 @@ export const HomePage = () => (
       <MenuComponent />
       <HeroSection />
       <AboutSection />
-      {/* <TicketsSection /> */}
+      <TicketsSection />
       {/* <SupportProgramSection /> */}
       <GallerySection />
       <ContactSection />

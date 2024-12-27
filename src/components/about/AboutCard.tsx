@@ -5,7 +5,7 @@ export const AboutCard = () => {
     <InfoCard headline="O PLESE:">
       <div className="flex flex-col order-1 gap-4">
         <p>
-          Srdečně vás zveme na XXIII. ročník Reprezentačního plesu 
+          Srdečně Vás zveme na XXIII. ročník Reprezentačního plesu 
           Univerzity Tomáše Bati, který se uskuteční 14. února 2025. 
         </p>
         <p>
