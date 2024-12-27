@@ -1,8 +1,9 @@
 import { InfoCard } from '../cards/InfoCard';
+import dresscode from "../../assets/img/headlines/dresscode.svg"
 
 export const DresscodeCard = () => {
   return (
-    <InfoCard headline="DRESS CODE">
+    <InfoCard headline={dresscode}>
       <div className="flex flex-col order-3 gap-4">
         <p>
           Dress code letošního ročníku bude inspirován francouzskou elegancí a šarmem. 

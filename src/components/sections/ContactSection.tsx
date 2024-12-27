@@ -1,6 +1,7 @@
 import { ContactCard } from '../cards/ContactCard';
 import { InfoCard } from '../cards/InfoCard';
 import { Section } from '../shared/Section';
+import kontakty from "../../assets/img/headlines/kontakty.svg"
 
 export const ContactSection = () => {
   return (
@@ -11,7 +12,7 @@ export const ContactSection = () => {
         <div style={{
           color: '#02264F',
         }}>
-          <InfoCard headline="Kontakty:">
+          <InfoCard headline={kontakty}>
             <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <ContactCard
                 name="Jiří Pernica"

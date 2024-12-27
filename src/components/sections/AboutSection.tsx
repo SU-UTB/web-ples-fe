@@ -4,6 +4,7 @@ import { ProgramItemList } from '../about/ProgramItemList';
 import { InfoCard } from '../cards/InfoCard';
 import { Section } from '../shared/Section';
 import aboutImg from '../../assets/img/about-socha.png';
+import program from "../../assets/img/headlines/program.svg"
 
 export const AboutSection = () => {
   return (
@@ -23,7 +24,7 @@ export const AboutSection = () => {
             <AboutCard />
             <DresscodeCard />
             <section id="program">
-              <InfoCard headline="PROGRAM:">
+              <InfoCard headline={program}>
                 <div className="order-3 my-4 text-xl">
                   Celým večerem Vás provede moderátorka Jitka Nováčková.
                 </div>

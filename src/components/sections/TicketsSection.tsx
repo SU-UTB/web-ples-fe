@@ -1,6 +1,7 @@
 import { ContactCard } from '../cards/ContactCard';
 import { Section } from '../shared/Section';
 import { TicketItemList } from '../ticket/TicketItemList';
+import vstupenky from '../../assets/img/headlines/vstupenky.svg'
 
 export const TicketsSection = () => {
   return (
@@ -8,9 +9,11 @@ export const TicketsSection = () => {
       backgroundColor: '#F3E7E7'
     }}>
       <Section id="vstupenky">
-        <h2 className="px-2 mb-4 text-2xl font-semibold uppercase sm:text-3xl font-numbers desktop:px-0">
-          Vstupenky
-        </h2>
+        <img
+          src={vstupenky} // Import the SVG
+          alt="Vstupenky" // Alt text for accessibility
+          className="px-2 mb-4 h-[50px] desktop:px-0" // Set height and margin (adjust as needed)
+        />
         <div className="flex flex-col justify-between w-full gap-8 pb-20 lg:flex-row">
           <div className="max-w-2xl px-2 space-y-2 text-lg desktop:px-0">
             <p>

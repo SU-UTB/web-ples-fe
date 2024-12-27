@@ -1,8 +1,9 @@
 import { InfoCard } from '../cards/InfoCard';
+import o_plese from "../../assets/img/headlines/o_plese.svg"
 
 export const AboutCard = () => {
   return (
-    <InfoCard headline="O PLESE:">
+    <InfoCard headline={o_plese}>
       <div className="flex flex-col order-1 gap-4">
         <p>
           Srdečně Vás zveme na XXIII. ročník Reprezentačního plesu 
