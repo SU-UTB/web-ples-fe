@@ -6,14 +6,13 @@ export const ProgramItemList = () => {
       <ProgramCard
         time="19:00"
         headline="Otevření kongresového centra"
-        description={<p>ve foyer vystoupí harfistka z Musica Angelica Zlín</p>}
+        description={<p>ve foyer vystoupí Trio Chouette – francouzské šansony</p>}
       />
       <ProgramCard
         time="20:00"
         headline="Slavnostní zahájení plesu:"
         description={
-          <p>
-            Světelná show s projekcemi Aliatrix
+          <p>iDance Studio Zlín
             <br /> Proslov rektora&nbsp;
             <span className="font-bold">
               prof.&nbsp;Mgr.&nbsp;Milana Adámka,&nbsp;Ph.D.
@@ -28,7 +27,7 @@ export const ProgramItemList = () => {
       />
       <ProgramCard
         time="20:45"
-        headline="Kapela SIMPLY THE SHOW"
+        headline="Kapela FRONTMEN"
         description=""
       />
       <ProgramCard
@@ -38,7 +37,7 @@ export const ProgramItemList = () => {
       />
       <ProgramCard
         time="22:00"
-        headline="Taneční vystoupení od Idance Studio"
+        headline="Kabaret show Unique Queens"
         description=""
       />
       <ProgramCard
@@ -63,10 +62,10 @@ export const ProgramItemList = () => {
       />
       <ProgramCard
         time="00:10"
-        headline="Kapela SIMPLY THE SHOW"
+        headline="Kapela FRONTMEN"
         description=" "
       />
-      <ProgramCard time="01:00" headline="Ukončení plesu" description=" " />
+      <ProgramCard time="02:00" headline="Ukončení plesu" description=" " />
     </div>
   );
 };

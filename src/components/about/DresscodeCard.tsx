@@ -5,26 +5,21 @@ export const DresscodeCard = () => {
     <InfoCard headline="DRESS CODE">
       <div className="flex flex-col order-3 gap-4">
         <p>
-          Letošní dress code se na Olympu ponese v bílé, zlaté a zelené barvě,
-          protože jen tak vzdáme úctu velké trojce - Diovi, Poseidónovi a
-          Hádovi.
+          Dress code letošního ročníku bude inspirován francouzskou elegancí a šarmem. 
+          Barvy letošního ročníku se ponesou v duchu francouzské trikolóry:&nbsp; 
+          <span className="font-bold">červená, tmavě modrá a bílá</span>. 
         </p>
         <p>
-          <span className="font-bold">Ženy</span>, zkuste vstoupit na parket v
-          dlouhých šatech v jedné ze zmíněných barev, popřípadě s vlečkou,
-          dlouhým rukávem a výraznými ozdobami. Můžete si vybrat i kratší střih
-          pod kolena, ale nezapomeňte na výrazné třpytivé doplňky v duchu
-          antického Řecka – korunku, čelenku nebo jiný vlasový prvek. Určitě
-          nesmí chybět ani elegantní podpatky, které vašemu outfitu dodají tu
-          správnou božskou tečku.
+          <span className="font-bold">Dámy</span>, nechte se unášet tematikou
+          romantické Paříže a vyberte si róbu v jedné ze zmíněných barev. 
+          Doplnit ji můžete šperky či doplňky, které budou třešničkou na dortu Vašeho jedinečného stylu. 
+          Můžete si zvolit i kratší šaty pod kolena. Nezapomeňte doplnit Váš outfit o krásné lodičky nebo podpatky.
         </p>
         <p>
-          <span className="font-bold">Pro muže</span> doporučujeme modrý nebo
-          bílý oblek, ale klidně můžete sáhnout i po klasických černých či
-          šedých tónech. Celý outfit završte zlatou nebo zelenou kravatou,
-          případně si dovolte experiment s motýlky v těchto odstínech. Dodatečný
-          lesk můžete přidat třpytivými či originálně zdobenými manžetovými
-          knoflíčky. A samozřejmě nezapomeňte na elegantní pánskou obuv.
+          <span className="font-bold">Pro gentlemany</span> doporučujeme tmavě modrý oblek.<br/> 
+          Pro pány, kteří se nebojí odlišit, je skvělou volbou oblek v barvě bordó či v jiném odstínu červené. 
+          Outfit můžete doplnit kravatou nebo motýlkem v barvách plesu. 
+          Celkový dojem podtrhnou zdobené manžetové knoflíčky nebo jiné doplňky, a samozřejmě společenská pánská obuv.
         </p>
       </div>
     </InfoCard>

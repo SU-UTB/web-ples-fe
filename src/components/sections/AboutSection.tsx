@@ -21,19 +21,18 @@ export const AboutSection = () => {
           />
           <div className="flex flex-col gap-8">
             <AboutCard />
-            {/* <DresscodeCard />
+            <DresscodeCard />
             <section id="program">
               <InfoCard headline="PROGRAM:">
                 <div className="order-3 my-4 text-xl">
-                  Celým večerem vás provede moderátor, herec a zpěvák Milan
-                  Peroutka.
+                  Celým večerem Vás provede moderátorka Jitka Nováčková.
                 </div>
                 <ProgramItemList />
                 <div className="mt-6 text-center opacity-50">
                   Změna programu vyhrazena
                 </div>
               </InfoCard>
-            </section> */}
+            </section>
           </div>
         </div>
       </Section>
