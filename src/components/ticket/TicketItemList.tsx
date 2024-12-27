@@ -13,7 +13,7 @@ export const TicketItemList = () => {
     <>
       <Swiper
         modules={[Pagination]}
-        className="block desktop:hidden h-[640px]"
+        className="block desktop:hidden h-[480px]"
         breakpoints={{
           640: { slidesPerView: 2, spaceBetween: 40 },
         }}
