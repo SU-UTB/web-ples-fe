@@ -10,7 +10,7 @@ export const ProgramItemList = () => {
 
     setTimeout(() => {
       setShowPikachu(false); // Hide Pikachu after 1.3 seconds
-    }, 1300);
+    }, 3000);
   };
 
   return (
@@ -69,30 +69,51 @@ export const ProgramItemList = () => {
         description=""
       />
 
-      {/* Display Pikachu above ProgramCard at time 00:00 */}
-      {showPikachu && (
-        <img
-          src={pikachu_img} // Replace with your Pikachu image path
-          alt="Pikachu"
-          style={{
-            position: 'relative', // Positioned relative to the container
-            width: '50px',
-            height: '50px',
-            marginBottom: '10px', // Adds space between the image and the card
-          }}
-        />
-      )}
-
-      <div onClick={handleClick} onTouchStart={handleClick}>
+      {/* Display Pikachu over text at time 00:00 */}
+      <div style={{ position: 'relative' }} onClick={handleClick} onTouchStart={handleClick}>
         <ProgramCard
           time="00:00"
           headline="Půlnoční překvapení"
           description=" "
         />
+        {showPikachu && (
+          <img
+            src={pikachu_img} // Replace with your Pikachu image path
+            alt="Pikachu"
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '50px',
+              height: '50px',
+              zIndex: 10,
+              transform: 'translate(30%, -100%)',
+              opacity: 0, // Start hidden
+              animation: 'fade-in-out 3s forwards', // Apply fade in and out animation
+            }}
+          />
+        )}
       </div>
 
       <ProgramCard time="00:10" headline="Kapela FRONTMEN" description=" " />
       <ProgramCard time="02:00" headline="Ukončení plesu" description=" " />
+
+      {/* CSS for fade-in-out animation */}
+      <style>
+        {`
+          @keyframes fade-in-out {
+            0% {
+              opacity: 0;
+            }
+            50% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };

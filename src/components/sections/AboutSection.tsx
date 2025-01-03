@@ -20,7 +20,7 @@ export const AboutSection = () => {
             alt="Socha"
             width={645}
             height={645}
-            className="w-full max-w-[645px] h-auto hidden desktop:block"
+            className="w-full max-w-[645px] h-auto hidden desktop:hidden"
             style={{
               position: 'sticky',
               top: '0px', // Sticks to the viewport top
