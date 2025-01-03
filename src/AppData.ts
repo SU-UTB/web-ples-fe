@@ -8,6 +8,7 @@ import galleryImg7 from './assets/img/gallery/g7.webp';
 import galleryImg8 from './assets/img/gallery/g8.webp';
 import galleryImg9 from './assets/img/gallery/g9.webp';
 import galleryImg10 from './assets/img/gallery/g10.webp';
+import galleryImg11 from './assets/img/gallery/g11.webp';
 
 import vecere from './assets/img/tickets/vecere.jpg';
 import sezeni from './assets/img/tickets/sezeni.jpg';
@@ -32,10 +33,24 @@ export const galleryPhotos: PhotoType[] = [
     height: GALLERY_PHOTO_HEIGHT,
   },
   {
+    id: 5,
+    src: galleryImg6,
+    alt: 'galerie6',
+    width: 525,
+    height: GALLERY_PHOTO_HEIGHT,
+  },
+  {
+    id: 6,
+    src: galleryImg7,
+    alt: 'galerie7',
+    width: 242,
+    height: GALLERY_PHOTO_HEIGHT,
+  },
+  {
     id: 2,
     src: galleryImg3,
     alt: 'galerie3',
-    width: 400,
+    width: 600,
     height: GALLERY_PHOTO_HEIGHT,
   },
   {
@@ -53,17 +68,17 @@ export const galleryPhotos: PhotoType[] = [
     height: GALLERY_PHOTO_HEIGHT,
   },
   {
-    id: 5,
-    src: galleryImg6,
-    alt: 'galerie6',
-    width: 525,
+    id: 9,
+    src: galleryImg10,
+    alt: 'galerie10',
+    width: 645,
     height: GALLERY_PHOTO_HEIGHT,
   },
   {
-    id: 6,
-    src: galleryImg7,
-    alt: 'galerie7',
-    width: 242,
+    id: 10,
+    src: galleryImg11,
+    alt: 'galerie11',
+    width: 645,
     height: GALLERY_PHOTO_HEIGHT,
   },
   {
@@ -78,13 +93,6 @@ export const galleryPhotos: PhotoType[] = [
     src: galleryImg9,
     alt: 'galerie9',
     width: 645,
-    height: GALLERY_PHOTO_HEIGHT,
-  },
-  {
-    id: 9,
-    src: galleryImg10,
-    alt: 'galerie10',
-    width: 206,
     height: GALLERY_PHOTO_HEIGHT,
   },
 ];
