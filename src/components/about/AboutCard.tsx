@@ -11,7 +11,7 @@ export const AboutCard = () => {
         </p>
         <p>
           Tento den přímo vybízí k tomu, aby Kongresové centrum ve Zlíně ožilo romantikou, 
-          která připomíná kouzelnou atmosféru Paříže – města lásky. 
+          která připomíná kouzelnou atmosféru Paříže – města lásky.<br/> 
           Vzduchem se bude nést rytmus písně Love Is in the Air, 
           který dokonale podtrhne večer plný nezapomenutelných zážitků.
         </p>
