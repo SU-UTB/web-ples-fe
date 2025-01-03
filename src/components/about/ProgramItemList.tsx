@@ -55,7 +55,7 @@ export const ProgramItemList = () => {
       />
       <ProgramCard
         time="22:10"
-        headline="Kapela SIMPLY THE SHOW"
+        headline="Kapela FRONTMEN"
         description=""
       />
       <ProgramCard
