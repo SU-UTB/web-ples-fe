@@ -8,7 +8,7 @@ export const OrganizerSection = () => {
   const clickCount = useRef<number>(0);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null); // Compatible timeout type
 
-  const handleTripleClick = () => {
+  const handleDoubleleClick = () => {
     setIsRolling(true); // Trigger barrel roll animation
     // Reset the animation after it finishes (5 seconds)
     setTimeout(() => {
@@ -24,8 +24,8 @@ export const OrganizerSection = () => {
       }
 
       timer.current = setTimeout(() => {
-          if (clickCount.current === 3) {
-              handleTripleClick();
+          if (clickCount.current === 2) {
+              handleDoubleleClick();
           } else if (clickCount.current === 1) {
               // Open a _blank link if it's a single click
               window.open('https://su.utb.cz', '_blank');

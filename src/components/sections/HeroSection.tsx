@@ -10,6 +10,7 @@ import rightImage from '../../assets/img/hero/HeroHeadingRight.svg';
 import easterEggImage from '../../assets/img/eastereggs/easterEgg.png'; 
 import baguetteImage from '../../assets/img/eastereggs/baguette.png'; // Add your baguette image
 import soundFile from '../../assets/img/eastereggs/french-music.mp3';
+import backgroundImage from '../../assets/img/hero/heroBg.jpg';
 
 export const HeroSection = () => {
   const clickCount = useRef<number>(0);
@@ -25,7 +26,7 @@ export const HeroSection = () => {
   const [baguetteAnimation, setBaguetteAnimation] = useState(false);
   const [baguetteImages, setBaguetteImages] = useState<number[]>([]); // State for multiple baguettes
 
-  const handleTripleClick = () => {
+  const handleDoubleClick = () => {
     // Trigger the baguette animation and create multiple baguette images
     setBaguetteAnimation(true);
     setBaguetteImages(Array.from({ length: 4 }, (_, i) => i)); // Create 10 baguette images
@@ -49,8 +50,8 @@ export const HeroSection = () => {
     }
 
     timer.current = setTimeout(() => {
-      if (clickCount.current === 3) {
-        handleTripleClick();
+      if (clickCount.current === 2) {
+        handleDoubleClick();
       }
       clickCount.current = 0; // Reset click count after a short delay
     }, 300); // Adjust the delay as needed
@@ -131,7 +132,12 @@ export const HeroSection = () => {
       id="hero"
       className="flex flex-col items-center justify-center px-4 pt-12 bg-center bg-no-repeat bg-cover bg-card-gray md:pt-20"
       style={{
-        background: `linear-gradient(to bottom, #B22547 80%, #F3E7E7 98%)`,
+        backgroundImage: `
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(243, 231, 231, 1) 98%),
+          url(${backgroundImage})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
       }}
     >
       <style>{animationStyle}</style> {/* Injecting the Easter egg animation */}
