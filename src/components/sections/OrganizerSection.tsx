@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import suIcon from '../../assets/icons/organizer/su-icon.svg';
 import utbIcon from '../../assets/icons/organizer/utb-icon.svg';
 import { Section } from '../shared/Section';
+import pointerCursor from '../../assets/img/eastereggs/pointerCursor.png';
 
 export const OrganizerSection = () => {
   const [isRolling, setIsRolling] = useState(false); // State to track the barrel roll animation trigger
@@ -61,7 +62,7 @@ export const OrganizerSection = () => {
               style={{
                 transition: 'transform 1s ease-in-out',
                 transform: isRolling ? 'rotate(720deg) scale(1.5)' : 'rotate(0deg) scale(1)', // Apply barrel roll rotation
-                cursor: 'pointer'
+                cursor: `url(${pointerCursor}) 0 0, auto`
               }}
             />
             <a 
