@@ -24,7 +24,7 @@ export const TicketItemList = () => {
         pagination={{ clickable: true }}
       >
         {ticketCards.map((ticket) => (
-          <SwiperSlide key={ticket.id} className="pt-8">
+          <SwiperSlide key={ticket.id} className="pt-16 md:pt-4 lg:pt-0">
             <TicketCard {...ticket} />
           </SwiperSlide>
         ))}

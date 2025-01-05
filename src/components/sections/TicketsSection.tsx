@@ -23,6 +23,7 @@ export const TicketsSection = () => {
               <span className="font-bold">online</span> přes aplikaci nebo na webu{' '}
               <span className="font-bold">SMSticket</span>.
             </p>
+            <br/>
             <p>
               Vstupenky jsou k dispozici také v{' '}
               <span className="font-bold">Masters of Rock Café</span> (Tyršovo nábřeží 5497, Zlín),{' '}
