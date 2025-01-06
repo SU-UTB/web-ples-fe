@@ -190,7 +190,7 @@ export const HeroSection = () => {
 
       
       <div
-        className="bg-center bg-no-repeat bg-cover m-0 relative w-full h-[200px]"
+        className="bg-center bg-no-repeat bg-cover m-0 relative w-full h-[150px] md:h-[200px]"
         // style={{
         //   backgroundImage: `url('${clouds}')`,
         // }}

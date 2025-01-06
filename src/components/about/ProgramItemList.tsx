@@ -26,7 +26,7 @@ export const ProgramItemList = () => {
         description={
           <p>
             iDance Studio Zlín
-            <br /> Proslov rektora&nbsp;
+            <br /> Proslov rektora{' '}
             <span className="font-bold">
               prof.&nbsp;Mgr.&nbsp;Milana Adámka,&nbsp;Ph.D.
             </span>
@@ -44,7 +44,7 @@ export const ProgramItemList = () => {
         description=""
       />
       <ProgramCard
-        time="21:15"
+        time="21:15&nbsp;&nbsp;"
         headline="Prestige Symphony Orchestra"
         description=""
       />

@@ -14,7 +14,7 @@ export const TicketCard = ({
 }: TicketCardProps) => {
   return (
     <article className="flex flex-col items-center text-center gap-y-8 bg-[#F3E7E7] relative">
-      <div className="relative w-full max-w-[412px]">
+      <div className="relative w-full max-w-[412px] p-6">
         <img
           width={412}
           height={412}
@@ -28,7 +28,7 @@ export const TicketCard = ({
         >
           <h3 className="text-2xl font-semibold uppercase">{headline}</h3>
           <h4 className="text-2xl">{price}</h4>
-          <p className="text-lg max-w-[450px]">{info}</p>
+          <p className="text-lg max-w-[412px]">{info}</p>
         </div>
       </div>
     </article>
