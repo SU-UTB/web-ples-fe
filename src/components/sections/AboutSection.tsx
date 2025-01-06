@@ -8,11 +8,9 @@ import program from "../../assets/img/headlines/program.svg"
 
 export const AboutSection = () => {
   return (
-    <div
-      style={{
-        backgroundColor: '#F3E7E7',
-      }}
-    >
+    <div style={{
+      backgroundColor: '#F3E7E7'
+    }}>
       <Section id="o-plese" className="">
         <div className="flex flex-col items-center justify-center lg:items-start lg:gap-x-4 lg:flex-row relative">
           <img

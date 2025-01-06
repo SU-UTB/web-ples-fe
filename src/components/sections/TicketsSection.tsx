@@ -14,7 +14,7 @@ export const TicketsSection = () => {
           alt="Vstupenky" // Alt text for accessibility
           className="px-2 mb-4 h-[50px] desktop:px-0" // Set height and margin (adjust as needed)
         />
-        <div className="flex flex-col justify-between w-full gap-8 pb-20 lg:flex-row">
+        <div className="flex flex-col justify-between w-full gap-8 pb-6 md:pb-20 lg:flex-row">
           <div className="max-w-2xl px-2 space-y-2 text-lg desktop:px-0">
             <p>
               Předprodej vstupenek začíná již{' '}
