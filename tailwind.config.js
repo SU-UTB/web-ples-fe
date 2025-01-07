@@ -46,14 +46,14 @@ export default {
         30: '30px',
       },
       boxShadow: {
-        card: '12px 12px 18px 0px rgba(83, 146, 134, 0.20), -12px -12px 18px 0px #FFF',
+        card: '0px 0px 18px 1px #dbcaca',
         sidebar:
-          '12px 12px 18px 0px rgba(83, 146, 134, 0.20), -12px -12px 18px 0px rgba(255, 255, 255, 0.25)',
+          '12px 12px 18px 0px rgba(83, 146, 134, 0.20), -12px -12px 18px 0px #F3E7E7',
       },
     },
     fontFamily: {
-      sans: ['PilcrowRounded', 'sans-serif'],
-      numbers: ['Cormorant Garamond', 'sans-serif'],
+      sans: ['NeueRegrade', 'sans-serif'],
+      numbers: ['NeueRegrade', 'sans-serif'],
     },
   },
   variants: {

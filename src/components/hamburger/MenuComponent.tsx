@@ -1,3 +1,4 @@
+// Parent Component (MenuComponent.tsx)
 import { useState } from 'react';
 import { HamburgerButton } from './HamburgerButton';
 import { Sidebar } from './Sidebar';
@@ -12,7 +13,7 @@ export const MenuComponent = () => {
   return (
     <>
       <HamburgerButton isOpen={isOpen} toggle={toggleSidebar} />
-      <Sidebar isOpen={isOpen} />
+      <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} /> {/* Pass setIsOpen to Sidebar */}
     </>
   );
 };

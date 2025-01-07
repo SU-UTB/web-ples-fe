@@ -22,14 +22,14 @@ export const Countdown = ({ targetDate }: Props) => {
   const timeLeft = getCountdownTimeLeft(msLeft);
 
   return (
-    <div className="flex items-center justify-center space-x-1">
+    <div className="flex items-center justify-center">
       <div className="flex">
         <CountdownWindow timeToDisplay={timeLeft.days} timeFormat="dní" />
-        <span className="p-2 text-3xl">:</span>
+      <span className="p-1 md:p-2 text-3xl" style={{color: '#F3E7E7'}}>:</span>
       </div>
       <div className="flex">
         <CountdownWindow timeToDisplay={timeLeft.hours} timeFormat="hodin" />
-        <span className="p-2 text-3xl">:</span>
+        <span className="p-1 md:p-2 text-3xl" style={{color: '#F3E7E7'}}>:</span>
       </div>
       <CountdownWindow timeToDisplay={timeLeft.minutes} timeFormat="minut" />
     </div>

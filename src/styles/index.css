@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 
-@font-face {
+/* @font-face {
   font-family: 'PilcrowRounded';
   src: url('../assets/fonts/PilcrowRounded-Regular.woff2') format('woff2');
   font-weight: 400;
@@ -30,6 +30,38 @@
   src: url('../assets/fonts/PilcrowRounded-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: 'NeueRegrade';
+  src: url('../assets/fonts/Neue-Regrade-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueRegrade';
+  src: url('../assets/fonts/Neue-Regrade-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueRegrade';
+  src: url('../assets/fonts/Neue-Regrade-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueRegrade';
+  font-display: swap;
+  src: url('../assets/fonts/Neue-Regrade-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @tailwind base;
@@ -41,7 +73,8 @@ html {
 }
 
 body {
-  font-family: 'PilcrowRounded';
+  /* font-family: 'PilcrowRounded'; */
+  font-family: 'NeueRegrade';
   font-size: 16px;
   color: #2e2e2e;
 

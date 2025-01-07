@@ -18,12 +18,12 @@ export const HomePage = () => (
       <HeroSection />
       <AboutSection />
       <TicketsSection />
-      <SupportProgramSection />
+      {/* <SupportProgramSection /> */}
       <GallerySection />
       <ContactSection />
-      <GeneralPartnerSection />
-      <MainPartnerSection />
-      <PartnersSection />
+      {/* <GeneralPartnerSection /> */}
+      {/* <MainPartnerSection /> */}
+      {/* <PartnersSection /> */}
       <OrganizerSection />
     </main>
     <Footer />

@@ -13,9 +13,10 @@ export const TicketItemList = () => {
     <>
       <Swiper
         modules={[Pagination]}
-        className="block desktop:hidden h-[640px]"
+        className="block lg:hidden"
         breakpoints={{
           640: { slidesPerView: 2, spaceBetween: 40 },
+          820: { slidesPerView: 2, spaceBetween: 0 },
         }}
         spaceBetween={50}
         slidesPerView={1}
@@ -24,12 +25,12 @@ export const TicketItemList = () => {
         pagination={{ clickable: true }}
       >
         {ticketCards.map((ticket) => (
-          <SwiperSlide key={ticket.id} className="pt-8">
+          <SwiperSlide key={ticket.id} className="pt-2 lg:pt-0">
             <TicketCard {...ticket} />
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="hidden desktop:grid desktop:grid-cols-3 md:gap-y-12">
+      <div className="hidden lg:grid lg:grid-cols-3 md:gap-y-12">
         {ticketCards.map((ticket) => (
           <TicketCard key={ticket.id} {...ticket} />
         ))}

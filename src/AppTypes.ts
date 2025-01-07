@@ -19,4 +19,5 @@ export type TicketCardType = {
   headline: string;
   price: string;
   info: string;
+  textColor: string;
 };
