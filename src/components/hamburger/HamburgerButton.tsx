@@ -21,7 +21,7 @@ export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
           closed: { rotate: 0, translateY: 0 },
           open: {
             rotate: 45,
-            translateY: window.innerWidth >= 768 ? 14 : 8, // Adjust Y translation for desktop (>=768px)
+            translateY: window.innerWidth >= 768 ? 14 : 8,
             translateX: 0,
           },
         }}
