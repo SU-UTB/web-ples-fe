@@ -17,17 +17,17 @@ export const TicketsSection = () => {
         <div className="flex flex-col justify-between w-full gap-8 pb-6 md:pb-20 lg:flex-row">
           <div className="max-w-2xl px-2 space-y-2 text-lg desktop:px-0">
             <p>
-              <span className='font-bold'>Pro studující a zaměstnance UTB:</span><br/>
-              Předprodej začíná <span className='font-bold'>20. ledna 2025 v 9:00</span>. Vstupenky bude možné zakoupit pouze prostřednictvím unikátního odkazu, který obdržíte na svůj univerzitní e-mail.
+              <b>Pro studující a zaměstnance UTB:</b><br/>
+              Předprodej začíná <b>20. ledna 2025 v 9:00</b>. Vstupenky bude možné zakoupit pouze prostřednictvím unikátního odkazu, který obdržíte na svůj univerzitní e-mail.
             </p>
             <br/>
             <p>
-              <span className='font-bold'>Pro veřejnost:</span><br/>
-              Prodej vstupenek bude spuštěn{' '}<span className='font-bold'>22. ledna 2025 v 9:00</span>.
+              <b>Pro veřejnost:</b><br/>
+              Prodej vstupenek bude spuštěn{' '}<b>22. ledna 2025 v 9:00</b>.
             </p>
             <br/>
             <p>
-              <span className="font-bold">Kde lze vstupenky zakoupit?</span>
+              <b>Kde lze vstupenky zakoupit?</b>
               <br />
               <span
                 style={{
@@ -36,7 +36,7 @@ export const TicketsSection = () => {
                   textIndent: '-5rem', // Aligns bullet point with the rest of the text
                 }}
               >
-                <span style={{ fontWeight: 'bold' }}>• Online:</span>{' '}Přes aplikaci nebo na webu SMSticket.
+                <b>• Online:</b>{' '}Přes aplikaci nebo na webu SMSticket.
               </span>
               <span
                 style={{
@@ -45,7 +45,7 @@ export const TicketsSection = () => {
                   textIndent: '-5.5rem', // Aligns bullet point with the rest of the text
                 }}
               >
-                <span style={{ fontWeight: 'bold' }}>• Osobně:</span>{' '}
+                <b>• Osobně:</b>{' '}
                 V Masters of Rock Café (Tyršovo nábřeží 5497, Zlín), kde je platba možná
                 pouze v hotovosti.
               </span>
