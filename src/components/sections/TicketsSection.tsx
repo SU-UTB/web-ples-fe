@@ -17,21 +17,39 @@ export const TicketsSection = () => {
         <div className="flex flex-col justify-between w-full gap-8 pb-6 md:pb-20 lg:flex-row">
           <div className="max-w-2xl px-2 space-y-2 text-lg desktop:px-0">
             <p>
-              Předprodej vstupenek začíná již{' '}
-              <span className="font-bold">20. ledna 2025</span>.{' '}
-              Lístky lze nově zakoupit{' '}
-              <span className="font-bold">online</span> přes aplikaci nebo na webu{' '}
-              <span className="font-bold">SMSticket</span>.
+              <span className='font-bold'>Pro studující a zaměstnance UTB:</span><br/>
+              Předprodej začíná <span className='font-bold'>20. ledna 2025 v 9:00</span>. Vstupenky bude možné zakoupit pouze prostřednictvím unikátního odkazu, který obdržíte na svůj univerzitní e-mail.
             </p>
-            <br/>
             <p>
-              Vstupenky jsou k dispozici také v{' '}
-              <span className="font-bold">Masters of Rock Café</span> (Tyršovo nábřeží 5497, Zlín),{' '}
-              kde je platba možná{' '}
-              <span className="font-bold">pouze v hotovosti</span>.
+              <span className='font-bold'>Pro veřejnost:</span><br/>
+              Prodej vstupenek bude spuštěn{' '}<span className='font-bold'>22. ledna 2025 v 9:00</span>.
+            </p>
+            <p>
+              <span className="font-bold">Kde lze vstupenky zakoupit?</span>
+              <br />
+              <span
+                style={{
+                  display: 'block',
+                  paddingLeft: '6rem', // Adds "tab" space
+                  textIndent: '-5rem', // Aligns bullet point with the rest of the text
+                }}
+              >
+                <span style={{ fontWeight: 'bold' }}>• Online:</span>{' '}Přes aplikaci nebo na webu SMSticket.
+              </span>
+              <span
+                style={{
+                  display: 'block',
+                  paddingLeft: '6.5rem', // Adds "tab" space
+                  textIndent: '-5.5rem', // Aligns bullet point with the rest of the text
+                }}
+              >
+                <span style={{ fontWeight: 'bold' }}>• Osobně:</span>{' '}
+                V Masters of Rock Café (Tyršovo nábřeží 5497, Zlín), kde je platba možná
+                pouze v hotovosti.
+              </span>
             </p>
           </div>
-          <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card max-w-[500px]">
+          <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card max-w-[500px] flex flex-col justify-center">
             <h3 className="text-xl font-semibold">
               Bližší informace k předprodeji:
             </h3>
