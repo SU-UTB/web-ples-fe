@@ -25,6 +25,7 @@ export const TicketsSection = () => {
               <span className='font-bold'>Pro veřejnost:</span><br/>
               Prodej vstupenek bude spuštěn{' '}<span className='font-bold'>22. ledna 2025 v 9:00</span>.
             </p>
+            <br/>
             <p>
               <span className="font-bold">Kde lze vstupenky zakoupit?</span>
               <br />
