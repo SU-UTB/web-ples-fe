@@ -15,13 +15,13 @@ export const TicketItemList = () => {
         modules={[Pagination]}
         className="block lg:hidden"
         breakpoints={{
-          640: { slidesPerView: 2, spaceBetween: 40 },
-          820: { slidesPerView: 2, spaceBetween: 0 },
+          640: { slidesPerView: 1, spaceBetween: 20 }, // Adjusted spaceBetween
+          820: { slidesPerView: 2, spaceBetween: 20 }, // Consistent spaceBetween
         }}
-        spaceBetween={50}
+        spaceBetween={20} // Updated to match breakpoints
         slidesPerView={1}
-        centeredSlides
-        loop
+        centeredSlides={false} // Disable centering to improve swipe behavior
+        loop={false} // Disable loop to avoid conflicts with pagination and snapping
         pagination={{ clickable: true }}
       >
         {ticketCards.map((ticket) => (
