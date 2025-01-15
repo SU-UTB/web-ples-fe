@@ -28,28 +28,15 @@ export const TicketsSection = () => {
             <br/>
             <p>
               <b>Kde lze vstupenky zakoupit?</b>
-              <br />
-              <span
-                style={{
-                  display: 'block',
-                  paddingLeft: '6rem', // Adds "tab" space
-                  textIndent: '-5rem', // Aligns bullet point with the rest of the text
-                }}
-              >
-                <b>• Online:</b>{' '}Přes aplikaci nebo na webu SMSticket.
-              </span>
-              <span
-                style={{
-                  display: 'block',
-                  paddingLeft: '6.5rem', // Adds "tab" space
-                  textIndent: '-5.5rem', // Aligns bullet point with the rest of the text
-                }}
-              >
-                <b>• Osobně:</b>{' '}
-                V Masters of Rock Café (Tyršovo nábřeží 5497, Zlín), kde je platba možná
-                pouze v hotovosti.
-              </span>
             </p>
+            <ul style={{ listStyleType: 'disc', listStylePosition: 'outside', marginLeft: '2rem' }}>
+              <li>
+                <b>Online:</b> Přes aplikaci nebo na webu SMSticket.
+              </li>
+              <li>
+                <b>Osobně:</b> V Masters of Rock Café (Tyršovo nábřeží 5497, Zlín), kde je platba možná pouze v hotovosti.
+              </li>
+            </ul>
           </div>
           <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card max-w-[500px] flex flex-col justify-center">
             <h3 className="text-xl font-semibold">
