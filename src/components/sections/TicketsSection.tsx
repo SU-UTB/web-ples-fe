@@ -17,21 +17,28 @@ export const TicketsSection = () => {
         <div className="flex flex-col justify-between w-full gap-8 pb-6 md:pb-20 lg:flex-row">
           <div className="max-w-2xl px-2 space-y-2 text-lg desktop:px-0">
             <p>
-              Předprodej vstupenek začíná již{' '}
-              <span className="font-bold">20. ledna 2025</span>.{' '}
-              Lístky lze nově zakoupit{' '}
-              <span className="font-bold">online</span> přes aplikaci nebo na webu{' '}
-              <span className="font-bold">SMSticket</span>.
+              <b>Pro studující a zaměstnance UTB:</b><br/>
+              Předprodej začíná <b>20. ledna 2025 v 9:00</b>. Vstupenky bude možné zakoupit pouze prostřednictvím unikátního odkazu, který obdržíte na svůj univerzitní e-mail.
             </p>
             <br/>
             <p>
-              Vstupenky jsou k dispozici také v{' '}
-              <span className="font-bold">Masters of Rock Café</span> (Tyršovo nábřeží 5497, Zlín),{' '}
-              kde je platba možná{' '}
-              <span className="font-bold">pouze v hotovosti</span>.
+              <b>Pro veřejnost:</b><br/>
+              Prodej vstupenek bude spuštěn{' '}<b>22. ledna 2025 v 9:00</b>.
             </p>
+            <br/>
+            <p>
+              <b>Kde lze vstupenky zakoupit?</b>
+            </p>
+            <ul style={{ listStyleType: 'disc', listStylePosition: 'outside', marginLeft: '2rem' }}>
+              <li>
+                <b>Online:</b> Přes aplikaci nebo na webu SMSticket.
+              </li>
+              <li>
+                <b>Osobně:</b> V Masters of Rock Café (Tyršovo nábřeží 5497, Zlín), kde je platba možná pouze v hotovosti.
+              </li>
+            </ul>
           </div>
-          <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card max-w-[500px]">
+          <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card max-w-[500px] flex flex-col justify-center">
             <h3 className="text-xl font-semibold">
               Bližší informace k předprodeji:
             </h3>
