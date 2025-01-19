@@ -1,8 +1,10 @@
 import { Section } from '../shared/Section';
 
 import kellerIcon from '../../assets/img/partners/main/keller-icon.svg';
-import laviteIcon from '../../assets/img/partners/main/lavite-icon.svg';
-import sushiHubIcon from '../../assets/img/partners/main/sushiHub-icon.svg';
+import onsemi from '../../assets/img/partners/main/onsemi.png';
+import bennon from '../../assets/img/partners/main/bennon.svg';
+import topnatur from '../../assets/img/partners/main/topnatur.png';
+import vincentka from '../../assets/img/partners/main/vincentka.svg';
 
 export const MainPartnerSection = () => {
   return (
@@ -16,22 +18,34 @@ export const MainPartnerSection = () => {
           </h2>
           <div className="flex flex-wrap justify-center gap-16 gap-y-8">
             <img
-              src={laviteIcon}
-              loading="lazy"
-              alt="Lavite"
-              className="h-30 sm:h-30"
-            />
-            <img
               src={kellerIcon}
               loading="lazy"
               alt="Keller"
-              className="h-30 sm:h-30"
+              className="h-12 sm:h-12"
             />
             <img
-              src={sushiHubIcon}
+              src={onsemi}
               loading="lazy"
-              alt="SushiHub"
-              className="h-30 sm:h-30"
+              alt="Onsemi"
+              className="h-12 sm:h-12"
+            />
+            <img
+              src={bennon}
+              loading="lazy"
+              alt="Bennon"
+              className="h-12 sm:h-12"
+            />
+            <img
+              src={topnatur}
+              loading="lazy"
+              alt="Topnatur"
+              className="h-12 sm:h-12"
+            />
+            <img
+              src={vincentka}
+              loading="lazy"
+              alt="Vincentka"
+              className="h-16 sm:h-16"
             />
           </div>
         </div>
