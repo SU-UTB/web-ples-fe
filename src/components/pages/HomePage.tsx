@@ -5,6 +5,9 @@ import { GallerySection } from '../sections/GallerySection';
 import { HeroSection } from '../sections/HeroSection';
 import { OrganizerSection } from '../sections/OrganizerSection';
 import { TicketsSection } from '../sections/TicketsSection';
+import { GeneralPartnerSection } from '../sections/GeneralPartnerSection';
+import { MainPartnerSection } from '../sections/MainPartnerSection';
+import { PartnersSection } from '../sections/PartnersSection'
 import { Footer } from '../shared/Footer';
 
 export const HomePage = () => (
@@ -16,6 +19,9 @@ export const HomePage = () => (
       <TicketsSection />
       <GallerySection />
       <ContactSection />
+      <GeneralPartnerSection />
+      <MainPartnerSection />
+      <PartnersSection />
       <OrganizerSection />
     </main>
     <Footer />
