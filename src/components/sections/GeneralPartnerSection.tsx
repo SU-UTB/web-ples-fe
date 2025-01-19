@@ -1,7 +1,9 @@
 import { Section } from '../shared/Section';
 
-import bennonIcon from '../../assets/img/partners/general/bennon-icon.svg';
+import fairyTailors from '../../assets/img/partners/general/fairy_tailors.svg'
 import flyUnitedIcon from '../../assets/img/partners/general/flyUnited-icon.svg';
+import infitness from '../../assets/img/partners/general/infitness.svg'
+import isprodukce from '../../assets/img/partners/general/isProdukce.svg'
 
 export const GeneralPartnerSection = () => {
   return (
@@ -15,16 +17,28 @@ export const GeneralPartnerSection = () => {
           </h2>
           <div className="flex flex-wrap justify-center gap-16 gap-y-8">
             <img
-              src={bennonIcon}
+              src={fairyTailors}
               loading="lazy"
-              alt="Bennon"
-              className="h-30 sm:h-30"
+              alt="Fairy Tailors"
+              className="h-10 sm:h-10"
+            />
+            <img
+              src={infitness}
+              loading="lazy"
+              alt="InFitness"
+              className="h-10 sm:h-10"
+            />
+            <img
+              src={isprodukce}
+              loading="lazy"
+              alt="IS Produkce"
+              className="h-10 sm:h-10"
             />
             <img
               src={flyUnitedIcon}
               loading="lazy"
               alt="FlyUnited"
-              className="h-30 sm:h-30"
+              className="h-10 sm:h-10"
             />
           </div>
         </div>
