@@ -7,7 +7,7 @@ import { OrganizerSection } from '../sections/OrganizerSection';
 import { TicketsSection } from '../sections/TicketsSection';
 import { GeneralPartnerSection } from '../sections/GeneralPartnerSection';
 import { MainPartnerSection } from '../sections/MainPartnerSection';
-import { PartnersSection } from '../sections/PartnersSection'
+// import { PartnersSection } from '../sections/PartnersSection'
 import { Footer } from '../shared/Footer';
 
 export const HomePage = () => (
@@ -21,7 +21,7 @@ export const HomePage = () => (
       <ContactSection />
       <GeneralPartnerSection />
       <MainPartnerSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       <OrganizerSection />
     </main>
     <Footer />

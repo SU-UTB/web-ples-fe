@@ -16,6 +16,10 @@ import vitar from '../../assets/img/partners/vitar.png';
 import zijemeGastrem from '../../assets/img/partners/zijeme-gastrem.png';
 import zlinFilmFestival from '../../assets/img/partners/zlin-film-festival.png';
 
+import adrop from '../../assets/img/partners/basic/adrop.png';
+import maximus from '../../assets/img/partners/basic/infinitmaximus.svg';
+import tamazpet from '../../assets/img/partners/basic/tamazpet.png';
+
 export const PartnersSection = () => {
   return (
     <div style={{
@@ -27,6 +31,25 @@ export const PartnersSection = () => {
           Partneři:
         </h2>
         <div className="flex flex-wrap justify-center gap-x-16 gap-y-12 items-center ">
+          <img
+            src={adrop}
+            loading="lazy"
+            alt="Adrop"
+            className="h-10"
+          />
+          <img
+            src={maximus}
+            loading="lazy"
+            alt="Infinit Maximus"
+            className="h-10"
+          />
+          <img
+            src={tamazpet}
+            loading="lazy"
+            alt="Infinit Maximus"
+            className="h-10"
+          />
+
           <img
             src={laserGameZlin}
             loading="lazy"
