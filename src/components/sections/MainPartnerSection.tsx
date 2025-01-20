@@ -25,9 +25,6 @@ export const MainPartnerSection = () => {
             aspect-ratio: 3 / 1;
             object-fit: contain;
           }
-          .main-partner-logo.vincentka {
-            aspect-ratio: auto; /* Specific override for Vincentka's logo */
-          }
         `}
       </style>
       <div style={{ backgroundColor: '#F3E7E7' }}>
@@ -43,7 +40,7 @@ export const MainPartnerSection = () => {
                   src={partner.src}
                   loading="lazy"
                   alt={partner.alt}
-                  className={`main-partner-logo ${partner.alt === 'Vincentka' ? 'vincentka' : ''}`}
+                  className="main-partner-logo"
                 />
               ))}
             </div>
