@@ -57,8 +57,7 @@ export const PartnersSection = () => {
         {`
           .partner-logo {
             width: clamp(150px, 12vw, 200px);
-            height: auto;
-            aspect-ratio: 3 / 1;
+            height: clamp(60px, 8vw, 75px);
             object-fit: contain;
           }
         `}
