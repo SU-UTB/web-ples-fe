@@ -5,6 +5,7 @@ import onsemi from '../../assets/img/partners/main/onsemi.png';
 import bennon from '../../assets/img/partners/main/bennon.svg';
 import topnatur from '../../assets/img/partners/main/topnatur.png';
 import vincentka from '../../assets/img/partners/main/vincentka.svg';
+import eurocar from '../../assets/img/partners/main/eurocar.png';
 
 const mainPartners = [
   { src: kellerIcon, alt: 'Keller' },
@@ -12,6 +13,7 @@ const mainPartners = [
   { src: bennon, alt: 'Bennon' },
   { src: topnatur, alt: 'Topnatur' },
   { src: vincentka, alt: 'Vincentka' },
+  { src: eurocar, alt: 'Eurocar' },
 ];
 
 export const MainPartnerSection = () => {
