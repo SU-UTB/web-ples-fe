@@ -50,11 +50,11 @@ export const TicketsSection = () => {
           <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card max-w-[500px] flex flex-col justify-center">
             <h3 className="text-xl font-semibold">Bližší informace k předprodeji:</h3>
             <ContactCard
-              title=""
+              title="Bc."
               name="Aneta Nejezchlebová"
               position=""
               email="nejezchlebova@sutb.cz"
-              phone="+420 723 132 295"
+              phone=""
             />
           </div>
         </div>
