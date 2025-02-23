@@ -6,6 +6,9 @@ import bennon from '../../assets/img/partners/main/bennon.svg';
 import topnatur from '../../assets/img/partners/main/topnatur.png';
 import vincentka from '../../assets/img/partners/main/vincentka.svg';
 import eurocar from '../../assets/img/partners/main/eurocar.png';
+import sykora from '../../assets/img/partners/main/sykora.png';
+import greiner from '../../assets/img/partners/main/greiner.svg';
+import bageterie from '../../assets/img/partners/main/bageterie.png';
 
 const mainPartners = [
   { src: kellerIcon, alt: 'Keller' },
@@ -14,6 +17,9 @@ const mainPartners = [
   { src: topnatur, alt: 'Topnatur' },
   { src: vincentka, alt: 'Vincentka' },
   { src: eurocar, alt: 'Eurocar' },
+  { src: sykora, alt: 'Sykora' },
+  { src: greiner, alt: 'Greiner' },
+  { src: bageterie, alt: 'Bageterie' },
 ];
 
 export const MainPartnerSection = () => {

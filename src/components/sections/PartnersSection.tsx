@@ -2,17 +2,27 @@ import { Section } from '../shared/Section';
 
 import adrop from '../../assets/img/partners/basic/adrop.png';
 import amem from '../../assets/img/partners/basic/amem.png';
+import berani from '../../assets/img/partners/basic/berani.png';
 import continental from '../../assets/img/partners/basic/continental.png'; 
 import dermacol from '../../assets/img/partners/basic/dermacol.png'; 
 import exitroom from '../../assets/img/partners/basic/exitroom.png'; 
+import garni from '../../assets/img/partners/basic/garni.png';
 import gienger from '../../assets/img/partners/basic/gienger.png'; 
+import hame from '../../assets/img/partners/basic/hame.png';
+import barber from '../../assets/img/partners/basic/barber.svg';
 import maximus from '../../assets/img/partners/basic/infinitmaximus.svg';
+import kafe from '../../assets/img/partners/basic/kafe.png';
+import kyocera from '../../assets/img/partners/basic/kyocera.png';
 import lasergame from '../../assets/img/partners/basic/lasergame.png';
 import lazneluha from '../../assets/img/partners/basic/lazneluha.png';
 import marmellady from '../../assets/img/partners/basic/marmellady.png';
+import mpl from '../../assets/img/partners/basic/mpl.png';
 import roomstock from '../../assets/img/partners/basic/roomstock.png';
 import sushi from '../../assets/img/partners/basic/sushi.svg';
+import bubliny from '../../assets/img/partners/basic/bubliny.png';
 import tamazpet from '../../assets/img/partners/basic/tamazpet.png';
+import tic from '../../assets/img/partners/basic/tic.png';
+import vertikon from '../../assets/img/partners/basic/vertikon.png';
 import vest from '../../assets/img/partners/basic/vest.png';
 import vitar from '../../assets/img/partners/basic/vitar.png';
 import vosime from '../../assets/img/partners/basic/vosime.png';
@@ -28,17 +38,27 @@ import rjelinek from '../../assets/img/partners/basic/rjelinek.png';
 const partners = [
   { src: adrop, alt: 'Adrop' },
   { src: amem, alt: 'Ambulance estetické medicíny' },
+  { src: kafe, alt: 'Kafe na rohu' },
+  { src: berani, alt: 'Berani' },
   { src: continental, alt: 'Continental'},
   { src: dermacol, alt: 'Dermacol'},
   { src: exitroom, alt: 'Exitroom Zlín'},
+  { src: garni, alt: 'Garni'},
   { src: gienger, alt: 'Gienger'},
+  { src: hame, alt: 'Hamé'},
+  { src: barber, alt: 'Head Barber' },
   { src: maximus, alt: 'Infinit Maximus' },
+  { src: kyocera, alt: 'Kyocera' },
   { src: lasergame, alt: 'Laser game Zlín' },
   { src: lazneluha, alt: 'Lázně Luhačovice' },
   { src: marmellady, alt: 'Marmellady' },
+  { src: mpl, alt: 'MPL stavebniny' },
   { src: roomstock, alt: 'Roomstock' },
   { src: sushi, alt: 'SushiHub' },
+  { src: bubliny, alt: 'Svět bublin' },
   { src: tamazpet, alt: 'Tamazpet' },
+  { src: tic, alt: 'TIC' },
+  { src: vertikon, alt: 'Vertikon' },
   { src: vest, alt: 'Vest' },
   { src: vitar, alt: 'Vitar' },
   { src: vosime, alt: 'Vosíme' },
