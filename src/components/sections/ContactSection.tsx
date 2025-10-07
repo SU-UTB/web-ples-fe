@@ -27,7 +27,7 @@ export const ContactSection = () => {
                 phone="+420 720 182 609"
               />
               <ContactCard
-                name="Lukáš Faksa"
+                name="Bc. Lukáš Faksa"
                 position="Produkce"
                 email="faksa@sutb.cz"
                 phone="+420 605 456 216"
