@@ -11,7 +11,7 @@ export const ContactCard = ({ title, name, position, email, phone }: Props) => {
     <div className="flex flex-col py-2 space-y-2">
       <hgroup>
         <h3 className="font-bold text-lg sm:text-xl">
-          {title} <span className="uppercase">{name}</span>
+          {title} <span className="">{name}</span>
         </h3>
         <p className="text-lg sm:text-xl">{position}</p>
       </hgroup>
