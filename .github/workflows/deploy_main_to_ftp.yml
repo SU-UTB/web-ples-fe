@@ -3,7 +3,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+
 name: Deploy website on main push
+
 jobs:
   web-deploy:
     name: Deploy
@@ -11,14 +13,37 @@ jobs:
     steps:
       - name: Get latest code
         uses: actions/checkout@v3
-      - run: yarn install && yarn build
 
-      - name: Sync files  
+      - name: Install dependencies and build
+        run: yarn install && yarn build
+
+      # --- Connect to VPN ---
+      - name: Connect to VPN
+        run: |
+          echo "${{ secrets.VPN_PASSWORD }}" > vpn-pass.txt
+          sudo apt-get update -y
+          sudo apt-get install -y openconnect
+          sudo openconnect --user=${{ secrets.VPN_USERNAME }} \
+            --passwd-on-stdin \
+            ${{ secrets.VPN_URL }} < vpn-pass.txt &
+          sleep 10
+        env:
+          VPN_USERNAME: ${{ secrets.VPN_USERNAME }}
+          VPN_PASSWORD: ${{ secrets.VPN_PASSWORD }}
+          VPN_URL: ${{ secrets.VPN_URL }}
+
+      # --- Deploy over SFTP (through VPN) ---
+      - name: Sync files
         uses: wangyucode/sftp-upload-action@v2.0.2
         with:
-          host: ${{ secrets.FTP }}  
+          host: ${{ secrets.FTP }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: './dist/' 
-          remoteDir: './www/' 
-          exclude: '.git*,**/.git*,**/.git*/**,**/.idea*,**/.idea*/**.DS_Store' 
+          localDir: './dist/'
+          remoteDir: './www/'
+          exclude: '.git*,**/.git*,**/.git*/**,**/.idea*,**/.idea*/**.DS_Store'
+
+      # --- Disconnect VPN ---
+      - name: Disconnect VPN
+        if: always()
+        run: sudo killall openconnect || true
