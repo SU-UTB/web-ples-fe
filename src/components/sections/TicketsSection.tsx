@@ -1,9 +1,8 @@
-import { ContactCard } from '../cards/ContactCard';
-import { Section } from '../shared/Section';
-import { TicketItemList } from '../ticket/TicketItemList';
 import vstupenky from '../../assets/img/headlines/vstupenky.svg';
 import buttonBackground from '../../assets/img/hero/heroBg.jpg';
 import { TICKET_BUY } from '../../utils/constants'; // Import the ticket buy time
+import { ContactCard } from '../cards/ContactCard';
+import { Section } from '../shared/Section';
 
 export const TicketsSection = () => {
   const currentDateTime = new Date(); // Get the current date and time
@@ -25,17 +24,19 @@ export const TicketsSection = () => {
             <p>
               <b>Pro studující a zaměstnance UTB:</b>
               <br />
-              Předprodej začíná <b>20. ledna 2025 v 9:00</b>. Vstupenky bude možné zakoupit pouze prostřednictvím unikátního odkazu,
-              který obdržíte na svůj univerzitní e-mail.
+              {/* Předprodej začíná <b>20. ledna 2025 v 9:00</b>. */}Vstupenky
+              bude možné zakoupit pouze prostřednictvím unikátního odkazu, který
+              obdržíte na svůj univerzitní e-mail.
             </p>
             <br />
             <p>
               <b>Pro veřejnost:</b>
               <br />
-              Prodej vstupenek bude spuštěn <b>22. ledna 2025 v 9:00</b>.
+              {/* Prodej vstupenek bude spuštěn <b>22. ledna 2025 v 9:00</b>. */}
+              Informace o předprodeji zde na webu.
             </p>
             <br />
-            <p>
+            {/* <p>
               <b>Kde lze vstupenky zakoupit?</b>
             </p>
             <ul style={{ listStyleType: 'disc', listStylePosition: 'outside', marginLeft: '2rem' }}>
@@ -45,20 +46,22 @@ export const TicketsSection = () => {
               <li>
                 <b>Osobně:</b> V Masters of Rock Café (Tyršovo nábřeží 5497, Zlín), kde je platba možná pouze v hotovosti.
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="px-10 py-8 bg-card-grey rounded-20 shadow-card max-w-[500px] flex flex-col justify-center">
-            <h3 className="text-xl font-semibold">Bližší informace k předprodeji:</h3>
+            <h3 className="text-xl font-semibold">
+              Bližší informace k předprodeji:
+            </h3>
             <ContactCard
-              title="Bc."
-              name="Aneta Nejezchlebová"
+              title=""
+              name="Hana Benešová"
               position=""
-              email="nejezchlebova@sutb.cz"
+              email="benesova@sutb.cz"
               phone=""
             />
           </div>
         </div>
-        <TicketItemList />
+        {/* <TicketItemList /> */}
         {currentDateTime >= TICKET_BUY && ( // Show button only if current date is on or after TICKET_BUY
           <div className="flex justify-center mt-8">
             <a

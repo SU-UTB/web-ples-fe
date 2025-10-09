@@ -3,7 +3,7 @@ import { Countdown } from '../countdown/Countdown';
 import { COUNTDOWN_DATE } from '../../utils/constants';
 
 // import clouds from '../../assets/img/hero/HeroClouds.png';
-import heroHeading from '../../assets/img/hero/HeroHeading.svg';
+import heroHeading from '../../assets/img/hero/HeroHeadingPre2026.svg';
 // import heroPillar from '../../assets/img/hero/HeroPillarsCropped.png';
 import leftImage from '../../assets/img/hero/HeroHeadingLeft.svg'; 
 import rightImage from '../../assets/img/hero/HeroHeadingRight.svg';
