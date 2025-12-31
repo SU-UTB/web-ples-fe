@@ -16,9 +16,9 @@ export const HomePage = () => (
       <TicketsSection />
       <GallerySection />
       <ContactSection />
-      {/* <GeneralPartnerSection /> */}
-      {/* <MainPartnerSection /> */}
-      {/* <PartnersSection /> */}
+      {/* <GeneralPartnerSection />
+      <MainPartnerSection />
+      <PartnersSection /> */}
       <OrganizerSection />
     </main>
     <Footer />
