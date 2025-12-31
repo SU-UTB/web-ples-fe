@@ -14,10 +14,9 @@ export type PhotoType = {
 
 export type TicketCardType = {
   id: number;
-  img: string;
-  alt: string;
   headline: string;
   price: string;
   info: string;
   textColor: string;
+  bgColor: string;
 };

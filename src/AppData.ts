@@ -10,10 +10,6 @@ import galleryImg9 from './assets/img/gallery/g9.webp';
 import galleryImg10 from './assets/img/gallery/g10.webp';
 import galleryImg11 from './assets/img/gallery/g11.webp';
 
-import vecere from './assets/img/tickets/vecere.jpg';
-import sezeni from './assets/img/tickets/sezeni.jpg';
-import stani from './assets/img/tickets/stani.jpg';
-
 import { PhotoType, TicketCardType } from './AppTypes';
 import { GALLERY_PHOTO_HEIGHT } from './utils/constants';
 
@@ -100,29 +96,26 @@ export const galleryPhotos: PhotoType[] = [
 export const ticketCards: TicketCardType[] = [
   {
     id: 0,
-    img: stani,
-    alt: 'Stání',
     headline: 'na stání',
     price: '350,-',
     info: '(možnost sezení na volně dostupných sedačkách bez stolu a místenky)',
-    textColor: '#F3E7E7',
+    textColor: 'text-white',
+    bgColor: 'bg-light-violet',
   },
   {
     id: 1,
-    img: sezeni,
-    alt: 'Sezení',
     headline: 'na sezení bez večeře',
     price: '550,-',
     info: '(zahrnuje místo k sezení pod hlavním pódiem)',
-    textColor: '#02264F',
+    textColor: 'text-white',
+    bgColor: 'bg-dark-violet',
   },
   {
     id: 2,
-    img: vecere,
-    alt: 'Sezení s rautem',
     headline: 'na sezení s večeří',
     price: '850,-',
     info: '(zahrnuje výběr hlavního jídla, předkrmu, dezertu a nápoje)',
-    textColor: '#F3E7E7',
+    textColor: 'text-white',
+    bgColor: 'bg-dark-blue',
   },
 ];
