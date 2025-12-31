@@ -10,6 +10,11 @@ export default {
       colors: {
         'contact-grey': '#2E2E2E',
         'card-grey': '#F3F3F0',
+        'violet': '#451C6F',
+        'light-violet': '#7451A6',
+        'dark-violet': '#35115F',
+        'white': '#F1F0EF',
+        'dark-blue': '#151632',
         orange: {
           default: '#ee7711',
           50: '#fff9ed',
@@ -52,8 +57,8 @@ export default {
       },
     },
     fontFamily: {
-      sans: ['NeueRegrade', 'sans-serif'],
-      numbers: ['NeueRegrade', 'sans-serif'],
+      sans: ['Sfizia', 'sans-serif'],
+      numbers: ['Sfizia', 'sans-serif'],
     },
   },
   variants: {

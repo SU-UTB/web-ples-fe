@@ -24,14 +24,14 @@ export const Countdown = ({ targetDate }: Props) => {
   return (
     <div className="flex items-center justify-center">
       <div className="flex">
-        <CountdownWindow timeToDisplay={timeLeft.days} timeFormat="dní" />
+        <CountdownWindow timeToDisplay={timeLeft.days} timeFormat="Dní" />
       <span className="p-1 md:p-2 text-3xl" style={{color: '#F3E7E7'}}>:</span>
       </div>
       <div className="flex">
-        <CountdownWindow timeToDisplay={timeLeft.hours} timeFormat="hodin" />
+        <CountdownWindow timeToDisplay={timeLeft.hours} timeFormat="Hodin" />
         <span className="p-1 md:p-2 text-3xl" style={{color: '#F3E7E7'}}>:</span>
       </div>
-      <CountdownWindow timeToDisplay={timeLeft.minutes} timeFormat="minut" />
+      <CountdownWindow timeToDisplay={timeLeft.minutes} timeFormat="Minut" />
     </div>
   );
 };
