@@ -33,33 +33,33 @@
 } */
 
 @font-face {
-  font-family: 'NeueRegrade';
-  src: url('../assets/fonts/Neue-Regrade-Regular.woff2') format('woff2');
+  font-family: 'Sfizia';
+  src: url('../assets/fonts/Sfizia-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeueRegrade';
-  src: url('../assets/fonts/Neue-Regrade-Medium.woff2') format('woff2');
+  font-family: 'Sfizia';
+  src: url('../assets/fonts/Sfizia-Medium.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeueRegrade';
-  src: url('../assets/fonts/Neue-Regrade-Semibold.woff2') format('woff2');
+  font-family: 'Sfizia';
+  src: url('../assets/fonts/Sfizia-Semibold.ttf') format('truetype');
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeueRegrade';
+  font-family: 'Sfizia';
   font-display: swap;
-  src: url('../assets/fonts/Neue-Regrade-Bold.woff2') format('woff2');
+  src: url('../assets/fonts/Sfizia-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -74,7 +74,7 @@ html {
 
 body {
   /* font-family: 'PilcrowRounded'; */
-  font-family: 'NeueRegrade';
+  font-family: 'Sfizia';
   font-size: 16px;
   color: #2e2e2e;
 

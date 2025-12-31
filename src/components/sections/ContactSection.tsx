@@ -5,13 +5,9 @@ import kontakty from "../../assets/img/headlines/kontakty.svg"
 
 export const ContactSection = () => {
   return (
-    <div style={{
-      backgroundColor: '#F3E7E7'
-    }}>
+    <div className='bg-violet'>
       <Section id="kontakty" className="py-24">
-        <div style={{
-          color: '#02264F',
-        }}>
+        <div className='px-4'>
           <InfoCard headline={kontakty}>
             <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <ContactCard

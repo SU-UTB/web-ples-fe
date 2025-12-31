@@ -82,10 +82,10 @@ export const PartnersSection = () => {
           }
         `}
       </style>
-      <div style={{ backgroundColor: '#F3E7E7' }}>
+      <div className='bg-white'>
         <Section id="main-partner">
           <div className="w-full px-4 mx-auto max-w-screen-desktop desktop:px-0">
-            <h2 className="mb-16 text-center text-2xl font-semibold uppercase sm:text-3xl font-numbers text-[#02264F]">
+            <h2 className="mb-16 text-center text-2xl font-semibold uppercase sm:text-3xl font-numbers text-violet">
               Partneři:
             </h2>
             <div className="flex flex-wrap justify-center gap-x-16 gap-y-12 items-center">

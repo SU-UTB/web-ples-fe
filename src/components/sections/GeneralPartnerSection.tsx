@@ -25,10 +25,10 @@ export const GeneralPartnerSection = () => {
           }
         `}
       </style>
-      <div style={{ backgroundColor: '#F3E7E7' }}>
+      <div className='bg-white'>
         <Section id="general-partner">
           <div className="w-full px-4 mx-auto max-w-screen-desktop desktop:px-0">
-            <h2 className="mb-16 text-2xl font-semibold text-center uppercase sm:text-3xl font-numbers text-[#02264F]">
+            <h2 className="mb-16 text-2xl font-semibold text-center uppercase sm:text-3xl font-numbers text-violet">
               Generální partneři:
             </h2>
             <div className="flex flex-wrap justify-center gap-16 gap-y-8">
