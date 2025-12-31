@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import {
@@ -9,8 +8,8 @@ import {
 import './styles/index.css';
 
 // Import your custom cursor images
-import frCursor from './assets/img/eastereggs/frCursor.png';
-import pointerCursor from './assets/img/eastereggs/pointerCursor.png';
+// import frCursor from './assets/img/eastereggs/frCursor.png';
+// import pointerCursor from './assets/img/eastereggs/pointerCursor.png';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -28,7 +27,7 @@ const App = () => {
     },
   ]);
 
-  useEffect(() => {
+/*   useEffect(() => {
     // Set the default cursor for the body
     document.body.style.cursor = `url(${frCursor}) 0 0, auto`;
 
@@ -48,7 +47,7 @@ const App = () => {
         style.parentNode.removeChild(style);
       }
     };
-  }, []);
+  }, []); */
 
   return (
     <>

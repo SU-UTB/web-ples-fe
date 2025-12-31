@@ -11,7 +11,7 @@ export const HeroSection = () => {
       className="relative flex flex-col items-center bg-violet min-h-[60vh] md:min-h-[80vh] overflow-hidden pt-12"
     >
       {/* --- LEVÁ MASKA --- */}
-      <div className="absolute -left-10 md:left-0 md:right-auto bottom-0 w-3/4 md:w-1/3 pointer-events-none z-10">
+      <div className="absolute -left-10 md:left-0 md:right-auto bottom-0 w-3/4 md:w-1/3 pointer-events-none z-10 [mask-image:linear-gradient(to_bottom,white_75%,transparent)]">
         <img
           src={maskImage}
           alt=""
@@ -22,7 +22,7 @@ export const HeroSection = () => {
       </div>
 
       {/* --- PRAVÁ MASKA --- */}
-      <div className="absolute right-0 bottom-0 w-1/3 pointer-events-none z-10 hidden md:block">
+      <div className="absolute right-0 bottom-0 w-1/3 pointer-events-none z-10 hidden md:block md:[mask-image:linear-gradient(to_bottom,white_75%,transparent)]">
         <img
           src={maskImage}
           alt=""

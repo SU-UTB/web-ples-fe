@@ -8,8 +8,7 @@ type HamburgerButtonProps = {
 export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
   <button
     onClick={toggle}
-    className="fixed flex justify-center items-center z-50 top-5 right-5 h-[40px] w-[40px] rounded-[10px] shadow-card md:h-[60px] md:w-[60px]"
-    style={{ backgroundColor: '#F3E7E7' }}
+    className="fixed flex bg-white justify-center items-center z-50 top-5 right-5 h-[40px] w-[40px] rounded-[10px] shadow-card md:h-[60px] md:w-[60px]"
   >
     <motion.div
       className="flex flex-col justify-between w-[50%] h-[50%] space-y-2 md:space-y-3 "
@@ -25,16 +24,14 @@ export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
             translateX: 0,
           },
         }}
-        className="w-full h-[1px] md:h-[2px]"
-        style={{ backgroundColor: '#02264F' }}
+        className="w-full h-[1px] md:h-[2px] bg-dark-violet"
       />
       <motion.div
         variants={{
           closed: { opacity: 1 },
           open: { opacity: 0 },
         }}
-        className="w-full h-[1px] md:h-[2px]"
-        style={{ backgroundColor: '#02264F' }}
+        className="w-full h-[1px] md:h-[2px] bg-dark-violet"
         transition={{ duration: 0.1 }}
       />
       <motion.div
@@ -46,8 +43,7 @@ export const HamburgerButton = ({ toggle, isOpen }: HamburgerButtonProps) => (
             translateX: 0,
           },
         }}
-        className="w-full h-[1px] md:h-[2px]"
-        style={{ backgroundColor: '#02264F' }}
+        className="w-full h-[1px] md:h-[2px] bg-dark-violet"
       />
     </motion.div>
   </button>
