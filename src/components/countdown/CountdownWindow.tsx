@@ -11,7 +11,7 @@ export const CountdownWindow = ({ timeToDisplay, timeFormat }: Props) => {
           {timeToDisplay}
         </p>
       </div>
-      <p className="mt-2 text-sm md:text-xl font-numbers" style={{color: '#F3E7E7'}}>{timeFormat}</p>
+      <p className="mt-2 text-sm md:text-xl font-numbers text-white">{timeFormat}</p>
     </div>
   );
 };
