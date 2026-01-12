@@ -2,6 +2,7 @@ import vstupenky from '../../assets/img/headlines/vstupenky.svg';
 import { TICKET_BUY } from '../../utils/constants'; // Import the ticket buy time
 import { ContactCard } from '../cards/ContactCard';
 import { Section } from '../shared/Section';
+import { TicketItemList } from '../ticket/TicketItemList';
 
 export const TicketsSection = () => {
   const currentDateTime = new Date(); // Get the current date and time
@@ -17,9 +18,9 @@ export const TicketsSection = () => {
         <div className="flex flex-col justify-between w-full gap-8 pb-6 md:pb-20 lg:flex-row">
           <div className="max-w-2xl px-2 space-y-2 text-lg desktop:px-0">
             <p>
-              {/*<b>Pro studující a zaměstnance UTB:</b>
+              <b>Pro studující a zaměstnance UTB:</b>
               <br />
-              Předprodej začíná <b>20. ledna 2025 v 9:00</b>. Vstupenky
+              Předprodej začíná <b>20. ledna 2026 v 9:00</b>. Vstupenky
               bude možné zakoupit pouze prostřednictvím unikátního odkazu, který
               obdržíte na svůj univerzitní e-mail.
             </p>
@@ -27,21 +28,20 @@ export const TicketsSection = () => {
             <p>
               <b>Pro veřejnost:</b>
               <br />
-              Prodej vstupenek bude spuštěn <b>22. ledna 2025 v 9:00</b>.*/}
-              Informace o předprodeji brzy zde na webu.
+              Prodej vstupenek bude spuštěn <b>23. ledna 2026 v 9:00</b>.
             </p>
             <br />
-            {/*<p>
+            <p>
               <b>Kde lze vstupenky zakoupit?</b>
             </p>
             <ul style={{ listStyleType: 'disc', listStylePosition: 'outside', marginLeft: '2rem' }}>
               <li>
                 <b>Online:</b> Přes aplikaci nebo na webu SMSticket.
               </li>
-              <li>
+              {/* <li>
                 <b>Osobně:</b> V Masters of Rock Café (Tyršovo nábřeží 5497, Zlín), kde je platba možná pouze v hotovosti.
-              </li>
-            </ul>*/}
+              </li> */}
+            </ul>
           </div>
           <div className="px-10 py-8 bg-light-violet rounded-20 flex flex-col justify-center">
             <h3 className="text-xl font-bold">
@@ -57,7 +57,7 @@ export const TicketsSection = () => {
           </div>
         </div>
 
-        {/* <TicketItemList /> */}
+        <TicketItemList />
         
         {currentDateTime >= TICKET_BUY && ( // Show button only if current date is on or after TICKET_BUY
           <div className="flex justify-center mt-8">

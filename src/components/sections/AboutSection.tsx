@@ -1,6 +1,8 @@
 import aboutImg from '../../assets/img/about-socha.png';
 import program from '../../assets/img/headlines/program.svg';
 import { AboutCard } from '../about/AboutCard';
+import { DresscodeCard } from '../about/DresscodeCard';
+import { ProgramItemList } from '../about/ProgramItemList';
 import { InfoCard } from '../cards/InfoCard';
 import { Section } from '../shared/Section';
 
@@ -18,15 +20,17 @@ export const AboutSection = () => {
           />
           <div className="flex flex-col px-8 md:px-0 gap-8">
             <AboutCard />
-            {/* <DresscodeCard /> */}
+            <DresscodeCard />
             <section id="program">
-              <InfoCard headline={program}>
+              <InfoCard headline={program} width='max-w-2xl'>
                 {/* <div className="order-3 my-4 text-xl">
                   Celým večerem Vás provede moderátorka Jitka Nováčková.
                 </div> */}
-                <div className="order-3 my-4 text-xl">Připravujeme.</div>
-                {/* <ProgramItemList />
-                <div className="mt-6 text-center opacity-50">
+                <div className="order-3 my-4 text-xl">
+                  Celým večerem Vás provede moderátor Vladimír Polívka.
+                </div>
+                <ProgramItemList />
+                {/* <div className="mt-6 text-center opacity-50">
                   Změna programu vyhrazena
                 </div> */}
               </InfoCard>
