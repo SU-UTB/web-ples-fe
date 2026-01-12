@@ -1,28 +1,63 @@
+# 1. Prevent folder browsing
+Options -Indexes
+
 RewriteEngine On
 
-# Exclude specific files from rewriting
-RewriteRule ^manifest\.json$ - [L]
-RewriteRule ^robots\.txt$ - [L]
-RewriteRule ^page-icon\.svg$ - [L]
-RewriteRule ^meta-image\.png$ - [L]
-RewriteRule \.(png|ico)$ - [L]
+# 2. ALLOW: Specific files in the /www root (icons, manifests, verification)
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(apple|android|ms|favicon|mstile|google|safari|manifest|browserconfig|site|robots|meta-image|page-icon).*\.(png|ico|svg|html|json|xml|webmanifest|txt)$ - [L]
 
+# 3. ALLOW: The assets folder
+RewriteRule ^assets/ - [L]
+
+# 4. BACKEND: Routing for API, Admin, and public assets
 RewriteRule ^build/(.*) backend/public/build/$1 [L]
 RewriteRule ^vendor/(.*) backend/public/vendor/$1 [L]
 RewriteRule ^js/(.*) backend/public/js/$1 [L]
 RewriteRule ^css/(.*) backend/public/css/$1 [L]
 RewriteRule ^images/(.*) backend/public/images/$1 [L]
-
-# Rewrite "/api/<something>` to backend 
 RewriteRule ^api/(.*) backend/public/index.php/api/$1 [L]
-
-# Rewrite "/admin/<something>` to admin backend 
 RewriteRule ^admin(.*) backend/public/index.php/admin/$1 [L]
 
-# url.cz/admin/_x_ => admin/
+# 5. BLOCK: Subdirectories ONLY (2014, support, etc.)
+# Added a check: !^$ ensures we don't block the empty path (the home page)
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteCond %{REQUEST_URI} !^/backend/
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [F,L]
 
-# Exclude /assets/ directory from rewriting
-RewriteRule ^assets/ - [L]
-
-# Rewrite all other requests to index.html
+# 6. SPA FALLBACK: Rewrite everything else to index.html
+# This will now correctly pick up the home page request
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.html [L]
+
+
+# RewriteEngine On
+
+# # Exclude specific files from rewriting
+# RewriteRule ^manifest\.json$ - [L]
+# RewriteRule ^robots\.txt$ - [L]
+# RewriteRule ^page-icon\.svg$ - [L]
+# RewriteRule ^meta-image\.png$ - [L]
+# RewriteRule \.(png|ico)$ - [L]
+
+# RewriteRule ^build/(.*) backend/public/build/$1 [L]
+# RewriteRule ^vendor/(.*) backend/public/vendor/$1 [L]
+# RewriteRule ^js/(.*) backend/public/js/$1 [L]
+# RewriteRule ^css/(.*) backend/public/css/$1 [L]
+# RewriteRule ^images/(.*) backend/public/images/$1 [L]
+
+# # Rewrite "/api/<something>` to backend 
+# RewriteRule ^api/(.*) backend/public/index.php/api/$1 [L]
+
+# # Rewrite "/admin/<something>` to admin backend 
+# RewriteRule ^admin(.*) backend/public/index.php/admin/$1 [L]
+
+# # url.cz/admin/_x_ => admin/
+
+# # Exclude /assets/ directory from rewriting
+# RewriteRule ^assets/ - [L]
+
+# # Rewrite all other requests to index.html
+# RewriteRule ^(.*)$ index.html [L]
