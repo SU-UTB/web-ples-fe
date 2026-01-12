@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: 'Sfizia';
-  src: url('../assets/fonts/Sfizia-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/sfizia-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: 'Sfizia';
-  src: url('../assets/fonts/Sfizia-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/sfizia-Medium.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: 'Sfizia';
-  src: url('../assets/fonts/Sfizia-Semibold.ttf') format('truetype');
+  src: url('../assets/fonts/sfizia-Semibold.ttf') format('truetype');
   font-weight: 600;
   font-display: swap;
   font-style: normal;
@@ -59,7 +59,7 @@
 @font-face {
   font-family: 'Sfizia';
   font-display: swap;
-  src: url('../assets/fonts/Sfizia-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/sfizia-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -72,13 +72,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  /* font-family: 'PilcrowRounded'; */
-  font-family: 'Sfizia';
-  font-size: 16px;
-  color: #2e2e2e;
-
-  @apply bg-gray-50;
+@layer base {
+  body {
+    font-family: 'Sfizia', sans-serif;
+  }
 }
 
 .multiSelectContainer li:hover {
