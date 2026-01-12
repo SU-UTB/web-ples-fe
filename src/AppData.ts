@@ -97,7 +97,7 @@ export const ticketCards: TicketCardType[] = [
   {
     id: 0,
     headline: 'na stání',
-    price: '350,-',
+    price: '400,-',
     info: '(možnost sezení na volně dostupných sedačkách bez stolu a místenky)',
     textColor: 'text-white',
     bgColor: 'bg-light-violet',
@@ -105,7 +105,7 @@ export const ticketCards: TicketCardType[] = [
   {
     id: 1,
     headline: 'na sezení bez večeře',
-    price: '550,-',
+    price: '650,-',
     info: '(zahrnuje místo k sezení pod hlavním pódiem)',
     textColor: 'text-white',
     bgColor: 'bg-dark-violet',
@@ -113,7 +113,7 @@ export const ticketCards: TicketCardType[] = [
   {
     id: 2,
     headline: 'na sezení s večeří',
-    price: '850,-',
+    price: '990,-',
     info: '(zahrnuje výběr hlavního jídla, předkrmu, dezertu a nápoje)',
     textColor: 'text-white',
     bgColor: 'bg-dark-blue',
