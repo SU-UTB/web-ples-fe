@@ -1,16 +1,15 @@
 # 1. Prevent folder browsing
 Options -Indexes
-
 RewriteEngine On
 
-# 2. ALLOW: Specific files in the /www root (icons, manifests, verification)
+# 2. ALLOW: Specific files (přidán config)
 RewriteCond %{REQUEST_FILENAME} -f
-RewriteRule ^(apple|android|ms|favicon|mstile|google|safari|manifest|browserconfig|site|robots|meta-image|page-icon).*\.(png|ico|svg|html|json|xml|webmanifest|txt)$ - [L]
+RewriteRule ^(apple|android|ms|favicon|mstile|google|safari|manifest|browserconfig|site|robots|meta-image|page-icon|config).*\.(png|ico|svg|html|json|xml|webmanifest|txt)$ - [L]
 
 # 3. ALLOW: The assets folder
 RewriteRule ^assets/ - [L]
 
-# 4. BACKEND: Routing for API, Admin, and public assets
+# 4. BACKEND: Routing
 RewriteRule ^build/(.*) backend/public/build/$1 [L]
 RewriteRule ^vendor/(.*) backend/public/vendor/$1 [L]
 RewriteRule ^js/(.*) backend/public/js/$1 [L]
@@ -19,16 +18,14 @@ RewriteRule ^images/(.*) backend/public/images/$1 [L]
 RewriteRule ^api/(.*) backend/public/index.php/api/$1 [L]
 RewriteRule ^admin(.*) backend/public/index.php/admin/$1 [L]
 
-# 5. BLOCK: Subdirectories ONLY (2014, support, etc.)
-# Added a check: !^$ ensures we don't block the empty path (the home page)
+# 5. BLOCK: Subdirectories
 RewriteCond %{REQUEST_URI} !^/$
 RewriteCond %{REQUEST_URI} !^/assets/
 RewriteCond %{REQUEST_URI} !^/backend/
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [F,L]
 
-# 6. SPA FALLBACK: Rewrite everything else to index.html
-# This will now correctly pick up the home page request
+# 6. SPA FALLBACK
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.html [L]
 
