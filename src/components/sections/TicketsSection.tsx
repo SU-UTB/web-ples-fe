@@ -60,7 +60,7 @@ export const TicketsSection = () => {
             <p>
               <b>Pro veřejnost:</b>
               <br />
-              Prodej vstupenek bude spuštěn <b>23. ledna 2026 v 9:00</b>.
+              Prodej vstupenek bude spuštěn <b>22. ledna 2026 v 9:00</b>.
             </p>
             <br />
             <p>
