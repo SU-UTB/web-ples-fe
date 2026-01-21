@@ -1,6 +1,6 @@
 .swiper-pagination {
   position: relative;
-  top: 140px;
+  padding-top: 24px;
 }
 
 .swiper-pagination-bullet {
