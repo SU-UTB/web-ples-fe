@@ -1,73 +1,31 @@
 import { Section } from '../shared/Section';
 
-import adrop from '../../assets/img/partners/basic/adrop.png';
-import amem from '../../assets/img/partners/basic/amem.png';
-import berani from '../../assets/img/partners/basic/berani.png';
-import continental from '../../assets/img/partners/basic/continental.png'; 
-import dermacol from '../../assets/img/partners/basic/dermacol.png'; 
-import exitroom from '../../assets/img/partners/basic/exitroom.png'; 
-import garni from '../../assets/img/partners/basic/garni.png';
-import gienger from '../../assets/img/partners/basic/gienger.png'; 
-import hame from '../../assets/img/partners/basic/hame.png';
-import barber from '../../assets/img/partners/basic/barber.svg';
-import maximus from '../../assets/img/partners/basic/infinitmaximus.svg';
-import kafe from '../../assets/img/partners/basic/kafe.png';
-import kyocera from '../../assets/img/partners/basic/kyocera.png';
-import lasergame from '../../assets/img/partners/basic/lasergame.png';
-import lazneluha from '../../assets/img/partners/basic/lazneluha.png';
-import marmellady from '../../assets/img/partners/basic/marmellady.png';
-import mpl from '../../assets/img/partners/basic/mpl.png';
-import roomstock from '../../assets/img/partners/basic/roomstock.png';
-import sushi from '../../assets/img/partners/basic/sushi.svg';
+import bonusia from '../../assets/img/partners/basic/bonusia.png';
+import brgroup from '../../assets/img/partners/basic/brgroup.png';
 import bubliny from '../../assets/img/partners/basic/bubliny.png';
-import tamazpet from '../../assets/img/partners/basic/tamazpet.png';
-import tic from '../../assets/img/partners/basic/tic.png';
-import vertikon from '../../assets/img/partners/basic/vertikon.png';
+import cebes from '../../assets/img/partners/basic/cebes.png';
+import duometal from '../../assets/img/partners/basic/duometal.webp';
+import maximus from '../../assets/img/partners/basic/infinitmaximus.png';
+import infitness from '../../assets/img/partners/basic/infitness.svg';
+import letuska from '../../assets/img/partners/basic/letuska.png';
+import mclimon from '../../assets/img/partners/basic/mclimon.png';
+import sachy from '../../assets/img/partners/basic/sachovy_svaz.png';
 import vest from '../../assets/img/partners/basic/vest.png';
-import vitar from '../../assets/img/partners/basic/vitar.png';
-import vosime from '../../assets/img/partners/basic/vosime.png';
-import zff from '../../assets/img/partners/basic/zff.png';
-
-// tombola
-import everstar from '../../assets/img/partners/basic/everstar.png';
-import fatra from '../../assets/img/partners/basic/fatra.png';
-import rallye from '../../assets/img/partners/basic/rallye.png';
-import rjelinek from '../../assets/img/partners/basic/rjelinek.png';
-
+import vincentka from '../../assets/img/partners/basic/vincentka.png';
 
 const partners = [
-  { src: adrop, alt: 'Adrop' },
-  { src: amem, alt: 'Ambulance estetické medicíny' },
-  { src: kafe, alt: 'Kafe na rohu' },
-  { src: berani, alt: 'Berani' },
-  { src: continental, alt: 'Continental'},
-  { src: dermacol, alt: 'Dermacol'},
-  { src: exitroom, alt: 'Exitroom Zlín'},
-  { src: garni, alt: 'Garni'},
-  { src: gienger, alt: 'Gienger'},
-  { src: hame, alt: 'Hamé'},
-  { src: barber, alt: 'Head Barber' },
-  { src: maximus, alt: 'Infinit Maximus' },
-  { src: kyocera, alt: 'Kyocera' },
-  { src: lasergame, alt: 'Laser game Zlín' },
-  { src: lazneluha, alt: 'Lázně Luhačovice' },
-  { src: marmellady, alt: 'Marmellady' },
-  { src: mpl, alt: 'MPL stavebniny' },
-  { src: roomstock, alt: 'Roomstock' },
-  { src: sushi, alt: 'SushiHub' },
-  { src: bubliny, alt: 'Svět bublin' },
-  { src: tamazpet, alt: 'Tamazpet' },
-  { src: tic, alt: 'TIC' },
-  { src: vertikon, alt: 'Vertikon' },
-  { src: vest, alt: 'Vest' },
-  { src: vitar, alt: 'Vitar' },
-  { src: vosime, alt: 'Vosíme' },
-  { src: zff, alt: 'Zlín film festival' },
-  //tombola
-  { src: everstar, alt: 'Everstar' },
-  { src: fatra, alt: 'Fatra' },
-  { src: rallye, alt: 'Rallye Design' },
-  { src: rjelinek, alt: 'R. Jelínek' },
+  { src: bonusia, alt: 'Bonusia' }, // Imported
+  { src: brgroup, alt: 'BR Group' }, // Imported
+  { src: cebes, alt: 'Cebes' }, // Imported
+  { src: duometal, alt: 'Duometal' }, // Imported
+  { src: infitness, alt: 'Infitness' }, // Imported
+  { src: letuska, alt: 'Letuska' }, // Imported
+  { src: maximus, alt: 'Infinit Maximus' }, // Imported
+  { src: mclimon, alt: 'McLimón' }, // Imported
+  { src: bubliny, alt: 'Svět bublin' }, // Imported
+  { src: sachy, alt: 'Šachový svaz' }, // Imported
+  { src: vest, alt: 'Vest' }, // Imported
+  { src: vincentka, alt: 'Vincentka' }, // Imported
 ];
 
 export const PartnersSection = () => {
@@ -82,7 +40,7 @@ export const PartnersSection = () => {
           }
         `}
       </style>
-      <div className='bg-white'>
+      <div className="bg-white">
         <Section id="main-partner">
           <div className="w-full px-4 mx-auto max-w-screen-desktop desktop:px-0">
             <h2 className="mb-16 text-center text-2xl font-semibold uppercase sm:text-3xl font-numbers text-violet">

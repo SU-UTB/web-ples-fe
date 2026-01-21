@@ -2,13 +2,13 @@ import { Section } from '../shared/Section';
 
 import fairyTailors from '../../assets/img/partners/general/fairy_tailors.svg';
 import flyUnitedIcon from '../../assets/img/partners/general/flyUnited-icon.svg';
-import infitness from '../../assets/img/partners/general/infitness.svg';
-import isprodukce from '../../assets/img/partners/general/isProdukce.svg';
+import edhouse from '../../assets/img/partners/general/edhouse.svg';
+import keller from '../../assets/img/partners/general/keller.svg';
 
 const partners = [
   { src: fairyTailors, alt: 'Fairy Tailors' },
-  { src: infitness, alt: 'InFitness' },
-  { src: isprodukce, alt: 'IS Produkce' },
+  { src: edhouse, alt: 'Edhouse' },
+  { src: keller, alt: 'Keller' },
   { src: flyUnitedIcon, alt: 'FlyUnited' },
 ];
 
