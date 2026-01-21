@@ -2,8 +2,11 @@ import { MenuComponent } from '../hamburger/MenuComponent';
 import { AboutSection } from '../sections/AboutSection';
 import { ContactSection } from '../sections/ContactSection';
 import { GallerySection } from '../sections/GallerySection';
+import { GeneralPartnerSection } from '../sections/GeneralPartnerSection';
 import { HeroSection } from '../sections/HeroSection';
+import { MainPartnerSection } from '../sections/MainPartnerSection';
 import { OrganizerSection } from '../sections/OrganizerSection';
+import { PartnersSection } from '../sections/PartnersSection';
 import { TicketsSection } from '../sections/TicketsSection';
 import { Footer } from '../shared/Footer';
 
@@ -16,9 +19,9 @@ export const HomePage = () => (
       <TicketsSection />
       <GallerySection />
       <ContactSection />
-      {/* <GeneralPartnerSection />
+      <GeneralPartnerSection />
       <MainPartnerSection />
-      <PartnersSection /> */}
+      <PartnersSection />
       <OrganizerSection />
     </main>
     <Footer />

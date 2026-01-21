@@ -1,25 +1,15 @@
 import { Section } from '../shared/Section';
 
-import kellerIcon from '../../assets/img/partners/main/keller-icon.svg';
-import onsemi from '../../assets/img/partners/main/onsemi.png';
 import bennon from '../../assets/img/partners/main/bennon.svg';
-import topnatur from '../../assets/img/partners/main/topnatur.png';
-import vincentka from '../../assets/img/partners/main/vincentka.svg';
-import eurocar from '../../assets/img/partners/main/eurocar.png';
-import sykora from '../../assets/img/partners/main/sykora.png';
-import greiner from '../../assets/img/partners/main/greiner.svg';
-import bageterie from '../../assets/img/partners/main/bageterie.png';
+import barber from '../../assets/img/partners/main/barber.svg';
+import sushi from '../../assets/img/partners/main/sushi.svg';
+import zalesi from '../../assets/img/partners/main/zalesi.png';
 
 const mainPartners = [
-  { src: kellerIcon, alt: 'Keller' },
-  { src: onsemi, alt: 'Onsemi' },
   { src: bennon, alt: 'Bennon' },
-  { src: topnatur, alt: 'Topnatur' },
-  { src: vincentka, alt: 'Vincentka' },
-  { src: eurocar, alt: 'Eurocar' },
-  { src: sykora, alt: 'Sykora' },
-  { src: greiner, alt: 'Greiner' },
-  { src: bageterie, alt: 'Bageterie' },
+  { src: barber, alt: 'HeadBarber' },
+  { src: sushi, alt: 'Sushi Hub' },
+  { src: zalesi, alt: 'Zálesí' },
 ];
 
 export const MainPartnerSection = () => {
