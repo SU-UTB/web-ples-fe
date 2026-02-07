@@ -35,7 +35,7 @@ export const ProgramItemList = () => {
       />
       <ProgramCard
         time="22:00"
-        headline="Vystoupení Michala Třísky"
+        headline="Comedy Juggling s Michalem Třískou"
         description=""
       />
       <ProgramCard

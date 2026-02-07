@@ -5,27 +5,31 @@ import brgroup from '../../assets/img/partners/basic/brgroup.png';
 import bubliny from '../../assets/img/partners/basic/bubliny.png';
 import cebes from '../../assets/img/partners/basic/cebes.png';
 import duometal from '../../assets/img/partners/basic/duometal.webp';
+import idance from '../../assets/img/partners/basic/idance.svg';
 import maximus from '../../assets/img/partners/basic/infinitmaximus.png';
 import infitness from '../../assets/img/partners/basic/infitness.svg';
 import letuska from '../../assets/img/partners/basic/letuska.png';
 import mclimon from '../../assets/img/partners/basic/mclimon.png';
 import sachy from '../../assets/img/partners/basic/sachovy_svaz.png';
+import valasske_tornado from '../../assets/img/partners/basic/valasske_tornado.png';
 import vest from '../../assets/img/partners/basic/vest.png';
 import vincentka from '../../assets/img/partners/basic/vincentka.png';
 
 const partners = [
-  { src: bonusia, alt: 'Bonusia' }, // Imported
-  { src: brgroup, alt: 'BR Group' }, // Imported
-  { src: cebes, alt: 'Cebes' }, // Imported
-  { src: duometal, alt: 'Duometal' }, // Imported
-  { src: infitness, alt: 'Infitness' }, // Imported
-  { src: letuska, alt: 'Letuska' }, // Imported
-  { src: maximus, alt: 'Infinit Maximus' }, // Imported
-  { src: mclimon, alt: 'McLimón' }, // Imported
-  { src: bubliny, alt: 'Svět bublin' }, // Imported
-  { src: sachy, alt: 'Šachový svaz' }, // Imported
-  { src: vest, alt: 'Vest' }, // Imported
-  { src: vincentka, alt: 'Vincentka' }, // Imported
+  { src: bonusia, alt: 'Bonusia' },
+  { src: brgroup, alt: 'BR Group' },
+  { src: cebes, alt: 'Cebes' },
+  { src: duometal, alt: 'Duometal' },
+  { src: idance, alt: 'iDance studio Zlín' },
+  { src: infitness, alt: 'Infitness' },
+  { src: letuska, alt: 'Letuska' },
+  { src: maximus, alt: 'Infinit Maximus' },
+  { src: mclimon, alt: 'McLimón' },
+  { src: bubliny, alt: 'Svět bublin' },
+  { src: sachy, alt: 'Šachový svaz' },
+  { src: valasske_tornado, alt: 'Valašské Tornádo' },
+  { src: vest, alt: 'Vest' },
+  { src: vincentka, alt: 'Vincentka' },
 ];
 
 export const PartnersSection = () => {
