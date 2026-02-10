@@ -24,6 +24,11 @@ export const ProgramItemList = () => {
         description=""
       />
       <ProgramCard
+        time="20:30"
+        headline="Začátek výdeje večeře (malý sál)"
+        description=""
+      />
+      <ProgramCard
         time="20:45"
         headline="Kapela FRONTMEN"
         description=""
@@ -41,6 +46,11 @@ export const ProgramItemList = () => {
       <ProgramCard
         time="22:15"
         headline="Kapela FRONTMEN"
+        description=""
+      />
+      <ProgramCard
+        time="23:00"
+        headline="Konec výdeje večeře"
         description=""
       />
       <ProgramCard
