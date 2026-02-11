@@ -60,7 +60,7 @@ export const ProgramItemList = () => {
       />
       <ProgramCard
         time="23:45"
-        headline="Losování hlavních cen tomboly"
+        headline="Losování hlavních cen"
         description=""
       />
       <ProgramCard
