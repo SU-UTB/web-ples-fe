@@ -8,8 +8,12 @@ import duometal from '../../assets/img/partners/basic/duometal.webp';
 import idance from '../../assets/img/partners/basic/idance.svg';
 import maximus from '../../assets/img/partners/basic/infinitmaximus.png';
 import infitness from '../../assets/img/partners/basic/infitness.svg';
+import kafe from '../../assets/img/partners/basic/kafe.png';
+import kave from '../../assets/img/partners/basic/kave_boty.webp';
 import letuska from '../../assets/img/partners/basic/letuska.png';
 import mclimon from '../../assets/img/partners/basic/mclimon.png';
+import proud from '../../assets/img/partners/basic/proud.png';
+import rallye from '../../assets/img/partners/basic/rallye.png';
 import sachy from '../../assets/img/partners/basic/sachovy_svaz.png';
 import valasske_tornado from '../../assets/img/partners/basic/valasske_tornado.png';
 import vest from '../../assets/img/partners/basic/vest.png';
@@ -20,11 +24,15 @@ const partners = [
   { src: brgroup, alt: 'BR Group' },
   { src: cebes, alt: 'Cebes' },
   { src: duometal, alt: 'Duometal' },
-  { src: idance, alt: 'iDance studio Zlín' },
-  { src: infitness, alt: 'Infitness' },
-  { src: letuska, alt: 'Letuska' },
-  { src: maximus, alt: 'Infinit Maximus' },
   { src: mclimon, alt: 'McLimón' },
+  { src: idance, alt: 'iDance studio Zlín' },
+  { src: maximus, alt: 'Infinit Maximus' },
+  { src: infitness, alt: 'Infitness' },
+  { src: kafe, alt: 'Kafe na rohu' },
+  { src: kave, alt: 'Kave boty' },
+  { src: letuska, alt: 'Letuska' },
+  { src: proud, alt: 'Proud' },
+  { src: rallye, alt: 'Rallye Design' },
   { src: bubliny, alt: 'Svět bublin' },
   { src: sachy, alt: 'Šachový svaz' },
   { src: valasske_tornado, alt: 'Valašské Tornádo' },
