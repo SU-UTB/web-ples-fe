@@ -11,22 +11,22 @@ export const ContactSection = () => {
           <InfoCard headline={kontakty}>
             <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <ContactCard
-                name="Bc. David Fiala"
-                position="Manažer plesu"
-                email="fiala@sutb.cz"
-                phone="+420 739 437 387"
-              />
-              <ContactCard
-                name="Kristina Marečková"
+                name="Bc. Ema Kubíčková"
                 position="Manažerka plesu"
-                email="mareckova@sutb.cz"
-                phone="+420 720 182 609"
+                email="kubickova@sutb.cz"
+                phone="+420 778 489 420"
               />
               <ContactCard
-                name="Bc. Lukáš Faksa"
+                name="Bc. Karolína Korená"
+                position="Manažerka plesu"
+                email="korena@sutb.cz"
+                phone="+420 737 148 498"
+              />
+              <ContactCard
+                name="Kateřina Minaříková"
                 position="Produkce"
-                email="faksa@sutb.cz"
-                phone="+420 605 456 216"
+                email="minarikova@sutb.cz"
+                phone="+420 739 988 781"
               />
               {/* <ContactCard
                 title="Bc."
@@ -36,16 +36,16 @@ export const ContactSection = () => {
                 phone="+420 734 542 044"
               /> */}
               <ContactCard
-                name="Bc. Daniel Bušos"
-                position="Spolupráce a sponzoři"
-                email="busos@sutb.cz"
-                phone="+420 731 926 176"
+                name="Patrik Kašpar"
+                position="Sponzoring"
+                email="kaspar@sutb.cz"
+                phone="+420 739 116 111"
               />
               <ContactCard
-                name="Tímea Patáková"
+                name="Lukáš Pikula"
                 position="Propagace"
-                email="patakova@sutb.cz"
-                phone="+420 735 389 035"
+                email="pikula@sutb.cz"
+                phone="+420 732 329 291"
               />
             </div>
           </InfoCard>
